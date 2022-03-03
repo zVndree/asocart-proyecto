@@ -1,0 +1,280 @@
+/*=============================================
+Slide
+=============================================*/
+
+:root {
+	--amarillo2: #f7a541;
+	--amarillo: #ffbc42;
+	--primary: #c3b395;
+	--light: #eeeeee;
+	--dark: #212121;
+	--red: #eb3127;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--blanco: #f8f5fe;
+	--gris: #74747474;
+	--gris2: #8c8377;
+	--nickel: #6a706e;
+}
+
+/*=======================================
+=            BOTON SCROLL UP            =
+=======================================*/
+.btn-up-top{
+	position: fixed;
+	width: 70px;
+	height: 60px;
+	right: 0;
+	bottom: 10px;
+	background-color: var(--dark);
+	color: var(--amarillo);
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 50px 0px 0px 50px;
+	font-size: 40px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 3;
+	transition: all .4s;
+
+}
+
+.btn-up-top.active{
+	pointer-events: auto;
+	opacity: 1;
+	bottom: 68px;
+
+}
+
+.btn-up-top:hover{
+	text-decoration: none;
+	color: var(--dark);
+	background-color: var(--amarillo);
+}
+
+/*-----Boton de Whatsapp-------*/
+
+.float {
+	position: fixed;
+	width: 70px;
+	height: 60px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50px 0px 0px 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+	transition: all .4s;
+}
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color: #fff;
+}
+
+.my-float {
+	margin-top: 16px;
+}
+
+#slide {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+#slide ul {
+	position: relative;
+	left: 0%;
+	margin: auto;
+	height: auto;
+	/* width: 400%; */
+	clear: both;
+	display: table;
+}
+
+#slide ul li {
+	position: relative;
+	float: left;
+	/* width: 25%; */
+}
+
+#slide ul li img {
+	width: 100%;
+}
+
+#slide .slide_opcion1 img {
+	position: absolute;
+	opacity: 1;
+	/* 	top: 15%;
+    right: 10%;
+    width: 45%; */
+}
+
+#slide .slide_opcion1 .textos_slide {
+	position: absolute;
+	/*  width: 40%;
+    top: 20%;
+    left: 10%; */
+}
+
+#slide .slide_opcion2 img {
+	position: absolute;
+	opacity: 1;
+	/* top: 20%;
+    left: 15%;
+    width: 30%; */
+}
+
+#slide .slide_opcion2 .textos_slide {
+	position: absolute;
+	text-align: right;
+	/* top: 15%;
+	right: 15%;
+    width: 40%; */
+}
+
+#slide .slide_opciones h1 {
+	text-transform: uppercase;
+	font-family: "Dosis", sans-serif;
+	opacity: 1;
+	top: -10%;
+	/* color: var(--dark); */
+}
+
+#slide .slide_opciones h3 {
+	text-transform: uppercase;
+	font-family: "Dosis", sans-serif;
+	opacity: 1;
+	top: -10%;
+	/* color: var(--dark_fuente); */
+}
+
+#slide .slide_opciones h4 {
+	text-transform: uppercase;
+	font-family: "Dosis", sans-serif;
+	opacity: 1;
+	top: -10%;
+	/* color: var(--nickel); */
+}
+
+#slide .slide_opciones button {
+	border: 0px;
+	margin-top: 10px;
+	padding: 10px;
+	opacity: 1;
+	top: -10%;
+}
+
+#slide .slide_opciones button:hover {
+	background: var(--dark);
+	color: var(--blanco);
+	border: 1px solid;
+}
+
+#slide .slide_opciones button span {
+	margin-left: 10px;
+}
+
+/*=============================================
+Flechas de los slides
+=============================================*/
+
+#slide .flechas {
+	position: absolute;
+	font-size: 2em;
+	/* color: var(--blanco); */
+	cursor: pointer;
+	z-index: 2;
+}
+
+#slide #anterior {
+	background: var(--gris);
+	font-size: 22px;
+	opacity: 1;
+	padding: 30px 15px 30px 10px;
+	top: 37%;
+	left: 0;
+}
+
+#slide #siguiente {
+	background: var(--gris);
+
+	opacity: 1;
+
+	right: 0;
+}
+
+#slide #anterior:hover,
+#slide #siguiente:hover {
+	background: var(--gris2);
+}
+
+/* #slide #anterior:active,
+#slide #siguiente:active {
+	background: var(--gris2);
+} */
+
+/*=============================================
+Paginacion
+=============================================*/
+
+#slide #paginacion {
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+#slide #paginacion li {
+	display: inline-block;
+	margin: 0px 5px;
+	cursor: pointer;
+	opacity: 0.6;
+	color: var(--blanco);
+	text-shadow: 0px 0px 5px var(--dark_fuente_hover);
+}
+
+#slide #paginacion li:first-child {
+	opacity: 1;
+}
+
+/*========================
+Scroll-down
+=========================*/
+.icono span {
+	font-size: 52px;
+	color: var(--dark);
+	transition: all 0.2s ease-in-out;
+}
+
+.icono span:hover {
+	color: var(--dark_fuente);
+	transform: scale(1.2);
+}
+
+.ct-btn-scroll {
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 0px;
+	z-index: 9;
+	border-radius: 50%;
+	-webkit-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+}

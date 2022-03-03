@@ -1,0 +1,124 @@
+/*=============================================
+Productos
+=============================================*/
+
+:root {
+	--amarillo2: #f7a541;
+	--amarillo: #ffbc42;
+	--primary: #c3b395;
+	--light: #eeeeee;
+	--dark: #212121;
+	--red: #eb3127;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--blanco: #f8f5fe;
+	--gris: #74747474;
+	--gris2: #8c8377;
+	--nickel: #6a706e;
+}
+
+/*==========================
+Servicios Empresa
+===========================*/
+
+.services_inline_home {
+	margin: 50px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item_service {
+	background: var(--light);
+	padding: 20px;
+	transition: all 0.4s ease-in-out;
+	border-radius: 5px;
+	border-bottom: solid 6px;
+}
+
+.item_service:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.26);
+}
+
+/*=============================================
+Banner Publicitario
+=============================================*/
+
+.banner {
+	position: relative;
+	overflow: hidden;
+}
+
+.banner .text_banner {
+	position: absolute;
+	/* font-family: "Dosis", sans-serif; */
+}
+
+.banner .text_der {
+	top: 50px;
+	right: 50px;
+	text-align: right;
+}
+
+.banner .text_izq {
+	top: 50px;
+	left: 50px;
+	text-align: left;
+}
+
+.banner .text_center {
+	top: 50px;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+	text-align: center;
+}
+
+.text_banner h1 {
+	font-size: 35px;
+	line-height: 25px;
+}
+
+.text_banner h2 {
+	font-size: 30px;
+	line-height: 25px;
+}
+
+.text_banner h3 {
+	font-size: 24px;
+	line-height: 25px;
+}
+
+/*====================================
+Barra productos
+====================================*/
+
+.bar_product .org_products span {
+	margin-left: 5px;
+}
+
+/*====================================
+Lista de productos
+====================================*/
+
+.titulo button span {
+	margin-left: 5px;
+}
+.titulo h1{
+	text-align: center;
+	line-height: normal;
+	font-family: "Dosis", sans-serif;
+	
+}
+.titulo h1:after {
+	position: relative;
+	content: "";
+	top: 100%;
+	width: 120px;
+	height: 8px;
+	display: block;
+	margin: 0 auto;
+	background: #ffbc42;
+	
+}

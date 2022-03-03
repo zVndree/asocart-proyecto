@@ -1,0 +1,28 @@
+
+/*==================================
+cambios dinamicos en el sistema
+===================================*/
+
+por medio de la bd se perimite que el 
+cliente elija cambiar los colores al sistema.
+
+barra superior
+texto superior
+color de fondo 
+color de texto
+redes sociales(red, estilo, url){
+    facebook,
+    facebook_color,
+    http://facebook.com/artesanias_girardot
+
+}
+
+/*==================================
+Tabla categorias del sistema
+===================================*/
+
+id
+nombre
+ruta
+fecha
+

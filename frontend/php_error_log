@@ -1,0 +1,1102 @@
+[06-Jan-2022 01:58:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php on line 12
+[06-Jan-2022 01:59:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControllerPlantill" not found in C:\xampp\htdocs\Art_Gir\frontend\index.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\index.php on line 12
+[06-Jan-2022 02:00:07 Europe/Berlin] PHP Warning:  include(../views/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php on line 10
+[06-Jan-2022 02:00:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../views/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php on line 10
+[05-Jan-2022 22:37:54 America/Bogota] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php on line 12
+[08-Jan-2022 00:15:38 America/Bogota] PHP Fatal error:  Uncaught Error: Non-static method Conexion::conectar() cannot be called statically in C:\xampp\htdocs\Art_Gir\frontend\models\plantilla.modelo.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(18): ControllerPlantilla->ctrEstiloPlantilla()
+#2 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(49): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Art_Gir\frontend\index.php(16): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\models\plantilla.modelo.php on line 11
+[08-Jan-2022 00:23:29 America/Bogota] PHP Fatal error:  Uncaught Error: Non-static method Conexion::conectar() cannot be called statically in C:\xampp\htdocs\Art_Gir\frontend\models\plantilla.modelo.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(18): ControllerPlantilla->ctrEstiloPlantilla()
+#2 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(49): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Art_Gir\frontend\index.php(16): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\models\plantilla.modelo.php on line 10
+[08-Jan-2022 01:59:42 America/Bogota] PHP Warning:  Undefined array key "red" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 19
+[08-Jan-2022 03:35:16 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 69
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:49:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 19:50:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[08-Jan-2022 20:04:16 America/Bogota] PHP Parse error:  Unclosed '{' on line 150 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 297
+[08-Jan-2022 22:38:56 America/Bogota] PHP Parse error:  Unclosed '{' on line 151 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 282
+[09-Jan-2022 00:30:00 America/Bogota] PHP Parse error:  Unclosed '{' on line 151 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 282
+[09-Jan-2022 00:32:03 America/Bogota] PHP Parse error:  Unclosed '{' on line 151 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 282
+[09-Jan-2022 00:33:17 America/Bogota] PHP Parse error:  Unclosed '{' on line 151 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 283
+[09-Jan-2022 00:43:21 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:21 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:21 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:22 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:43:39 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 166
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:49:54 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:50:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[09-Jan-2022 00:52:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 168
+[10-Jan-2022 16:26:40 America/Bogota] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 74
+[10-Jan-2022 16:26:51 America/Bogota] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 74
+[10-Jan-2022 17:48:14 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:52:12 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:52:21 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:52:27 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:52:41 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:53:15 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:53:54 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:54:57 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:55:11 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 17:55:27 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrListarCategorias(), 0 passed in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 147 and exactly 2 expected in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(147): controladorProductos::ctrListarCategorias()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 9
+[10-Jan-2022 18:35:46 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 81
+[10-Jan-2022 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 84
+[10-Jan-2022 18:47:52 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 84
+[10-Jan-2022 18:50:46 America/Bogota] PHP Warning:  Undefined variable $rutaCategorias in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 84
+[11-Jan-2022 01:48:04 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 01:48:04 America/Bogota] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: null + array in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:154
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 01:50:48 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 01:51:15 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 01:51:31 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 01:55:20 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 01:56:01 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 01:57:03 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 02:00:11 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 02:00:11 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:01:27 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:02:07 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 02:03:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 157
+[11-Jan-2022 02:04:54 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 02:08:48 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:08:48 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:18:41 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:18:41 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:27:37 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:27:37 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:27:54 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:27:54 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:31:46 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:31:46 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:31:51 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:31:51 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:32:51 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:32:51 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 02:34:22 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 02:34:22 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:28:22 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 150
+[11-Jan-2022 03:28:22 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:28:22 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:28:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 150
+[11-Jan-2022 03:28:47 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:28:47 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:29:36 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:29:36 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:30:38 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:30:38 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:33:14 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:33:14 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:33:42 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:33:42 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:34:16 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:34:16 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 156
+[11-Jan-2022 03:36:28 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:36:28 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 03:37:48 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:37:48 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 03:38:20 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 152
+[11-Jan-2022 03:38:20 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 154
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:40:37 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:41:02 America/Bogota] PHP Warning:  Undefined array key "estilo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 162
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:48:10 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 155
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:53:44 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 03:56:06 America/Bogota] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(151): json_decode(Array)
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 03:56:11 America/Bogota] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(151): json_decode(Array)
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 03:56:51 America/Bogota] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 151
+[11-Jan-2022 03:56:51 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 04:13:57 America/Bogota] PHP Warning:  Undefined variable $JsonObject in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 04:13:57 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 153
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:27:37 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:32:47 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 161
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 04:36:17 America/Bogota] PHP Warning:  Undefined array key "icono" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 160
+[11-Jan-2022 18:18:24 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function modeloProductos::mdlListarSubcategorias(), 2 passed in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 89 and exactly 4 expected in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php:36
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(89): modeloProductos::mdlListarSubcategorias('ruta', 'alfareria')
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php on line 36
+[11-Jan-2022 18:26:44 America/Bogota] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 93
+[11-Jan-2022 18:26:52 America/Bogota] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 93
+[11-Jan-2022 18:26:55 America/Bogota] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 93
+[11-Jan-2022 18:32:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:33:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:33:52 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:33:55 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:33:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:34:00 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:35:40 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:40:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 94
+[11-Jan-2022 18:40:52 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 94
+[11-Jan-2022 18:42:39 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:42:45 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 97
+[11-Jan-2022 18:48:30 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php:105
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 105
+[11-Jan-2022 18:51:18 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php:105
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 105
+[11-Jan-2022 20:05:52 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function modeloProductos::mdlListarSubcategorias(), 3 passed in C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php on line 26 and exactly 4 expected in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php:36
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php(26): modeloProductos::mdlListarSubcategorias('subcategorias', '1', NULL)
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(168): controladorProductos::ctrListarSubcategorias('1', NULL, NULL)
+#2 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php on line 36
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:06:25 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php:105
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 105
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, bool given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 172
+[11-Jan-2022 20:13:19 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php:105
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php on line 105
+[11-Jan-2022 20:16:21 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:177
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 177
+[11-Jan-2022 20:19:14 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:177
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 177
+[11-Jan-2022 20:20:19 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:177
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 177
+[11-Jan-2022 20:20:26 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php:177
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(66): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 177
+[11-Jan-2022 23:24:20 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 22
+[11-Jan-2022 23:27:00 America/Bogota] PHP Warning:  Undefined array key "fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 16
+[11-Jan-2022 23:27:00 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:28:16 America/Bogota] PHP Warning:  Undefined array key "fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 16
+[11-Jan-2022 23:28:16 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 18
+[11-Jan-2022 23:28:16 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:29:40 America/Bogota] PHP Warning:  Undefined array key "fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 16
+[11-Jan-2022 23:29:40 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 18
+[11-Jan-2022 23:29:40 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:30:11 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 18
+[11-Jan-2022 23:30:11 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:30:32 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 18
+[11-Jan-2022 23:30:32 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:31:05 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 20
+[11-Jan-2022 23:31:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 25
+[11-Jan-2022 23:31:28 America/Bogota] PHP Warning:  Undefined variable $Json_error in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 20
+[11-Jan-2022 23:31:28 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 20
+[11-Jan-2022 23:31:28 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 25
+[11-Jan-2022 23:31:43 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 21
+[11-Jan-2022 23:34:20 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 21
+[11-Jan-2022 23:34:49 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 25
+[11-Jan-2022 23:36:08 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 26
+[11-Jan-2022 23:36:55 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 20
+[11-Jan-2022 23:36:55 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 26
+[11-Jan-2022 23:37:24 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 26
+[11-Jan-2022 23:37:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 26
+[11-Jan-2022 23:37:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 28
+[11-Jan-2022 23:39:26 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 26
+[11-Jan-2022 23:40:45 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php:23
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 23
+[11-Jan-2022 23:42:29 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php:25
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\error404.php on line 25
+[14-Jan-2022 19:12:11 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.subcategorias' doesn't exist in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\producto.controller.php(26): modeloProductos::mdlListarSubcategorias('subcategorias', 'id_categoria', '1')
+#2 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php(172): controladorProductos::ctrListarSubcategorias('id_categoria', '1')
+#3 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(68): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Art_Gir\frontend\index.php(22): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\models\producto.modelo.php on line 43
+[19-Feb-2022 00:55:56 America/Bogota] PHP Warning:  Undefined array key " correo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 34
+[26-Feb-2022 02:12:32 America/Bogota] PHP Fatal error:  Uncaught Error: Non-static method Controller_slide::ctr_mostrar_slide() cannot be called statically in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(124): include()
+#1 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\index.php(24): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 12
+[26-Feb-2022 02:12:48 America/Bogota] PHP Fatal error:  Uncaught Error: Class "model_slide" not found in C:\xampp\htdocs\Art_Gir\frontend\controllers\slide.Controller.php:6
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php(12): Controller_slide::ctr_mostrar_slide()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(124): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(24): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\slide.Controller.php on line 6
+[26-Feb-2022 02:13:01 America/Bogota] PHP Fatal error:  Uncaught Error: Class "model_slide" not found in C:\xampp\htdocs\Art_Gir\frontend\controllers\slide.Controller.php:6
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php(12): Controller_slide::ctr_mostrar_slide()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(124): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(24): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\slide.Controller.php on line 6
+[26-Feb-2022 14:19:04 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:04 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:04 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:04 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:19:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:22:00 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:22:00 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:22:00 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:22:00 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:26:23 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:26:23 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:26:23 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:26:23 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:29:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:29:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:29:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:29:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:01 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:01 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:01 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:01 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:32:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:34:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:34:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:34:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:34:47 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:35:31 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:35:31 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:35:31 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:35:31 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:36:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:36:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:36:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:36:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:46:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:46:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:46:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:46:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 27
+[26-Feb-2022 14:50:56 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 30
+[26-Feb-2022 14:50:56 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 30
+[26-Feb-2022 14:50:56 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 30
+[26-Feb-2022 14:50:56 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\slide.php on line 30
+[27-Feb-2022 02:57:36 America/Bogota] PHP Fatal error:  Uncaught Error: Non-static method modeloEvento::mdl_mostrar_evento() cannot be called statically in C:\xampp\htdocs\Art_Gir\frontend\controllers\evento.controller.php:7
+Stack trace:
+#0 C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php(10): controller_Evento::ctr_mostrar_evento()
+#1 C:\xampp\htdocs\Art_Gir\frontend\views\plantilla.php(134): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Art_Gir\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Art_Gir\frontend\index.php(26): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\Art_Gir\frontend\controllers\evento.controller.php on line 7
+[27-Feb-2022 02:59:09 America/Bogota] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 15
+[27-Feb-2022 03:02:33 America/Bogota] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 18
+[27-Feb-2022 03:03:04 America/Bogota] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 18
+[27-Feb-2022 18:08:04 America/Bogota] PHP Parse error:  Unclosed '{' on line 11 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 58
+[27-Feb-2022 18:12:01 America/Bogota] PHP Parse error:  Unclosed '{' on line 11 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 56
+[27-Feb-2022 19:30:48 America/Bogota] PHP Parse error:  Unclosed '{' on line 21 in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 58
+[27-Feb-2022 19:31:46 America/Bogota] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\eventos.php on line 9
+[01-Mar-2022 18:53:29 America/Bogota] PHP Warning:  Undefined array key "back_color" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 18:54:06 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 18:54:47 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 18:56:46 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 18:57:29 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 19:00:12 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 19:00:51 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 19:01:59 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[01-Mar-2022 19:03:13 America/Bogota] PHP Warning:  Undefined array key "color_Fondo" in C:\xampp\htdocs\Art_Gir\frontend\views\modulos\cabezote.php on line 209
+[03-Mar-2022 17:36:13 America/Bogota] PHP Warning:  include_once(models/usuarios.modelo.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Art_Gir\frontend\index.php on line 22
+[03-Mar-2022 17:36:13 America/Bogota] PHP Warning:  include_once(): Failed opening 'models/usuarios.modelo.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Art_Gir\frontend\index.php on line 22

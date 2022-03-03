@@ -1,0 +1,166 @@
+/*========================
+Eventos
+========================*/
+
+:root {
+	--amarillo2: #f7a541;
+	--primary: #c3b395;
+	--light: #eeeeee;
+	--dark: #212121;
+	--red: #eb3127;
+	--cafe_claro: #5a3f30;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--blanco: #f8f5fe;
+	--gris: #74747474;
+	--gris2: #8c8377;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+p.numero {
+	font-size: 50px;
+	display: block;
+	margin: 0 0 10px 0;
+	font-family: 'Dosis', sans-serif;
+}
+
+/** Globales **/
+.contenedor {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.seccion {
+	padding: 30px 0;
+}
+
+.seccion p {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.seccion h1 {
+	text-align: center;
+	line-height: normal;
+	margin: 50px 0px;
+	font-family: "Dosis", sans-serif;
+}
+
+.seccion h1:after {
+	position: relative;
+	content: "";
+	top: 100%;
+	width: 120px;
+	height: 8px;
+	display: block;
+	margin: 0 auto;
+	background: #ffbc42;
+}
+
+.programa-evento h2 {
+	font-family: "Dosis", sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.detalle-evento h3 {
+	font-size: 1.6em;
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: "Dosis", sans-serif;
+}
+
+section.programa {
+	position: relative;
+}
+
+div.contenedor-video {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+div.contenido-programa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+div.programa-evento {
+	background-color: rgba(247, 247, 247, 0.836);
+	padding: 15px;
+	margin-top: 80px;
+}
+
+nav.menu-programa {
+	width: 100%;
+	border-bottom: 1px solid var(--amarillo2);
+	padding-bottom: 10px;
+}
+
+nav.menu-programa a {
+	display: block;
+	text-align: center;
+	color: var(--dark);
+	text-decoration: none;
+	font-family: "Dosis", sans-serif;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+}
+
+nav.menu-programa a i,
+div.detalle-evento p i {
+	color: var(--amarillo2);
+	font-size: 1.2em;
+	margin-right: 5px;
+}
+
+/*-------detalle evento-------*/
+
+div.detalle-evento {
+	margin-top: 20px;
+	border-bottom: 1px solid var(--dark);
+	padding: 0px 20px;
+}
+
+div.detalle-evento:nth-child(2) {
+	border: none;
+}
+
+div.detalle-evento p {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+/*-------------CUENTA REGRESIVA--------------*/
+
+div.cuenta-regresiva ul li{
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	line-height: 40px;
+	text-align: center;
+
+}
+
+

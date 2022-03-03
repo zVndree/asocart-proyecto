@@ -1,0 +1,295 @@
+/*========================
+Top
+========================*/
+
+:root {
+	--amarillo2: #f7a541;
+	--primary: #c3b395;
+	--light: #eeeeee;
+	--dark: #212121;
+	--red: #eb3127;
+	--cafe_claro: #5a3f30;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--blanco: #f8f5fe;
+	--gris: #74747474;
+	--gris2: #8c8377;
+	--combu_green: #273c2c;
+}
+
+#top ul {
+	padding-top: 10px;
+}
+
+#top ul li {
+	display: inline;
+	margin: 0px 5px;
+	color: var(--blanco);
+	line-height: 10px;
+}
+
+.social ul li a i {
+	font-size: 18px;
+	margin: 0 1px;
+}
+
+.registro ul {
+	margin-top: 5px;
+	font-size: 14px;
+	text-align: right;
+	background: var(--dark);
+}
+
+.registro img {
+	margin: 0 5px;
+}
+
+.dropdown-menu li a {
+	margin-top: -6px;
+}
+
+/* .bar_down {
+	border-bottom: 2px var(--dark) solid;
+} */
+
+/*========================
+Header
+========================*/
+
+header #btn_categorias {
+	margin-top: 25px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+header #btn_categorias p,
+span {
+	cursor: pointer;
+}
+
+header #buscador {
+	margin-top: 25px;
+}
+
+header #buscador input {
+	padding: 19px;
+	border-radius: 0;
+}
+
+header #buscador button {
+	padding: 9px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+header #carrito {
+	margin-top: 25px;
+	border-radius: 10px;
+}
+
+header #carrito button {
+	padding: 9px 15px;
+	border: 1px solid var(--primary);
+	border-radius: 5px;
+}
+
+header #categorias {
+	display: none;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+header #categorias h4 {
+	margin-top: 25px;
+	margin-bottom: -10px;
+}
+
+header #categorias hr {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+header #deseos {
+	margin-top: 25px;
+}
+
+header #deseos button {
+	padding: 9px 15px;
+	border: 1px solid var(--primary);
+	border-radius: 5px;
+}
+
+header #deseos p {
+	padding: 2px;
+	padding-left: 60px;
+	font-size: 12px;
+	border: 1px solid var(--primary);
+	border-radius: 5px;
+}
+ion-icon {
+	margin-top: 2px;
+	position: absolute;
+}
+
+.navbar-header span{
+	background: var(--dark);
+}
+
+/*--------MENU DE NAVEGACION--------*/
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	left: 0;
+	height: 60px;
+	z-index: 999;
+	border-bottom: solid 3px;
+}
+
+.et-hero-tabs-container--top {
+	position: fixed;
+	top: 0;
+}
+
+.navbar-header--top{
+	position: fixed;
+	top: 0;
+}
+
+.et-hero-tab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	color: #000;
+	letter-spacing: 0.1rem;
+	transition: all 0.5s ease;
+	font-size: 1.5rem;
+}
+
+.et-hero-tab i{
+	font-size: 18px;
+}
+
+.et-hero-tab:hover {
+	color: white;
+	background: var(--dark);
+	transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 6px;
+	background: #66b1f1;
+	transition: left 0.3s ease;
+}
+
+/*-------------MODAL REGISTRO Y LOGIN------------*/
+
+div.modal_titulo{
+	padding: 5px 0px;
+}
+
+div.modal_titulo h3{
+	text-align: center;
+	margin-top: -5px;
+	padding: 10px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+div.modal-content{
+	background: rgba(26, 26, 26, 0.25);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.modal_formulario .close{
+	position: absolute;
+	right: 20px;
+	font-size: 20px;
+	top: 5px;
+	color: #000;
+	font-size: 40px;
+}
+
+div.modal_formulario .regis_face, .modal_formulario .regis_google{
+	cursor: pointer;
+}
+
+div.modal_formulario .regis_face p{
+	background: #46639f;
+}
+
+div.modal_formulario .regis_face p:hover{
+	background: #5b7dc2;
+	transition: all 0.4s ease-in-out;
+}
+
+div.modal_formulario .regis_google p{
+	background: #d6513e;
+}
+
+div.modal_formulario .regis_google p:hover{
+	background: #f8654f;
+	transition: all 0.4s ease-in-out;
+}
+div.modal_formulario .regis_face p, .modal_formulario .regis_google p{
+	border-radius: 5px;
+	color: var(--blanco);
+	text-align: center;
+	line-height: 40px;
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+div.modal_formulario p i{
+	margin-left: -16px;
+	margin-right: 16px;
+	font-size: 25px;
+}
+
+div.modal_formulario form{
+	padding: 20px;
+}
+
+div.modal_formulario hr{
+	border: 1px solid #eee;
+}
+
+div.modal_formulario form input[type="text"], div.modal_formulario form input[type="email"], .modal_formulario form input[type="password"]{
+	padding: 20px;
+}
+
+div.modal_formulario form input[type="submit"]{
+	padding: 15px;
+}
+
+div.modal_formulario input{
+	background: 0;
+	outline: 0;
+	color: #000000;
+}
+div.modal_formulario input::placeholder {
+	color: rgba(238, 238, 238, 0.541);
+}
+
+div.checkbox label small{
+	color: var(--blanco);
+}
+
+div.modal_formulario .modal-footer p{
+	color: var(--blanco);
+}
+
+div.modal_formulario .modal-footer a{
+	color: var(--red);
+}
+
+div.modal_formulario .modal-footer a:hover{
+	color: #e65d56;
+	transition: all 0.4s ease-in-out;
+}

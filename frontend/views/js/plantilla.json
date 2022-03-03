@@ -1,0 +1,22 @@
+[
+	{
+		"red": "fa-facebook",
+		"estilo": "facebook_blanco",
+		"url": "https://www.facebook.com/Artesniasgirardot"
+	},
+	{
+		"red": "fa-youtube",
+		"estilo": "youtube_blanco",
+		"url": "http://youtube.com/"
+	},
+	{
+		"red": "fa-instagram",
+		"estilo": "instagram_blanco",
+		"url": "http://instagram.com/"
+	},
+	{
+		"red": "fa-pinterest",
+		"estilo": "pinterest_blanco",
+		"url": "htpp://pinterest.com/"
+	}
+]

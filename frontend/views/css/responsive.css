@@ -1,0 +1,573 @@
+/*========================
+Responsive Configuration
+========================*/
+
+/*---- Pantallas Grandes LG >=1366px ----*/
+
+@media (min-width: 1200px) {
+	/*--------CABEZOTE---------*/
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 20px 60px;
+		padding-left: 0;
+	}
+
+	header #carrito {
+		padding-left: 10px;
+	}
+
+	.navbar-center {
+		position: absolute;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+
+	/*------Plantilla-------*/
+
+	.col-lg-0 {
+		display: none;
+	}
+
+	.error_404 h1 {
+		font-size: 250px;
+		text-shadow: 7px 7px 1px #cfcfcf;
+		font-family: Poppins;
+		position: relative;
+		margin-left: 390px;
+	}
+
+	.error_404 h3 {
+		position: relative;
+		margin-left: 480px;
+	}
+
+	.img_error {
+		margin-top: 63px;
+		margin-left: 275px;
+		position: absolute;
+	}
+
+	/*-------Slides--------*/
+
+	#slide .slide_opciones h1 {
+		font-size: 50px;
+		margin-top: 10px;
+	}
+
+	#slide .slide_opciones h3 {
+		font-size: 30px;
+	}
+
+	#slide .slide_opciones h4 {
+		font-size: 25px;
+	}
+
+	#slide .slide_opciones button {
+		padding: 10px;
+	}
+
+	#slide #siguiente {
+		font-size: 18px;
+		padding: 15px 10px 15px 15px;
+		top: 37%;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+	#slide #anterior {
+		padding: 15px 15px 15px 10px;
+		top: 37%;
+		font-size: 18px;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+
+	/*--------productos-----------*/
+
+	.banner {
+		height: 260px;
+	}
+}
+
+/*---- Pantallas Medianas MD >=1024px ----*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	/*--------CABEZOTE---------*/
+
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 26px 60px;
+		padding-left: 0;
+	}
+
+	header #carrito {
+		padding-left: 10px;
+	}
+
+	/*------Plantilla-------*/
+
+	.col-md-0 {
+		display: none;
+	}
+
+	.error_404 h1 {
+		font-size: 200px;
+		text-shadow: 5px 5px 1px #dadada;
+		font-family: Poppins;
+		position: relative;
+		margin-left: 340px;
+	}
+
+	.error_404 h3 {
+		position: relative;
+		margin-left: 375px;
+	}
+
+	.img_error {
+		margin-top: 40px;
+		margin-left: 230px;
+		position: absolute;
+		padding-left: 0;
+	}
+
+	/*-------Slides--------*/
+
+	#slide .slide_opciones h1 {
+		font-size: 35px;
+		margin-top: 10px;
+	}
+
+	#slide .slide_opciones h3 {
+		font-size: 25px;
+	}
+
+	#slide .slide_opciones h4 {
+		font-size: 20px;
+	}
+
+	#slide .slide_opciones button {
+		padding: 10px;
+	}
+
+	#slide #siguiente {
+		font-size: 14px;
+		padding: 15px 10px 15px 15px;
+		top: 37%;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+	#slide #anterior {
+		padding: 15px 15px 15px 10px;
+		top: 37%;
+		font-size: 14px;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+
+	/*--------productos-----------*/
+	.banner {
+		height: 260px;
+	}
+
+	.item_service {
+		text-align: center;
+		margin: 20px 0px;
+	}
+}
+
+/*---- Pantallas pequeñas SM >=768px ----*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+	/*--------CABEZOTE---------*/
+
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 20px 0px;
+	}
+
+	header #carrito {
+		padding-left: 20px;
+	}
+
+	header #carrito button {
+		border-radius: 5px;
+	}
+
+	header #carrito p {
+		display: none;
+	}
+
+	header #deseos button {
+		border-radius: 5px;
+	}
+
+	header #deseos p {
+		display: none;
+	}
+
+	/*------Plantilla-------*/
+
+	.col-sm-0 {
+		display: none;
+	}
+
+	.error_404 h1 {
+		font-size: 150px;
+		text-shadow: 4px 4px 1px #dadada;
+		font-family: Poppins;
+		position: relative;
+		margin-left: 270px;
+	}
+
+	.error_404 h3 {
+		position: relative;
+		margin-left: 260px;
+	}
+
+	.img_error {
+		margin-top: 38px;
+		margin-left: 160px;
+		position: absolute;
+		padding-left: 0;
+	}
+
+	/*-------Slides--------*/
+
+	.icono span {
+		font-size: 42px;
+	}
+
+	.ct-btn-scroll {
+		bottom: 40px;
+	}
+
+	#slide .slide_opciones h1 {
+		font-size: 25px;
+		margin-top: 10px;
+	}
+
+	#slide .slide_opciones h3 {
+		font-size: 20px;
+	}
+
+	#slide .slide_opciones h4 {
+		font-size: 15px;
+	}
+
+	#slide .slide_opciones button {
+		padding: 5px 5px;
+	}
+
+	#slide #siguiente {
+		font-size: 14px;
+		padding: 15px 10px 15px 15px;
+		top: 37%;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+	#slide #anterior {
+		padding: 15px 15px 15px 10px;
+		top: 37%;
+		font-size: 14px;
+		border-radius: 5px;
+		margin: 0 10px;
+		opacity: 0.7;
+	}
+
+	/*--------productos-----------*/
+
+	.banner {
+		height: 180px;
+	}
+
+	.text_banner h1 {
+		font-size: 30px;
+		line-height: 15px;
+	}
+
+	.text_banner h2 {
+		font-size: 25px;
+		line-height: 15px;
+	}
+
+	.text_banner h3 {
+		font-size: 25px;
+		line-height: 15px;
+	}
+
+	.banner .text_der,
+	.banner .text_izq,
+	.banner .text_center {
+		top: 35px;
+	}
+
+	.item_service {
+		text-align: center;
+		margin: 20px 0px;
+	}
+
+	/*-------EVENTOS-------*/
+}
+
+/*---- Pantallas moviles XS <768px ----*/
+
+@media (max-width: 767px) {
+	/*--------CABEZOTE---------*/
+
+	/*========================
+	Top
+	========================*/
+
+	#top ul {
+		text-align: center;
+	}
+
+	#top,
+	.registro {
+		border-top: 1px solid var(--dark);
+	}
+
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 30px;
+		padding-bottom: 5px;
+	}
+
+	header #btn_categorias {
+		margin-bottom: 5px;
+		border-radius: 5px 0px 0px 5px;
+	}
+
+	header #btn-categorias p {
+		display: none;
+	}
+
+	header #buscador {
+		margin-bottom: 5px;
+	}
+
+	header #buscador input {
+		border-radius: 0px;
+	}
+
+	.et-hero-tabs-container {
+		position: relative;
+		flex-direction: column;
+	}
+	.et-hero-tab {
+		font-size: 1rem;
+	}
+	/*------Plantilla--------*/
+
+	.col-xs-0 {
+		display: none;
+	}
+
+	.error_404 h1 {
+		font-size: 100px;
+		text-shadow: 2px 2px 1px #dadada;
+		font-family: Poppins;
+		position: relative;
+		text-align: center;
+	}
+
+	.error_404 h3 {
+		position: relative;
+		text-align: center;
+	}
+
+	/*-------Slides--------*/
+
+	.icono span {
+		display: none;
+	}
+
+	.btn-up-top {
+		width: 60px;
+		height: 50px;
+		font-size: 30px;
+	}
+
+	.btn-up-top.active {
+		bottom: 60px;
+	}
+
+	.icono-up {
+		margin-top: 10px;
+	}
+
+	.float {
+		width: 60px;
+		height: 50px;
+	}
+
+	.my-float {
+		margin-top: 10px;
+	}
+
+	#slide .slide_opciones h1 {
+		font-size: 13px;
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+
+	#slide .slide_opciones h3 {
+		display: none;
+	}
+
+	#slide .slide_opciones h4 {
+		font-size: 10px;
+		margin-bottom: -5px;
+	}
+
+	#slide .slide_opciones button {
+		font-size: 8px;
+		padding: 5px 5px;
+	}
+
+	#slide #anterior,
+	#slide #siguiente {
+		display: none;
+	}
+
+	#slide #paginacion {
+		line-height: 20px;
+		font-size: 8px;
+	}
+
+	/*--------productos-----------*/
+
+	.banner {
+		height: 100px;
+	}
+
+	.banner .text_der,
+	.banner .text_center,
+	.banner .text_izq {
+		top: 7px;
+		left: 50%;
+		width: 800px;
+		margin-left: -400px;
+		text-align: center;
+		text-shadow: 2px 2px 20px black;
+	}
+
+	.text_banner h1 {
+		font-size: 20px;
+		line-height: 5px;
+	}
+
+	.text_banner h2 {
+		font-size: 20px;
+		line-height: 5px;
+	}
+
+	.text_banner h3 {
+		font-size: 15px;
+		line-height: 5px;
+	}
+
+	.titulo h1 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.titulo button {
+		position: absolute;
+		left: 50%;
+		width: 40%;
+		margin-left: -20%;
+	}
+
+	.products ul li h1 small {
+		font-size: 16px;
+	}
+
+	.services_inline_home {
+		margin: 20px 0px;
+	}
+	.item_service {
+		text-align: center;
+		margin: 15px 0px;
+		padding: 10px;
+	}
+
+	.item_service .info h2 {
+		font-size: 20px;
+	}
+	.item_service .info p {
+		font-size: 14px;
+	}
+
+	/*--------EVENTOS---------*/
+	.titulo_evento h1 {
+		font-size: 2em;
+		margin: 30px 0px;
+	}
+}
+
+@media (max-width: 368px) {
+	.dropdown-menu {
+		position: relative;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	div.programa-evento {
+		width: 70%;
+	}
+
+	nav.menu-programa {
+		display: table;
+	}
+
+	nav.menu-programa a {
+		display: table-cell;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	div.programa-evento {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.contenedor {
+		width: 95%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.contenedor {
+		width: 90%;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.contenedor {
+		width: 90%;
+		max-width: 1100px;
+	}
+}
+
+@media only screen and (min-width:768px){
+    div.cuenta-regresiva ul li {
+        width: 25%;
+        float: left;
+    }
+}
