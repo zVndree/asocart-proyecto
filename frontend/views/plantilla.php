@@ -40,6 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/sweetalert.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>views/css/plugins/ionicons.min.css">
 	<!--=====================================
 	Google Fonts  
@@ -64,6 +65,8 @@
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.scrollUp.js"></script>
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/sweetalert.min.js"></script>
+
 
 </head>
 
@@ -125,17 +128,35 @@ Contenido Dinamico
 
 		if ($ruta != null) {
 			include "modulos/productos.php";
-		} else {
+		}else if($rutas[0] == "verificar"){
+
+			include "modulos/".$rutas[0].".php";
+		}else if($rutas[0] == "inicio"){
+
+			include "modulos/slide.php";
+	
+			include "modulos/destacados.php";
+	
+		}else{
+	
 			include "modulos/error404.php";
 		}
-	} else {
+		/* } else {
+			include "modulos/error404.php";
+		} */
+	}else{
 		include "modulos/slide.php";
 		include "modulos/destacados.php";
 		include "modulos/eventos.php";
 
 	}
+
+
 	?>
 	
+	<!--=====================================
+	JAVASCRIPT PERSONALIZADO
+	======================================-->
 
 	<script src="<?php echo $url; ?>views/js/cabezote.js"></script>
 	<script src="<?php echo $url; ?>views/js/plantilla.js"></script>

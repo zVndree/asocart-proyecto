@@ -1,6 +1,7 @@
 <?php
 $server = Ruta::ctr_ruta_servidor();
-$social = ControllerPlantilla::ctrEstiloPlantilla();
+$plantilla = ControllerPlantilla::ctrEstiloPlantilla();
+
 ?>
 <!--======================
     Informacion servicios
@@ -9,50 +10,26 @@ $social = ControllerPlantilla::ctrEstiloPlantilla();
     <div class="services_inline_home">
         <div class="row">
             <div class="container">
-                <div class="col-lg-3 col-md-6">
-                    <div class="item_service" style="border-bottom: <? echo $social["color_Fondo"]; ?> 
-                        <div class="sv_icon">
-                            <img src="<?php echo $server ?>views/img/services/camion-de-reparto.png">
+                <?php
+                    $servicios = controladorProductos::ctrListarServicios();
+
+                    foreach ($servicios as $key => $value) {
+                        echo '
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="item_service bar_service"  style="'.$plantilla["colorFondo"].'"> 
+                                <div class="sv_icon">
+                                    <img src="'.$server.$value["icono"].'">
+                                </div>
+                                <div class="info">
+                                    <h2>'.$value["titulo"].'</h2>
+                                    <p>'.$value["descripcion"].'</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="info">
-                            <h2>Envios a nivel nacional</h2>
-                            <p>Nuestra promesa de entre es de 6 a 8 dias</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="item_service" style="border-bottom: <? echo $social["color_Fondo"]; ?>
-                        <div class="sv_icon">
-                            <img src="<?php echo $server ?>views/img/services/tarjeta-de-credito.png">
-                        </div>
-                        <div class="info">
-                            <h2>Pago seguro en linea</h2>
-                            <p>Contamos con certificado SSL/Seguro</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="item_service" style="border-bottom: <? echo $social["color_Fondo"]; ?>
-                        <div class="sv_icon">
-                            <img src="<?php echo $server ?>views/img/services/contra-reembolso.png">
-                        </div>
-                        <div class="info">
-                            <h2>Pago Contraentrega</h2>
-                            <p>Asegura tu pedido pagando desde casa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="item_service" style="border-bottom: <? echo $social["barTop"]; ?>
-                        <div class="sv_icon">
-                            <img src="<?php echo $server ?>views/img/services/telefono.png">
-                        </div>
-                        <div class="info">
-                            <h2>Atención al cliente 24/7</h2>
-                            <p>Comunicate con nosotros para ayudarte.</p>
-                        </div>
-                    </div>
-                </div>
+                        ';
+                    }
+                ?>
+                
             </div>
         </div>
     </div>
@@ -112,11 +89,12 @@ $social = ControllerPlantilla::ctrEstiloPlantilla();
                 <div class="col-xs-12 titulo">
 
                     <h1>Articulos en Oferta</h1>
+                    <hr class="back_color">
                 </div>
 
                 
             </div>
-            <hr>
+            
             <!--======================
         vista productos en cuadricula
         =======================-->

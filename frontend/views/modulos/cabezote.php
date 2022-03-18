@@ -77,7 +77,7 @@ Top
 Header
 ======================================-->
 
-	<header class="container-fluid bar_down">
+	<header class="container bar_down">
 
 		<div class="row" id="cabezote">
 			<!--=====================================
@@ -85,7 +85,7 @@ Header
 			======================================-->
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
 				<a href="#">
-					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive">
+					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive" style="width:500px;height:110px">
 				</a>
 			</div>
 			<!--=====================================
@@ -164,11 +164,10 @@ Header
 									<h4>
 										<img src="' . $server . $value["icono"] . '" class="img-responsive">
 										<a href="' . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
-										<ion-icon name="chevron-forward-outline"></ion-icon>
 										</a>
 									</h4>
 				
-									<hr>
+									<br>
 									<ul>';
 				$item = "id_categoria";
 				$valor = $value["id"];
@@ -177,7 +176,7 @@ Header
 				/* var_dump($subcategorias); */
 				foreach ($subcategorias as $key => $value) {
 					echo '<li>
-						<a href=' . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
+						<i class="fa fa-caret-right"></i> <a href=' . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
 						</a>
 						
 					</li>';
@@ -208,7 +207,7 @@ Header
 	</div>
 
 	<div class="collapse navbar-collapse" id="myNavbar">
-		<div class="et-hero-tabs-container bar_down" id="menu" style="<? echo $social["color_Fondo"]; ?>
+		<div class="et-hero-tabs-container bar_down" id="menu" style="<?php echo $social["colorFondo"]?>">
 		
 			<a class=" et-hero-tab" href="#"><i class="fa fa-home"></i></a>
 			<a class="et-hero-tab" href="#about">Sobre Nosotros </a>
@@ -262,26 +261,24 @@ VENTANA MODAL LOGIN Y REGISTRO
 					</p>
 				</div>
 
-				<hr>
-
 				<!----=====================
 				Registro con correo
 				========================--->
 
-				<form method="POST" onsubmit="return registro_user()">
+				<form method="post" onsubmit="return registro_user()">
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<i class="glyphicon glyphicon-user"></i>
 							</span>
-							<input type="text" class="form-control" name="regis_user" id="regis_user" placeholder="Nombre Completo"required="required">
-							<div class="alert alert-danger alerta_nombre" role="alert">
-							<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Por favor llene este campo
-                            </div>
-							<div class="alert alert-warning alerta_nombre" role="alert">
-							<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>No se permiten caracteres especiales ni numericos
-                            </div>
-							
+							<input type="text" class="form-control" name="regis_user" id="regis_user" placeholder="Nombre Completo" required="required">
+							<!-- <div class="alert alert-danger alerta_nombre_vacio" role="alert">
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Por favor llene este campo
+							</div>
+							<div class="alert alert-warning alerta_nombre_invalido" role="alert">
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>No se permiten caracteres especiales ni numericos
+							</div> -->
+
 						</div>
 					</div>
 					<div class="form-group">
@@ -289,10 +286,13 @@ VENTANA MODAL LOGIN Y REGISTRO
 							<span class="input-group-addon">
 								<i class="glyphicon glyphicon-envelope"></i>
 							</span>
-							<input type="email" class="form-control" name="regis_email" id="regis_email" placeholder="Correo Electronico" required="required">
-							<div class="alert alert-danger alerta_correo" role="alert">
-                            <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Ingresa un correo válido
-        					</div>
+							<input type="email" class="form-control" name="regis_email" id="regis_email" placeholder="Correo Electronico" required="required" >
+							<!-- <div class="alert alert-danger alerta_correo_vacio" role="alert">
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Por favor llene este campo
+							</div> -->
+							<!-- <div class="alert alert-danger alerta_correo_invalido" role="alert">
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Ingresa un correo válido
+							</div> -->
 						</div>
 					</div>
 					<div class="form-group">
@@ -301,44 +301,72 @@ VENTANA MODAL LOGIN Y REGISTRO
 								<i class="glyphicon glyphicon-lock"></i>
 							</span>
 							<input type="password" class="form-control" name="regis_pass" id="regis_pass" placeholder="Contraseña" required="required">
-							<div class="alert alert-warning alerta_password" role="alert">
-                            <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Minimo 8 caracteres
-                            </div>
-							<div class="alert alert-warning alerta_password" role="alert">
-                            <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Maximo 15 caracteres
-                            </div>
-							<div class="alert alert-danger alerta_password" role="alert">
-                            <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Contraseña Invalida, pruebe otra.
-                            </div>
+							<!-- <div class="alert alert-warning alerta_password_corto" role="alert" >
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Minimo 8 caracteres
+							</div>
+							<div class="alert alert-warning alerta_password_larga" role="alert" >
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Maximo 15 caracteres
+							</div> -->
+							<!-- <div class="alert alert-danger alerta_password_invalido" role="alert">
+								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Contraseña Invalida. Debe contener: <br>
+								<span class="fa fa-asterisk"> 8 o mas caracteres</span><br>
+								<span class="fa fa-asterisk"> Letras mayúsculas y minúsculas</span><br>
+								<span class="fa fa-asterisk"> al menos un número</span><br>
+								<span class="fa fa-asterisk"> al menos un caracter especial ($@!%*-_?&#.)</span><br>
+							</div> -->
 						</div>
 					</div>
-
-					<div class="alert alert-success alerta_correcto" role="alert">
-                        Registro exitoso
-                    </div>
-                    <div class="alert alert-danger alerta_incorrecto" role="alert">
-                        Algo salio mal intenta de nuevo.
-                    </div>
 
 					<!----==========================
 					POLITICAS TERMINOS Y CONDICIONES
 					============================--->
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" id="reg_politicas">
-							<small>Haciendo clic en Enviar aceptas nuestras condiciones de uso y politicas de privacidad <a href="https://www.iubenda.com/privacy-policy/34165403" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Política de Privacidad ">Leer más</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+							<input type="checkbox" id="reg_politicas" required="required">
+							<small>Haciendo clic en Enviar aceptas nuestras condiciones de uso y politicas de privacidad <a href="https://www.iubenda.com/privacy-policy/34165403" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Política de Privacidad ">Leer más</a>
+								<script type="text/javascript">
+									(function(w, d) {
+										var loader = function() {
+											var s = d.createElement("script"),
+												tag = d.getElementsByTagName("script")[0];
+											s.src = "https://cdn.iubenda.com/iubenda.js";
+											tag.parentNode.insertBefore(s, tag);
+										};
+										if (w.addEventListener) {
+											w.addEventListener("load", loader, false);
+										} else if (w.attachEvent) {
+											w.attachEvent("onload", loader);
+										} else {
+											w.onload = loader;
+										}
+									})(window, document);
+								</script>
 							</small>
+
 						</label>
+						<!-- <div class="alert alert-danger alerta_nocheck" role="alert">
+							<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Debe aceptar nuestras condiciones y politicas de privacidad
+						</div> -->
 					</div>
+					<!-- <div class="alert alert-success alerta_correcto" role="alert">
+						Registro exitoso
+					</div>
+					<div class="alert alert-danger alerta_incorrecto" role="alert">
+						Algo salio mal intenta de nuevo.
+					</div>	 -->			
 					<?php
-						$registro = new controller_usuarios();
-						$registro -> ctr_registro_usuarios();
+					$registro = new controller_usuarios();
+					$registro->ctr_registro_usuarios();
 					?>
+					
 					<input type="submit" class="btn btn-default btn-block back_color" value="ENVIAR" style="font-weight: bold;">
+					<!-- <div class="col-xs-12">
+						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
+					</div> -->
 				</form>
 			</div>
 			<div class="modal-footer">
-			<p>¿Ya tiene una cuenta? <a href="#modal_ingreso" data-dismiss="modal" data-toggle="modal"><span><strong>| Ingresar</strong> </span></a></p>
+				<p>¿Ya tiene una cuenta? <a href="#modal_ingreso" data-dismiss="modal" data-toggle="modal"><span><strong>| Ingresar</strong> </span></a></p>
 			</div>
 		</div>
 	</div>

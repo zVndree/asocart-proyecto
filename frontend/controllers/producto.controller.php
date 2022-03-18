@@ -26,4 +26,16 @@ class controladorProductos
         $respuesta = modeloProductos::mdlListarSubcategorias($tabla,$item, $valor);
         return $respuesta;
     }
+
+    /*========================
+    Mostrar Servicios
+    ========================*/
+
+    static public function ctrListarServicios()
+    {
+
+        $tabla_ser = "servicios";
+        $respuesta = modeloProductos::mdlListarServicios($tabla_ser);
+        return $respuesta;
+    }
 }

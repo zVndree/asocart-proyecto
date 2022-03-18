@@ -21,6 +21,11 @@ $.ajax({
 			background: bar_down,
 			color: colorFondo,
 		});
+
+		$(".bar_service").css({
+			background: colorFondo,
+			color: colorTexto,
+		});
 	},
 });
 

@@ -51,4 +51,19 @@ class modeloProductos
         $stmt -> close();
         $stmt = null;
     }
+
+    /*=============================================
+        Consulta para Mostrar Servicios
+    =============================================*/
+
+    static public function mdlListarServicios($tabla_ser)
+    {
+
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla_ser");
+        $stmt->execute();
+        return $stmt->fetchAll();
+        $stmt -> close();
+        $stmt = null;
+    }
+
 }

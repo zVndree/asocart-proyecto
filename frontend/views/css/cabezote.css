@@ -48,6 +48,10 @@ Top
 	margin-top: -6px;
 }
 
+/* .alert{
+	display: none;
+} */
+
 /* .bar_down {
 	border-bottom: 2px var(--dark) solid;
 } */
@@ -198,7 +202,7 @@ div.modal_titulo h3{
 }
 
 div.modal-content{
-	background: rgba(26, 26, 26, 0.25);
+	background: #cabca37c;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgba(0, 0, 0, 0.19);
@@ -274,7 +278,7 @@ div.modal_formulario input{
 	color: #000000;
 }
 div.modal_formulario input::placeholder {
-	color: rgba(238, 238, 238, 0.541);
+	color: rgba(32, 32, 32, 0.541);
 }
 
 div.checkbox label small{

@@ -44,6 +44,12 @@ Responsive Configuration
 		margin-left: 480px;
 	}
 
+	.verificar h3{
+		margin-top: 30px;
+		font-size: 60px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+
 	.img_error {
 		margin-top: 63px;
 		margin-left: 275px;
@@ -128,6 +134,12 @@ Responsive Configuration
 	.error_404 h3 {
 		position: relative;
 		margin-left: 375px;
+	}
+
+	.verificar h3{
+		margin-top: 30px;
+		font-size: 60px;
+		text-shadow: 4px 4px 1px #dadada;
 	}
 
 	.img_error {
@@ -234,6 +246,12 @@ Responsive Configuration
 	.error_404 h3 {
 		position: relative;
 		margin-left: 260px;
+	}
+
+	.verificar h3{
+		margin-top: 30px;
+		font-size: 50px;
+		text-shadow: 3px 3px 1px #dadada;
 	}
 
 	.img_error {
@@ -390,6 +408,11 @@ Responsive Configuration
 	.error_404 h3 {
 		position: relative;
 		text-align: center;
+	}
+	.verificar h3{
+		margin-top: 30px;
+		font-size: 30px;
+		text-shadow: 2px 2px 1px #dadada;
 	}
 
 	/*-------Slides--------*/
