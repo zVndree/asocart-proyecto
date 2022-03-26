@@ -31,6 +31,7 @@ function siguiente() {
 	} else {
 		item++;
 	}
+	interrumpir_ciclo = true;
 	desplazamiento(item);
 }
 
@@ -76,9 +77,10 @@ setInterval(function () {
 	if (interrumpir_ciclo) {
 		interrumpir_ciclo = false;
 	} else {
+
 		siguiente();
 	}
-}, 3000);
+}, 4000);
 
 /*========================
 Desplazamiento scroll-down
@@ -105,10 +107,10 @@ $(document).ready(function () {
 	TOOLTIPS
 	=============================*/
 
-$(function () {
+/* $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
-
+ */
 /*=============================
 	BOTON SUBIR
 	=============================*/

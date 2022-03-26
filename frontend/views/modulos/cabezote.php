@@ -1,6 +1,27 @@
 <?php
 $server = Ruta::ctr_ruta_servidor();
+$url = Ruta::ctrRuta();
+
+/*=============================================
+INICIO DE SESIÓN USUARIO
+=============================================*/
+
+if(isset($_SESSION["validar_sesion"])){
+
+	if($_SESSION["validar_sesion"] == "ok"){
+
+		echo '<script>
+		
+			localStorage.setItem("usuario","'.$_SESSION["id"].'");
+
+		</script>';
+
+	}
+
+}
 ?>
+
+
 
 <section class="et-hero-tabs">
 	<!--=====================================
@@ -35,10 +56,10 @@ Top
 
 						?>
 						<li>
-							<a href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo  $social["celular"]; ?></a>
+							<a href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> <span id="telefono"><?php echo  $social["celular"]; ?></span> </a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> <?php echo  $social["correo"]; ?></a>
+							<a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true" ></i> <span id="correo"><?php echo  $social["correo"];  ?></span> </a>
 						</li>
 					</ul>
 				</div>
@@ -63,10 +84,35 @@ Top
 									</li>
 								</ul>
 						</li> -->
+						<?php
+							if (isset($_SESSION["validar_sesion"])) {
+								if ($_SESSION["validar_sesion"] == "ok") {
+									if ($_SESSION["modo"] == "directo") {
+										if ($_SESSION["foto"] != "") {
+											echo '<li>
+											<img class="img-circle" src="'.$url.$_SESSION["foto"].'" width="10%">
+											</li>';
+											
+										}else{
+											echo '
+											<li><img class="img-circle" src="'.$server.'views/img/usuarios/default/user_icon.png" width="9%">
+											</li>';
+										}
 
-						<li><a href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
-						<li>|</li>
-						<li><a href="#modal_registro" data-toggle="modal">Crear una cuenta</a></li>
+										echo '<li>|</li>
+											<li><a href="'.$url.'perfil">Ver perfil</a></li>
+											<li>|</li>
+											<li><a href="'.$url.'salir">Salir</a></li>
+											';
+									}
+								}
+							}else{
+								echo '<li><a href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
+									<li>|</li>
+									<li><a href="#modal_registro" data-toggle="modal">Registrarse</a></li>';
+							}
+						?>
+	
 					</ul>
 				</div>
 			</div>
@@ -77,7 +123,7 @@ Top
 Header
 ======================================-->
 
-	<header class="container bar_down">
+	<header class="container-fluid bar_down">
 
 		<div class="row" id="cabezote">
 			<!--=====================================
@@ -85,31 +131,31 @@ Header
 			======================================-->
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
 				<a href="#">
-					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive" style="width:500px;height:110px">
+					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive" style="width:500px;height:100px">
 				</a>
 			</div>
 			<!--=====================================
 			Categorias y Buscador
 			======================================-->
 
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-5 col-md-6 col-sm-6 col-xs-10">
 				<!--=====================================
 				Btn Categorias
 				======================================-->
 
-				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 back_color" id="btn_categorias">
-					<h4>CATEGORÍAS
-						<span class="pull-right">
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</span>
-					</h4>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1 back_color" id="btn_categorias">
+					<h4 id="catalogo">CÁTALOGO</h4>
+					<span class="pull-right">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</span>
+					
 				</div>
 
 				<!--=====================================
 				Buscador
 				======================================-->
 
-				<div class="input-group col-lg-8 col-md-8 col-sm-7 col-xs-7" id="buscador">
+				<div class="input-group col-lg-8 col-md-8 col-sm-7 col-xs-10" id="buscador">
 					<input type="search" name="buscar" class="form-control" placeholder="¿Qué estás buscando?">
 					<span class="input-group-btn">
 						<a href="#">
@@ -124,23 +170,20 @@ Header
 			<!--=====================================
 			Lista de deseos
 			======================================-->
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2" id="deseos">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-1 text-center" id="deseos">
 				<a href="#">
-					<button class="btn btn-default pull-left back_color">
-						<i class="fa fa-heart">
+					<i style="color:<?php echo $social["barTop"] ?>" class="fa fa-heart">
+						<strong id="favoritos">Mis favoritos</strong>
 							<!-- <span class="cantidad_deseos"></span> -->
-						</i>
-					</button>
+					</i>
 				</a>
 			</div>
 			<!--=====================================
 			Carrito de compras 
 			======================================-->
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="carrito">
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
 				<a href="#">
-					<button class="btn btn-default pull-left back_color">
-						<i class="fa fa-shopping-cart" aria-hidden="true"><strong> Items</strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span></i>
-					</button>
+					<i style="color:<?php echo $social["barTop"]?>" class="fa fa-shopping-basket" aria-hidden="true"><strong id="items"> Items</strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span></i>
 				</a>
 
 			</div>
@@ -166,7 +209,6 @@ Header
 										<a href="' . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
 										</a>
 									</h4>
-				
 									<br>
 									<ul>';
 				$item = "id_categoria";
@@ -197,6 +239,34 @@ Header
 	</header>
 	<!-------BARRA DE NAVEGACION ----------->
 
+    <!-- <div class="nav_bar_down bar_down">
+        <ul id="nav-list" class="nav-menu">
+            <li class="menu-item">
+                <a href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="menu-item">
+                <a href="<?php echo $url ?>#about">Sobre Nosotros</a>
+            </li>
+			<li class="menu-item">
+                <a href="<?php echo $url ?>#tienda">Tienda</a>
+            </li>
+			<li class="menu-item">
+                <a href="<?php echo $url ?>#eventos">Eventos</a>
+            </li>
+			<li class="menu-item">
+                <a  href="directorio">Directorio</a>
+            </li>
+			<li class="menu-item">
+                <a href="<?php echo $url ?>#contacto">Contacto</a>
+            </li>
+        </ul>
+        <div id="nav-toggle" class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div> -->
+
 	<!--------BTN RESPONSIVE MENu------------->
 	<div class="navbar-header" id="btn_menu">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -207,13 +277,14 @@ Header
 	</div>
 
 	<div class="collapse navbar-collapse" id="myNavbar">
-		<div class="et-hero-tabs-container bar_down" id="menu" style="<?php echo $social["colorFondo"]?>">
-		
-			<a class=" et-hero-tab" href="#"><i class="fa fa-home"></i></a>
-			<a class="et-hero-tab" href="#about">Sobre Nosotros </a>
-			<a class="et-hero-tab" href="#tienda">Tienda</a>
-			<a class="et-hero-tab" href="#eventos">Eventos</a>
-			<a class="et-hero-tab" href="#contacto">Contacto</a>
+		<div class="et-hero-tabs-container bar_down" id="menu" style="<?php echo $social["colorFondo"] ?>">
+
+			<a class=" et-hero-tab" href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
+			<a class="et-hero-tab" href="<?php echo $url ?>#about">Sobre Nosotros </a>
+			<a class="et-hero-tab" href="<?php echo $url ?>#tienda">Tienda</a>
+			<a class="et-hero-tab" href="<?php echo $url ?>#eventos">Eventos</a>
+			<a class="et-hero-tab" href="directorio">Directorio</a>
+			<a class="et-hero-tab" href="<?php echo $url ?>#contacto">Contacto</a>
 			<!-- 			<a class="et-hero-tab" href="#registro_modal"><span class="glyphicon glyphicon-user" data-toggle="modal"></span> Sign Up</a>
  -->
 			<!-- 			<a class="et-hero-tab" href="#ingreso_modal"><span class="glyphicon glyphicon-log-in" data-toggle="modal"></span> Login</a>
@@ -222,6 +293,8 @@ Header
 		</div>
 	</div>
 
+
+
 	<!----=================----
 BOTON SUBIR
 ------=================--->
@@ -229,7 +302,7 @@ BOTON SUBIR
 </section>
 
 <!----=================----
-VENTANA MODAL LOGIN Y REGISTRO
+VENTANA MODAL REGISTRO
 ------=================--->
 
 <!-- Modal -->
@@ -266,56 +339,37 @@ VENTANA MODAL LOGIN Y REGISTRO
 				========================--->
 
 				<form method="post" onsubmit="return registro_user()">
+					<!-----INPUT NOMBRE------>
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<i class="glyphicon glyphicon-user"></i>
 							</span>
 							<input type="text" class="form-control" name="regis_user" id="regis_user" placeholder="Nombre Completo" required="required">
-							<!-- <div class="alert alert-danger alerta_nombre_vacio" role="alert">
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Por favor llene este campo
-							</div>
-							<div class="alert alert-warning alerta_nombre_invalido" role="alert">
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>No se permiten caracteres especiales ni numericos
-							</div> -->
 
 						</div>
 					</div>
+					<!-----INPUT CORREO------>
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<i class="glyphicon glyphicon-envelope"></i>
 							</span>
-							<input type="email" class="form-control" name="regis_email" id="regis_email" placeholder="Correo Electronico" required="required" >
-							<!-- <div class="alert alert-danger alerta_correo_vacio" role="alert">
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Por favor llene este campo
-							</div> -->
-							<!-- <div class="alert alert-danger alerta_correo_invalido" role="alert">
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Ingresa un correo válido
-							</div> -->
+							<input type="email" class="form-control" name="regis_email" id="regis_email" placeholder="Correo Electronico" required="required">
 						</div>
 					</div>
+					<!-----INPUT CONTRASEÑA------>
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<i class="glyphicon glyphicon-lock"></i>
 							</span>
 							<input type="password" class="form-control" name="regis_pass" id="regis_pass" placeholder="Contraseña" required="required">
-							<!-- <div class="alert alert-warning alerta_password_corto" role="alert" >
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Minimo 8 caracteres
-							</div>
-							<div class="alert alert-warning alerta_password_larga" role="alert" >
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Maximo 15 caracteres
-							</div> -->
-							<!-- <div class="alert alert-danger alerta_password_invalido" role="alert">
-								<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> Contraseña Invalida. Debe contener: <br>
-								<span class="fa fa-asterisk"> 8 o mas caracteres</span><br>
-								<span class="fa fa-asterisk"> Letras mayúsculas y minúsculas</span><br>
-								<span class="fa fa-asterisk"> al menos un número</span><br>
-								<span class="fa fa-asterisk"> al menos un caracter especial ($@!%*-_?&#.)</span><br>
-							</div> -->
+							<span id="imgContrasena" data-activo=false><img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-09-256.png" class="icono-pass"></span>
+
 						</div>
 					</div>
+
 
 					<!----==========================
 					POLITICAS TERMINOS Y CONDICIONES
@@ -344,21 +398,12 @@ VENTANA MODAL LOGIN Y REGISTRO
 							</small>
 
 						</label>
-						<!-- <div class="alert alert-danger alerta_nocheck" role="alert">
-							<strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>Debe aceptar nuestras condiciones y politicas de privacidad
-						</div> -->
 					</div>
-					<!-- <div class="alert alert-success alerta_correcto" role="alert">
-						Registro exitoso
-					</div>
-					<div class="alert alert-danger alerta_incorrecto" role="alert">
-						Algo salio mal intenta de nuevo.
-					</div>	 -->			
 					<?php
 					$registro = new controller_usuarios();
 					$registro->ctr_registro_usuarios();
 					?>
-					
+
 					<input type="submit" class="btn btn-default btn-block back_color" value="ENVIAR" style="font-weight: bold;">
 					<!-- <div class="col-xs-12">
 						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
@@ -366,7 +411,92 @@ VENTANA MODAL LOGIN Y REGISTRO
 				</form>
 			</div>
 			<div class="modal-footer">
-				<p>¿Ya tiene una cuenta? <a href="#modal_ingreso" data-dismiss="modal" data-toggle="modal"><span><strong>| Ingresar</strong> </span></a></p>
+				<p>¿Ya tienes una cuenta? | <strong><a href="#modal_ingreso" data-dismiss="modal" data-toggle="modal"><span> | Ingresar</span></a></strong> </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!----=================----
+VENTANA MODAL LOGIN
+------=================--->
+
+<!-- Modal -->
+<div class="modal fade modal_formulario" id="modal_ingreso" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body modal_titulo">
+				<h3 class="back_color">INICIAR SESIÓN</h3>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				<!----=================----
+				Ingreso con Facebook
+				------=================--->
+				<div class="col-sm-6 col-xs-12 regis_face" id="btn_regis_face">
+					<p>
+						<i class="fa fa-facebook"></i>
+						Ingreso con Facebook
+					</p>
+				</div>
+				<!----=====================
+				Ingreso con Google
+				========================--->
+				<div class="col-sm-6 col-xs-12 regis_google" id="btn_regis_google">
+					<p>
+						<i class="fa fa-google"></i>
+						Ingreso con Google
+					</p>
+				</div>
+
+				<!----=====================
+				INGRESO CON CORREO
+				========================--->
+
+				<form method="post">
+
+					<!----=====================
+					INPUT CORREO
+					========================--->
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="glyphicon glyphicon-envelope"></i>
+							</span>
+							<input type="email" class="form-control" name="ing_email" id="ing_email" placeholder="Correo Electronico" required="required">
+						</div>
+					</div>
+
+					<!----=====================
+					INPUT CONTRASEÑA
+					========================--->
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="glyphicon glyphicon-lock"></i>
+							</span>
+							<input type="password" class="form-control" name="ing_pass" id="ing_pass" placeholder="Contraseña" required="required">
+<!-- 							<span id="imgContrasena" data-activo=false><img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-09-256.png" class="icono-pass"></span>
+-->
+						</div>
+					</div>
+
+				
+
+					<?php
+					$ingreso = new controller_usuarios();
+					$ingreso ->ctr_ingreso_usuarios();
+					?>
+
+					<input type="submit" class="btn btn-default btn-block back_color btn_login" value="ENVIAR" style="font-weight: bold;">
+					<!-- <div class="col-xs-12">
+						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
+					</div> -->
+				</form>
+			</div>
+			<div class="modal-footer">
+				<p>¿No tienes una cuenta? <a href="#modal_registro" data-dismiss="modal" data-toggle="modal"><span><strong>| Regístrate</strong> </span></a></p>
 			</div>
 		</div>
 	</div>

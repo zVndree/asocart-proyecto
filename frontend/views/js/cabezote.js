@@ -2,51 +2,34 @@
 Cabezote
 =============================================*/
 
-/*-----Abrir y cerrar menu de las categorias----- */
-
-$("#btn_categorias").click(function () {
-
-	if (window.matchMedia("(max-width:390px)").matches){
-		$("#btn_categorias").after($("#categorias").slideToggle("fast"));
-		$(".bar_down").css({
-			"height": "110px"
-		})
-
-	}else if (window.matchMedia("(max-width:767px)").matches) {
-		$("#btn_categorias").after($("#categorias").slideToggle("fast"));
-		$(".bar_down").css({
-			"height": "170px"	
-		})
-	}else {
-		$("#cabezote").after($("#categorias").slideToggle("fast"));
-		$(".bar_down").css({
-			"height": "60px"
-		})
-	}
-});
-
 /*------MENU STICKY-------*/
+/* var tglbtn = document.getElementById("nav-toggle");
+var navlst = document.getElementById("nav-list")
+
+tglbtn.addEventListener('click', () => {navlst.classList.toggle("active");});  */
+
+
 class StickyNavigation {
 	
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
-		this.tabContainerHeight = 70;
+		this.tabContainerHeight = 60; 
 		/* let self = this;
 		$('.et-hero-tab').click(function() { 
 			self.onTabClick(event, $(this)); 
 		}); */
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
-	}
+	} 
 	
-	/* onTabClick(event, element) {
+	 onTabClick(event, element) {
 		event.preventDefault();
 		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-		$('html, body').animate({ scrollTop: scrollTop }, 600);
-	} */
+		$('html, body').animate({ scrollTop: scrollTop }, 200);
+	} 
 	
-	onScroll() {
+ 	onScroll() {
 		this.checkTabContainerPosition();
     this.findCurrentTabSelector();
 	}
@@ -101,5 +84,30 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+/*-----Abrir y cerrar menu de las categorias----- */
+
+$("#btn_categorias").click(function () {
+
+	if (window.matchMedia("(max-width:390px)").matches){
+		$("#cabezote").after($("#categorias").slideToggle("fast"));
+		$(".bar_down").css({
+			"height": "100%"
+		})
+	
+	}else if (window.matchMedia("(max-width:767px)").matches) {
+		$("#cabezote").after($("#categorias").slideToggle("fast"));
+		$(".bar_down").css({
+			"height": "100%"	
+		})
+	}else {
+		$("#cabezote").after($("#categorias").slideToggle("fast"));
+		$(".bar_down").css({
+			"height": "60px"
+		})
+	}
+});
+
+
 
 

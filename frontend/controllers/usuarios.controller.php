@@ -12,12 +12,12 @@ class controller_usuarios
         if (isset($_POST["regis_user"])) {
 
             if (
-                preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/', $_POST["regis_user"]) && 
+                preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/', $_POST["regis_user"]) &&
                 preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["regis_email"]) &&
                 preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/', $_POST["regis_pass"])
-            )   {
+            ) {
 
-                    $encriptar = crypt($_POST["regis_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
+                $encriptar = crypt($_POST["regis_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
                 $2a$07$asxx54ahjppf45sd87a5auxq/SS293XhTEeizKWMnfhnpfay0AALe');
 
                 $encriptar_email = md5($_POST["regis_email"]);
@@ -39,12 +39,12 @@ class controller_usuarios
                 if ($respuesta == "ok") {
 
 
-                /*=============================================
+                    /*=============================================
                 Verificacion del correo
                 =============================================*/
 
                     date_default_timezone_set("America/Bogota");
-                    $url =Ruta::ctrRuta();
+                    $url = Ruta::ctrRuta();
                     $mail = new PHPMailer;
                     $mail->CharSet = 'UTF-8';
                     $mail->isMail();
@@ -67,7 +67,7 @@ class controller_usuarios
                 
                                 <h4 style="font-weight: 100;color: #999; padding: 0 20px;">Bienvenido a Artesanias Girardot - tienda virtual.
                                     Para comenzar a usar su cuenta debes verificar tu correo electrónico para confirmar que eres tú.</h4>
-                                <a href="'.$url.'verificar/'.$encriptar_email.'" target="_blank" style="text-decoration: none;">
+                                <a href="' . $url . 'verificar/' . $encriptar_email . '" target="_blank" style="text-decoration: none;">
                                 <div style="margin: 20px 0; border-radius: 5px; line-height: 60px; background: #8A5D25;width: 60%; color: white;">Click aqui para verificar</div>
                                 </a>
                 
@@ -104,7 +104,7 @@ class controller_usuarios
                 
                             swal({
                                 tittle: "¡ERROR!",
-                                text: "¡No se ha podido finalizar con el envio de la verificacion al correo electronico ' . $_POST["regis_user"] .$mail->ErrorInfo.'!. Vuelva a intentar",
+                                text: "¡No se ha podido finalizar con el envio de la verificacion al correo electronico ' . $_POST["regis_user"] . $mail->ErrorInfo . '!. Vuelva a intentar",
                                 type: "error",
                                 confirmButtonText: "Cerrar",
                                 closeOnConfirm: false
@@ -122,7 +122,7 @@ class controller_usuarios
 
                             swal({
                                 title: "¡Registro Exitoso!",
-                                text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["regEmail"] . ' para verificar la cuenta!",
+                                text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["regis_email"] . ' para verificar la cuenta!",
                                 type:"success",
                                 confirmButtonText: "Cerrar",
                                 closeOnConfirm: false
@@ -136,7 +136,7 @@ class controller_usuarios
                             });
 					    </script>';
                     }
-                }    
+                }
             } else {
 
                 echo '<script>
@@ -163,22 +163,121 @@ class controller_usuarios
     Mostrar usuarios
     =============================================*/
 
-    static public function ctrMostrarUsuario($item, $valor){
-        $tabla ="usuarios";
+    static public function ctrMostrarUsuario($item, $valor)
+    {
+        $tabla = "usuarios";
         $respuesta = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
         return $respuesta;
-
     }
 
     /*=============================================
     Actualizar usuarios
     =============================================*/
 
-    static public function ctrActualizarUsuario($id, $item, $valor){
-        $tabla ="usuarios";
+    static public function ctrActualizarUsuario($id, $item, $valor)
+    {
+        $tabla = "usuarios";
         $respuesta = ModeloUsuarios::mdlActualizarUsuario($tabla, $id, $item, $valor);
         return $respuesta;
+    }
 
+    /*=============================================
+    Ingreso de usuario al sistema
+    =============================================*/
+
+    static public function ctr_ingreso_usuarios()
+    {
+
+        if (isset($_POST["ing_email"])) {
+            if (
+                preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["ing_email"]) &&
+                preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/', $_POST["ing_pass"])
+            ) {
+
+
+                $encriptar = crypt($_POST["ing_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
+                $2a$07$asxx54ahjppf45sd87a5auxq/SS293XhTEeizKWMnfhnpfay0AALe');
+
+                $tabla = "usuarios";
+
+                $item = "email";
+                $valor = $_POST["ing_email"];
+
+                $respuesta = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
+
+                if ($respuesta["email"] == $_POST["ing_email"] && $respuesta["password"] == $encriptar) {
+                    if ($respuesta["verificacion"] == 1) {
+                        echo '<script>
+
+							swal({
+								title: "¡NO HA VERIFICADO SU CORREO ELECTRÓNICO!",
+								text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo para verififcar la dirección de correo electrónico ' . $respuesta["email"] . '!",
+								type: "error",
+								confirmButtonText: "Cerrar",
+								closeOnConfirm: false
+							},
+
+							function(isConfirm){
+									if (isConfirm) {	   
+									    history.back();
+									} 
+							});
+
+							</script>';
+                    } else {
+
+                        $_SESSION["validar_sesion"] = "ok";
+                        $_SESSION["id"] = $respuesta["id"];
+                        $_SESSION["nombre"] = $respuesta["nombre"];
+                        $_SESSION["foto"] = $respuesta["foto"];
+                        $_SESSION["email"] = $respuesta["email"];
+                        $_SESSION["password"] = $respuesta["password"];
+                        $_SESSION["modo"] = $respuesta["modo"];
+
+                        echo '<script>
+
+                            window.location = localStorage.getItem("ruta_actual");
+                        
+                        </script>';
+                    }
+                } else {
+
+                    echo '<script>
+
+                        swal({
+                            title: "ERROR AL INGRESAR!",
+                            text: "¡Por favor revise que el email exista o la contraseña coincida con la registrada!",
+                            type: "error",
+                            confirmButtonText: "Cerrar",
+                            closeOnConfirm: false
+                        },
+
+                        function(isConfirm){
+                                if (isConfirm) {	   
+                                    window.location = localStorage.getItem("ruta_actual");
+                                } 
+                        });
+
+                    </script>';
+                }
+            } else {
+                echo '<script>
+                
+                        swal({
+                            tittle: "¡ERROR!",
+                            text: "¡Error al ingresar al sistema!",
+                            type: "error",
+                            confirmButtonText: "Cerrar",
+                            closeOnConfirm: false
+
+                            },
+                            function(isConfirm){
+                                if(isConfirm){
+									history.back();
+								}
+                        });
+                </script>';
+            }
+        }
     }
 }
-

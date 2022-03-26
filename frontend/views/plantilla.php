@@ -18,6 +18,7 @@
 	/*=============================================
 	Ruta fija del proyecto(estatica) LADO SERVER
 	=============================================*/
+	session_start();
 
 	$server = Ruta::ctr_ruta_servidor();
 
@@ -30,6 +31,8 @@
 
 	$url = Ruta::ctrRuta();
 	/* var_dump($url); */
+
+	
 
 	?>
 
@@ -121,16 +124,18 @@ Contenido Dinamico
 			}
 		}
 
-
 		/*=============================================
 		Lista Blanca de URL amigables
 		=============================================*/
 
 		if ($ruta != null) {
 			include "modulos/productos.php";
-		}else if($rutas[0] == "verificar"){
+		}else if($rutas[0] == "verificar" || $rutas[0] == "salir"){
 
 			include "modulos/".$rutas[0].".php";
+		}else if($rutas[0] == "directorio"){
+			include "modulos/directorio.php";
+
 		}else if($rutas[0] == "inicio"){
 
 			include "modulos/slide.php";
@@ -153,6 +158,8 @@ Contenido Dinamico
 
 
 	?>
+
+<input type="hidden" value="<?php echo $url; ?>" id="rutaOculta">
 	
 	<!--=====================================
 	JAVASCRIPT PERSONALIZADO
@@ -162,6 +169,7 @@ Contenido Dinamico
 	<script src="<?php echo $url; ?>views/js/plantilla.js"></script>
 	<script src="<?php echo $url; ?>views/js/slide.js"></script>
 	<script src="<?php echo $url; ?>views/js/usuarios.js"></script>
+	<script src="<?php echo $url; ?>views/js/productos.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

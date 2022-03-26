@@ -1,3 +1,19 @@
+/* PLANTILLA */
+
+var rutaOculta = $("#rutaOculta").val();
+
+/* Herramienta TOOLTIP */
+
+/*=============================
+	TOOLTIPS
+	=============================*/
+
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
+
+
 $.ajax({
 	url: "ajax/plantilla.ajax.php",
 	success: function (respuesta) {

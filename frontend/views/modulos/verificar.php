@@ -18,6 +18,8 @@
         if (is_array($respuesta) && $valor == $respuesta["email_encriptado"]) {
             $id = $respuesta["id"];
             $item2 = "verificacion";
+            $nombre = $respuesta["nombre"];
+            $correo = $respuesta["email"];
             $valor2 = 0;
     
             $respuesta2 = controller_usuarios::ctrActualizarUsuario($id, $item2, $valor2);
@@ -36,7 +38,7 @@
                     
                     if ($user_verificado) {
                         echo '<h3>Verificación completada</h3>
-                        <h2><small>¡Hemos  verificado su correo electronico, ya puede ingresar al sistema!</small></h2><br>
+                        <h2><small>¡Hemos  verificado su correo electronico <strong>'.$correo.'</strong>, ya puede ingresar al sistema!</small></h2><br>
 
                         <a href="#modal_ingreso" data-toggle="modal"><button class="btn btn-default back_color btn-lg">INGRESAR</button></a>';
                     }else{

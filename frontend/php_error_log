@@ -1179,3 +1179,176 @@ Stack trace:
 [17-Mar-2022 18:29:36 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 129
 [17-Mar-2022 18:35:36 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 131
 [17-Mar-2022 18:35:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 131
+[18-Mar-2022 03:04:43 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[18-Mar-2022 03:15:44 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[18-Mar-2022 15:05:36 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[18-Mar-2022 15:20:24 America/Bogota] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\verificar.php:39
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(133): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\verificar.php on line 39
+[18-Mar-2022 18:50:01 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 240
+[18-Mar-2022 19:13:53 America/Bogota] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 151
+[18-Mar-2022 19:23:41 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ruta' in 'where clause' in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(168): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'ruta', 'verificar')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(124): controller_usuarios::ctrMostrarUsuario('ruta', 'verificar')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[18-Mar-2022 19:24:48 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ruta' in 'where clause' in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(168): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'ruta', 'verificar')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(124): controller_usuarios::ctrMostrarUsuario('ruta', 'verificar')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[18-Mar-2022 19:25:37 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ruta' in 'where clause' in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(168): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'ruta', 'verificar')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(124): controller_usuarios::ctrMostrarUsuario('ruta', 'verificar')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 16:12:29 America/Bogota] PHP Parse error:  Unclosed '{' on line 194 does not match ')' in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 201
+[19-Mar-2022 16:12:31 America/Bogota] PHP Parse error:  Unclosed '{' on line 194 does not match ')' in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 201
+[19-Mar-2022 16:14:30 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[19-Mar-2022 16:14:55 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(418): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(82): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:14:30 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'alemagnus128@gm...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(82): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:18:05 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(82): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:18:39 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(82): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:22:19 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(86): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:22:39 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(86): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:24:58 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(86): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:25:25 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(86): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:45:35 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(85): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:45:54 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(85): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:46:34 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'dunvar241@gmail...', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(85): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 18:56:05 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[19-Mar-2022 18:56:51 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php:43
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php(43): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php(204): ModeloUsuarios::mdlMostrarUsuario('usuarios', 'duvan128@gmail....', 'email')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php(443): controller_usuarios::ctr_ingreso_usuarios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(85): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(30): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\usuarios.modelo.php on line 43
+[19-Mar-2022 19:08:51 America/Bogota] PHP Warning:  include(modulos/perfil.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135
+[19-Mar-2022 19:08:51 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/perfil.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135
+[19-Mar-2022 19:09:02 America/Bogota] PHP Warning:  include(modulos/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135
+[19-Mar-2022 19:09:02 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135
+[19-Mar-2022 20:35:36 America/Bogota] PHP Warning:  Undefined array key "regEmail" in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 125
+[19-Mar-2022 22:35:46 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 208
+[19-Mar-2022 22:38:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 208
+[19-Mar-2022 22:38:39 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 208
+[19-Mar-2022 22:43:34 America/Bogota] PHP Warning:  include(modulos/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135
+[19-Mar-2022 22:43:34 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 135

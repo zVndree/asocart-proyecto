@@ -26,10 +26,15 @@ SLIDE
 
 				echo '	<li>
 
-							<img src="'.$server . $value["img_fondo"] . '">
-							<div class="slide_opciones ' . $value["tipo_slide"] . '">
-								<img class="img_producto" src="'. $server . $value["img_producto"] . '" style="top:' . $style_img_producto["top"] . '; right: ' . $style_img_producto["right"] . '; width: ' . $style_img_producto["width"] . '; left:' . $style_img_producto["left"] . '">
-								<div class="textos_slide" style="top:' . $style_text_slide["top"] . '; right:' . $style_text_slide["right"] . '; width:' . $style_text_slide["width"] . '; left:' . $style_text_slide["left"] . '">
+						<img src="' . $server . $value["img_fondo"] . '">
+						<div class="slide_opciones ' . $value["tipo_slide"] . '">';
+				if ($value["img_producto"] != "") {
+				
+				echo
+				'<img class="img_producto" src="' . $server . $value["img_producto"] . '" style="top:' . $style_img_producto["top"] . '; right: ' . $style_img_producto["right"] . '; width: ' . $style_img_producto["width"] . '; left:' . $style_img_producto["left"] . '">';
+				}
+				echo
+				'<div class="textos_slide" style="top:' . $style_text_slide["top"] . '; right:' . $style_text_slide["right"] . '; width:' . $style_text_slide["width"] . '; left:' . $style_text_slide["left"] . '">
 									<h1 style="color: ' . $titulo1["color"] . '">' . $titulo1["texto"] . '</h1>
 									<h3 style="color:' . $titulo2["color"] . '">' . $titulo2["texto"] . '</h3>
 									<h4 style="color:' . $titulo3["color"] . '">' . $titulo3["texto"] . '</h4>
@@ -65,11 +70,10 @@ SLIDE
 	<ol id="paginacion">
 
 		<?php
-		for ($i=1; $i <= count($slide); $i++) { 
-			echo '<li item="'.$i.'"><span class="fa fa-circle"></span></li>';
-			
+		for ($i = 1; $i <= count($slide); $i++) {
+			echo '<li item="' . $i . '"><span class="fa fa-circle"></span></li>';
 		}
-		
+
 		?>
 	</ol>
 </div>

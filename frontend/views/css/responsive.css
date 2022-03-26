@@ -10,9 +10,28 @@ Responsive Configuration
 	Header
 	========================*/
 
+	header #cabezote{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
 	header #logotipo img {
-		padding: 20px 60px;
+		padding: 10px 40px;
 		padding-left: 0;
+	}
+
+	header #btn_categorias span{
+		position: absolute;
+		top: 5px;
+		right: 0px;
+		margin: 0px 6px;
+		font-size: 20px;
+	
+	}
+
+	header #catalogo{
+		padding-left: 10px;
+		position: relative;
 	}
 
 	header #carrito {
@@ -25,23 +44,38 @@ Responsive Configuration
 		transform: translatex(-50%);
 	}
 
+	header #carrito {
+	margin-top: 35px;
+	}
+
+	#carrito .fa-shopping-basket{
+		font-size: 20px;
+	}
+	#deseos .fa-heart{
+		font-size: 20px;
+	}
+
+	header #categorias{
+		padding-left: 40px;
+	}
+	
 	/*------Plantilla-------*/
 
 	.col-lg-0 {
 		display: none;
 	}
 
-	.error_404 h1 {
+	/* .error_404 h1 {
 		font-size: 250px;
 		text-shadow: 7px 7px 1px #cfcfcf;
 		font-family: Poppins;
 		position: relative;
 		margin-left: 390px;
-	}
+	} */
 
 	.error_404 h3 {
 		position: relative;
-		margin-left: 480px;
+		text-align: center;
 	}
 
 	.verificar h3{
@@ -51,9 +85,7 @@ Responsive Configuration
 	}
 
 	.img_error {
-		margin-top: 63px;
-		margin-left: 275px;
-		position: absolute;
+		margin-top: 20px;
 	}
 
 	/*-------Slides--------*/
@@ -107,6 +139,10 @@ Responsive Configuration
 	/*========================
 	Header
 	========================*/
+	header #cabezote{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
 
 	header #logotipo img {
 		padding: 26px 60px;
@@ -115,6 +151,30 @@ Responsive Configuration
 
 	header #carrito {
 		padding-left: 10px;
+	}
+
+	header #btn_categorias span{
+		position: absolute;
+		top: 5px;
+		right: 0px;
+		margin: 0px 6px;
+		font-size: 20px;
+	
+	}
+	header #catalogo{
+		padding-left: 10px;
+		position: relative;
+	}
+
+	header #categorias{
+		padding-left: 40px;
+	}
+
+	#carrito .fa-shopping-basket{
+		font-size: 18px;
+	}
+	#deseos .fa-heart{
+		font-size: 18px;
 	}
 
 	/*------Plantilla-------*/
@@ -192,7 +252,8 @@ Responsive Configuration
 
 	.item_service {
 		text-align: center;
-		margin: 20px 0px;
+		margin: 10px 10px;
+	
 	}
 }
 
@@ -205,28 +266,47 @@ Responsive Configuration
 	Header
 	========================*/
 
+	header #cabezote{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
 	header #logotipo img {
 		padding: 20px 0px;
-	}
-
-	header #carrito {
-		padding-left: 20px;
-	}
-
-	header #carrito button {
-		border-radius: 5px;
 	}
 
 	header #carrito p {
 		display: none;
 	}
-
-	header #deseos button {
-		border-radius: 5px;
+	header #categorias{
+		padding-left: 40px;
+	}
+	header #btn_categorias{
+		margin-left: 5px;
+	}
+	header #catalogo{
+		font-size: 12px;
+		padding: 3px;
+		position: relative;
+	}
+	header #btn_categorias span{
+		position: absolute;
+		top: 5px;
+		right: 0px;
+		margin: 0px 6px;
+		font-size: 20px;
+	
 	}
 
-	header #deseos p {
-		display: none;
+	#carrito .fa-shopping-basket{
+		font-size: 15px;
+	}
+	#deseos .fa-heart{
+		font-size: 15px;
+	}
+
+	#items{
+		opacity: 0;
 	}
 
 	/*------Plantilla-------*/
@@ -349,18 +429,45 @@ Responsive Configuration
 	Top
 	========================*/
 
-	#top ul {
+	header #cabezote{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	#top ul li {
 		text-align: center;
 	}
 
 	#top,
 	.registro {
 		border-top: 1px solid var(--dark);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#correo{
+		display: none;
+	}
+
+	#telefono{
+		display: none;
 	}
 
 	/*========================
 	Header
 	========================*/
+
+	#logotipo{
+	display: flex;
+  	justify-content: center;
+	}
 
 	header #logotipo img {
 		padding: 30px;
@@ -368,28 +475,59 @@ Responsive Configuration
 	}
 
 	header #btn_categorias {
-		margin-bottom: 5px;
 		border-radius: 5px 0px 0px 5px;
 	}
 
-	header #btn-categorias p {
-		display: none;
+	header #btn_categorias span{
+		position: absolute;
+		top: 2px;
+		margin: 0px 6px;
+		font-size: 25px;
+	
 	}
 
-	header #buscador {
-		margin-bottom: 5px;
+	#catalogo{
+		opacity: 0;
+	}
+
+	#favoritos{
+		opacity: 0;
+	}
+
+	#items{
+		opacity: 0;
 	}
 
 	header #buscador input {
 		border-radius: 0px;
 	}
 
-	.et-hero-tabs-container {
-		position: relative;
-		flex-direction: column;
+	header #categorias{
+		padding-left: 40px;
 	}
-	.et-hero-tab {
-		font-size: 1rem;
+
+	#btn_menu{
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 999;
+	}
+	
+	#menu{
+		position: fixed;
+		top: 0;
+		z-index: 998;
+		height: 100%;
+		left: 0;
+		background: var(--blanco);
+	
+	}
+
+	.et-hero-tabs-container {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+	
 	}
 	/*------Plantilla--------*/
 
@@ -593,4 +731,38 @@ Responsive Configuration
         width: 25%;
         float: left;
     }
+}
+
+/*--------------MENU RESPONSIVE-------------*/
+
+@media only screen and (max-width: 768px) {
+    .nav_bar_down {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: darkcyan;
+    }
+	.nav-menu {
+		display: none;
+		width: 100%;
+	}
+	
+	.active {
+		display: block;
+	}
 }

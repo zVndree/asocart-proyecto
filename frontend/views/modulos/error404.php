@@ -1,6 +1,9 @@
 <!--=====================================
 Error 404
-======================================-->
+======================================--->
+<?php
+    $server = Ruta::ctr_ruta_servidor();
+?>
 <div class="container-fluid">
 
     <div class="container">
@@ -12,15 +15,13 @@ Error 404
 
         /* var_dump($error); */
         echo '
-        <div class="row error_404" >
+        <div class="container error_404" >
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-0 img-responsive img_error"  >
-                <img src="http://localhost/Art_Gir/backend/' . $error["imagen"] . '" >
-                </div>
+            <img class="img-responsive center-block" src="'.$server. $error["imagen"] . '" >
 
             <div class="col-xs-12">
                 <h1 style="color:'.$error["color_error"].';">' . $error["error"] . '</h1>
-                <h3 style="color:'.$error["color_mensaje"].';">' . $error["mensaje"] . '</h3>
+                <h3 style="color:'.$error["color_mensaje"].';">' .'<strong>' . $error["mensaje"] . '</strong></h3>
             </div>
         </div>  
             ';
