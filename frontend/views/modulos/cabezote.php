@@ -285,7 +285,7 @@ Header
 			<a class="et-hero-tab" href="directorio">Directorio</a>
 			<a class="et-hero-tab" href="<?php echo $url ?>#contacto">Contacto</a>
 			<!-- 			<a class="et-hero-tab" href="#registro_modal"><span class="glyphicon glyphicon-user" data-toggle="modal"></span> Sign Up</a>
- -->
+-->
 			<!-- 			<a class="et-hero-tab" href="#ingreso_modal"><span class="glyphicon glyphicon-log-in" data-toggle="modal"></span> Login</a>
 		-->
 			<span class="et-hero-tab-slider"></span>
