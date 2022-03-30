@@ -1,6 +1,7 @@
+
 <div class="login-box">
     <div class="login-logo">
-        <img src="views/img/plantilla/logo2.png" class="img-responsive" style="padding:10px 50px; margin:20px 0px">
+        <img src="views/img/plantilla/logo-terminado.png" class="img-responsive" style="padding:10px 50px; margin:20px 0px">
     </div>
     <!-- /.login-logo -->
     <div class="login-container">

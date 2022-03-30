@@ -12,8 +12,6 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
-
-
 $.ajax({
 	url: "ajax/plantilla.ajax.php",
 	success: function (respuesta) {

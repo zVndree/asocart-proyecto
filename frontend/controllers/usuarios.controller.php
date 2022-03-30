@@ -14,7 +14,7 @@ class controller_usuarios
             if (
                 preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/', $_POST["regis_user"]) &&
                 preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["regis_email"]) &&
-                preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/', $_POST["regis_pass"])
+                preg_match('/^(?=.*[a-záéíóúñ])(?=.*[A-ZÁÉÍÓÚÑ])(?=.*[0-9])(?=.*[$@$!%,;:*?&#.$($)$-$-_])[A-Za-z\d$@$!%,;:*?&#.$($)$-$-_]\S{8,15}$/', $_POST["regis_pass"])
             ) {
 
                 $encriptar = crypt($_POST["regis_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
@@ -191,7 +191,7 @@ class controller_usuarios
         if (isset($_POST["ing_email"])) {
             if (
                 preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["ing_email"]) &&
-                preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/', $_POST["ing_pass"])
+                preg_match('/^(?=.*[a-záéíóúñ])(?=.*[A-ZÁÉÍÓÚÑ])(?=.*[0-9])(?=.*[$@$!%,;:*?&#.$($)$-$-_])[A-Za-z\d$@$!%,;:*?&#.$($)$-$-_]\S{8,15}$/', $_POST["ing_pass"])
             ) {
 
 
@@ -202,6 +202,7 @@ class controller_usuarios
 
                 $item = "email";
                 $valor = $_POST["ing_email"];
+
 
                 $respuesta = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
 
@@ -277,6 +278,221 @@ class controller_usuarios
 								}
                         });
                 </script>';
+            }
+        }
+    }
+
+    /*=============================================
+    Olvido de contraseña
+    =============================================*/
+
+    static public function ctr_olvido_password()
+    {
+        if (isset($_POST["pass_email"])) {
+            if (preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["pass_email"])) {
+
+                /*=============================================
+                Generar contraseña aleatoria
+                =============================================*/
+
+                function  generar_password($longitud)
+                {
+
+                    $key = "";
+                    $pattern = "1234567890abcdefglmnoprtuyzABCDEFGLMNOPRTUYZ@$;%:*?&#._-,";
+                    $max = strlen($pattern) - 1;
+
+                    for ($i = 0; $i < $longitud; $i++) {
+
+                        $key .= $pattern[mt_rand(0, $max)];
+                    }
+
+                    return $key;
+                }
+
+                $nueva_pass = generar_password(15);
+                $encriptar = crypt($nueva_pass, '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
+                $2a$07$asxx54ahjppf45sd87a5auxq/SS293XhTEeizKWMnfhnpfay0AALe');
+
+                $tabla = "usuarios";
+
+                $item1 = "email";
+                $valor1 = $_POST["pass_email"];
+                $respuesta1 = ModeloUsuarios::mdlMostrarUsuario($tabla, $item1, $valor1);
+
+                if ($respuesta1) {
+
+                    $id = $respuesta1["id"];
+                    $item2 = "password";
+                    $valor2 = $encriptar;
+                    
+                    $respuesta2 = ModeloUsuarios::mdlActualizarUsuario($tabla, $id, $item2, $valor2);
+
+                    if ($respuesta1["verificacion"] == "0") {
+                        
+                        
+                        if ($respuesta2 == "ok") {
+
+                            /*=============================================
+                            Cambio de contraseña
+                            =============================================*/
+
+                            date_default_timezone_set("America/Bogota");
+                            $url = Ruta::ctrRuta();
+                            $mail = new PHPMailer;
+                            $mail->CharSet = 'UTF-8';
+                            $mail->isMail();
+                            $mail->setFrom('artesanias-girardot@gmail.com', 'Artesanias Girardot');
+                            $mail->addReplyTo('artesanias-girardot@gmail.com', 'Artesanias Girardot');
+                            $mail->Subject = "Solicitud nueva contraseña";
+                            $mail->addAddress($_POST["pass_email"]);
+                            $mail->msgHTML('<div style="width: 100%;background: #eee; position: relative;font-family: sans-serif; padding-bottom: 40px">
+
+                                <center>
+                                    <img  style="width: 20%; padding: 20px;" src="https://i.imgur.com/z6ZQGP3.png">
+                                </center>
+                        
+                                <div style="position: relative; margin: auto; width: 600px;background: white; padding: 20px;">
+                                    <center>
+                                        <img style="padding: 20px; width: 15%;" src="https://imgur.com/h2kJX4I.png">
+                        
+                                        <h3 style="font-weight: 100; color: #999; text-transform: uppercase;">SOLICITUD DE NUEVA CONTRASEÑA</h3>
+                                        <hr style="border: 1px solid #ccc; width: 80%;">
+                        
+                                        <h4 style="font-weight: 100;color: #999; padding: 0 20px;">Bienvenido a Artesanias Girardot - tienda virtual.
+                                        Te hemos asignado una nueva clave temporal para que puedas acceder al sistema, la nueva clave temporal es: <strong>' . $nueva_pass . '</strong> </h4>
+                                        <a href="' . $url . '#modal_ingreso' . '" target="_blank" style="text-decoration: none;">
+                                        <div style="margin: 20px 0; border-radius: 5px; line-height: 60px; background: #8A5D25;width: 60%; color: white;">Ingrese nuevamente al sitio</div>
+                                        </a>
+                        
+                                        <hr style="border: 1px solid #ccc; width: 80%;">
+                        
+                                        <a href="" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                                            <i class="fa fa-facebook-official" style="color: #46639f; font-size: 24px; margin: 5px;"></i>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                                            <i class="fa fa-instagram" style="color: transparent;
+                                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                                            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                                            background-clip: text;
+                                            -webkit-background-clip: text;;font-size: 24px; margin: 5px;"></i>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                                            <i class="fa fa-pinterest-square" style="color: #DA0021; font-size: 24px; margin: 5px;"></i>
+                                        </a>
+                        
+                                        <h5 style="font-weight: 100; color: #999">Copyright Artesanias Girardot. All right reserved.</h5>
+                        
+                                        <img style="width: 8%;" src="https://i.imgur.com/bQFvw9o.png" alt="">
+                                        <h6 style="font-weight: 40; color: #212121;">Este correo electrónico fue enviado a <a href="">' . $_POST["pass_email"] . '</a></h6>
+                                    </center>
+                        
+                                </div>
+                                
+                            </div> ');
+
+                            $envio = $mail->Send();
+
+                            if (!$envio) {
+                                echo '<script>
+
+                                    swal({
+                                        title: "¡ERROR!",
+                                        text: "¡Ha ocurrido un problema enviando cambio de contraseña' . $_POST["pass_email"] . $mail->ErrorInfo . ' Vuelva a intentar!.",
+                                        type: "error",
+                                        confirmButtonText: "Cerrar",
+                                        closeOnConfirm: false
+                                    },
+
+                                    function(isConfirm){
+                                            if (isConfirm) {	   
+                                                history.back();
+                                            } 
+                                    });
+
+                                    </script>';
+
+
+                            } else {
+
+                                echo '<script> 
+
+                                    swal({
+                                        title: "¡Envio Exitoso!",
+                                        text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["pass_email"] . ' para su cambio de contraseña!",
+                                        type:"success",
+                                        confirmButtonText: "Cerrar",
+                                        closeOnConfirm: false
+                                        },
+
+                                        function(isConfirm){
+
+                                            if(isConfirm){
+                                                history.back();
+                                            }
+                                    });
+                                </script>';
+                            }
+                        }
+                    }else{
+                        echo '<script>
+
+							swal({
+								title: "¡ESTA CUENTA NO ESTA VERIFICADA!",
+								text: "¡Ingrese un correo que este verificado, si no lo has hecho por favor revise su correo ' . $respuesta1["email"] . ' y verifiquelo para que puedas continuar!",
+								type: "error",
+								confirmButtonText: "Cerrar",
+								closeOnConfirm: false
+							},
+
+							function(isConfirm){
+									if (isConfirm) {	   
+									    history.back();
+									} 
+							});
+
+							</script>';
+
+                    }
+
+                } else {
+                    echo '<script>
+
+							swal({
+								title: "¡ERROR: CORREO NO EXISTE",
+								text: "¡El correo ingresado no existe en el sistema, por favor verifique que sea uno ya registrado!",
+								type: "error",
+								confirmButtonText: "Cerrar",
+								closeOnConfirm: false
+							},
+
+							function(isConfirm){
+									if (isConfirm) {	   
+									    history.back();
+									} 
+							});
+
+							</script>';
+                }
+
+            } else {
+                echo '<script> 
+
+						swal({
+							title: "¡ERROR!",
+							text: "¡Error al enviar el correo electrónico, está mal escrito!",
+							type:"error",
+							confirmButtonText: "Cerrar",
+							closeOnConfirm: false
+						},
+
+						function(isConfirm){
+							    if(isConfirm){
+								    history.back();
+								}
+						});
+
+				        </script>';
             }
         }
     }

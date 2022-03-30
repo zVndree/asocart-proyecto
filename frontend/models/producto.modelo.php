@@ -66,4 +66,34 @@ class modeloProductos
         $stmt = null;
     }
 
+    /*=============================================
+        Consulta para Mostrar Productos
+    =============================================*/
+
+    static public function mdl_mostrar_productos($tabla, $ordenar){
+
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC LIMIT 4");
+        $stmt->execute();
+        return $stmt->fetchAll();
+        $stmt -> close();
+        $stmt = null;
+
+
+    }
+
+    /*=============================================
+        Consulta para Mostrar La Info Producto
+    =============================================*/
+
+    static public function mdl_mostrar_info_productos($tabla, $item, $valor)
+    {
+
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+        $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
+        $stmt-> execute();
+        return $stmt->fetch();
+        $stmt -> close();
+        $stmt = null;
+    }
+
 }

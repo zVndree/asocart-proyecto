@@ -90,6 +90,7 @@ Contenido Dinamico
 
 	$rutas = array();
 	$ruta = null;
+	$info_producto  = null;
 
 	if (isset($_GET["ruta"])) {
 
@@ -106,10 +107,9 @@ Contenido Dinamico
 
 		$ruta_categorias = controladorProductos::ctrListarCategorias($item, $valor);
 
-		if (is_array($ruta_categorias)) {
-			if ($rutas[0] == $ruta_categorias["ruta"]) {
-				$ruta = $rutas[0];
-			}
+		if (is_array($ruta_categorias) && $rutas[0] == $ruta_categorias["ruta"]) {
+			
+			$ruta = $rutas[0];
 		}
 
 		/*=============================================
@@ -125,14 +125,34 @@ Contenido Dinamico
 		}
 
 		/*=============================================
+		URL'S AMIGABLES DE PRODUCTOS
+		=============================================*/
+
+		$ruta_productos = controladorProductos::ctr_mostrar_info_productos($item, $valor);
+		
+		if (is_array($ruta_productos) && $rutas[0] == $ruta_productos["ruta"]) {
+				$info_producto = $rutas[0];
+		}
+		
+
+		/*=============================================
 		Lista Blanca de URL amigables
 		=============================================*/
 
-		if ($ruta != null) {
+		if ($ruta != null || $rutas[0] == "lo-mas-vendido" || $rutas[0] == "lo-mas-visto") {
 			include "modulos/productos.php";
+		
+		}else if($info_producto != null){
+
+			include "modulos/info_product.php";
+			
 		}else if($rutas[0] == "verificar" || $rutas[0] == "salir"){
 
 			include "modulos/".$rutas[0].".php";
+		}else if($rutas[0] == "sobre-nosotros"){
+			include "modulos/about.php";	
+		}else if($rutas[0]== "todas-las-categorias"){
+			include "modulos/all_categories.php";
 		}else if($rutas[0] == "directorio"){
 			include "modulos/directorio.php";
 

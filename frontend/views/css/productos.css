@@ -111,15 +111,16 @@ Lista de productos
 	
 }
 
+
 .productos ul li{
-	padding: 0px 8px;
+	padding: 5px 8px;
 }
 
 .productos ul li figure{
 	overflow:hidden;
 	margin-top: 10px;
 	border-radius:5px 5px 0px 0px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -129,24 +130,42 @@ Lista de productos
 	transform: scale(1.1,1.1);
 }
 
+.product-grid a{
+	font-size: 16px;
+	padding-bottom: 2px;
+	color: #212121;
+}
+
+.product-grid a:hover{
+	color: #747474;
+}
+
 .productos ul li div.precio{
 	padding:0;
 	margin-top:-30px;
-	padding-bottom:20px;
 }
 
 .productos ul li div.enlaces{
-	padding:0;
 	padding-bottom:20px;
+	list-style: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+
 }
 
 .productos ul li div.enlaces button{
-	margin:2px;
+	margin: 0 0 8px;
+	list-style: none;
+	color: #BCBCBC;
+    background:#f4f4f4;
+	text-align: center;
+	font-size:14px;
 }
 
-.productos ul li div.enlaces button i{
-	color:#999;
-	font-size:12px;
+.productos ul li div.enlaces button:hover{
+	color: #fff;
+    background: var(--red); 
 }
 
 .oferta{
@@ -160,9 +179,31 @@ Lista de productos
 	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a6884f' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 	border-radius: 0px 0px 5px 5px;
 	padding: 10px;
+	height: 135px;
 	border-top: 2px solid var(--dark);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+.product-grid .add-to-cart{
+	position: absolute;
+    color: #BCBCBC;
+    background:#f4f4f4;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+	bottom: -42px;
+	right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 10px 20px 10px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.product-grid .add-to-cart:hover{ border-radius: 10px; }
+.product-grid:hover .add-to-cart{
+    color: #fff;
+    background: #78bf00; 
 }
 
 /*===============STYLE SLIDE CARD PRODUCTS==============*/
@@ -304,7 +345,7 @@ Lista de productos
 	color: #ffc000;
 }
 
-.product-grid{
+/* .product-grid{
     font-family: 'Lato', sans-serif;
     border: 2px solid #F2F2F2;
     border-radius: 24px;
@@ -404,5 +445,5 @@ Lista de productos
 @media screen and (max-width: 990px){
     .product-grid{ margin-bottom: 30px; }
 }
-
+ */
 

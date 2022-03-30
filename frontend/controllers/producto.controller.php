@@ -38,4 +38,27 @@ class controladorProductos
         $respuesta = modeloProductos::mdlListarServicios($tabla_ser);
         return $respuesta;
     }
+
+    /*========================
+    Mostrar Productos
+    ========================*/
+
+    static public function ctr_mostrar_productos($ordenar){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_mostrar_productos($tabla, $ordenar);
+        return $respuesta;
+    }
+
+    /*========================
+    Mostrar Info Producto
+    ========================*/
+
+    static public function ctr_mostrar_info_productos($item, $valor){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_mostrar_info_productos($tabla, $item, $valor);
+        return $respuesta;
+
+    }
 }

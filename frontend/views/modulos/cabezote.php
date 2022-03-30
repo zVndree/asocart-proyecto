@@ -130,7 +130,7 @@ Header
 			Logotipo
 			======================================-->
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
-				<a href="#">
+				<a href="<?php echo $url?>">
 					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive" style="width:500px;height:100px">
 				</a>
 			</div>
@@ -205,9 +205,8 @@ Header
 
 				echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
 									<h4>
-										<img src="' . $server . $value["icono"] . '" class="img-responsive">
 										<a href="' . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
-										</a>
+										<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 									</h4>
 									<br>
 									<ul>';
@@ -218,7 +217,7 @@ Header
 				/* var_dump($subcategorias); */
 				foreach ($subcategorias as $key => $value) {
 					echo '<li>
-						<i class="fa fa-caret-right"></i> <a href=' . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
+						<a href='. $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
 						</a>
 						
 					</li>';
@@ -230,7 +229,7 @@ Header
 			?>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 all_categorias">
 				<h5>
-					<a href="views/allCategorias.php">Ver mas categorias...</a>
+					<a href="todas-las-categorias">Ver mas categorias...</a>
 				</h5>
 			</div>
 		</div>
@@ -277,10 +276,10 @@ Header
 	</div>
 
 	<div class="collapse navbar-collapse" id="myNavbar">
-		<div class="et-hero-tabs-container bar_down" id="menu" style="<?php echo $social["colorFondo"] ?>">
+		<div class="et-hero-tabs-container" id="menu">
 
 			<a class=" et-hero-tab" href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
-			<a class="et-hero-tab" href="<?php echo $url ?>#about">Sobre Nosotros </a>
+			<a class="et-hero-tab" href="sobre-nosotros">Sobre Nosotros </a>
 			<a class="et-hero-tab" href="<?php echo $url ?>#tienda">Tienda</a>
 			<a class="et-hero-tab" href="<?php echo $url ?>#eventos">Eventos</a>
 			<a class="et-hero-tab" href="directorio">Directorio</a>
@@ -307,7 +306,7 @@ VENTANA MODAL REGISTRO
 
 <!-- Modal -->
 <div class="modal fade modal_formulario" id="modal_registro" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal-dialog" >
 
 		<!-- Modal content-->
 		<div class="modal-content">
@@ -408,6 +407,7 @@ VENTANA MODAL REGISTRO
 					<!-- <div class="col-xs-12">
 						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
 					</div> -->
+				
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -489,10 +489,65 @@ VENTANA MODAL LOGIN
 					$ingreso ->ctr_ingreso_usuarios();
 					?>
 
-					<input type="submit" class="btn btn-default btn-block back_color btn_login" value="ENVIAR" style="font-weight: bold;">
+					<input type="submit" class="btn btn-default btn-block back_color btn_login" value="ENVIAR" style="font-weight: bold;"><br>
 					<!-- <div class="col-xs-12">
 						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
 					</div> -->
+					<center>
+						<a href="#modal_pass" data-dismiss="modal" data-toggle="modal">¿Se te olvidó tu contraseña?</a>
+					</center>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<p>¿No tienes una cuenta? <a href="#modal_registro" data-dismiss="modal" data-toggle="modal"><span><strong>| Regístrate</strong> </span></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!----=====================
+	VENTANA MODAL RECUPERAR CONTRA
+	========================--->
+
+<!-- Modal -->
+<div class="modal fade modal_formulario" id="modal_pass" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body modal_titulo">
+				<h3 class="back_color">RECUPERAR CONTRASEÑA</h3>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				<!----=================----
+				OLVIDO CONTRASEÑA
+				------=================--->
+
+				<form method="post">
+
+				<label >
+					Escribe el correo electronico para que puedas recuperar tu contraseña
+				</label>
+
+					<!----=====================
+					INPUT CORREO
+					========================--->
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="glyphicon glyphicon-envelope"></i>
+							</span>
+							<input type="email" class="form-control" name="pass_email" id="pass_email" placeholder="Correo Electronico" required="required">
+						</div>
+					</div>
+
+					<?php
+					$recuperar = new controller_usuarios();
+					$recuperar ->ctr_olvido_password();
+					?>
+
+					<input type="submit" class="btn btn-default btn-block back_color" value="ENVIAR" style="font-weight: bold;">
+					
 				</form>
 			</div>
 			<div class="modal-footer">
