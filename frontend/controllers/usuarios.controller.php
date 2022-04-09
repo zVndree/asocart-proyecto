@@ -25,6 +25,7 @@ class controller_usuarios
                     "nombre" => $_POST["regis_user"],
                     "password" => $encriptar,
                     "email" => $_POST["regis_email"],
+                    "foto" => "",
                     "modo" => "directo",
                     "verificacion" => 1,
                     "email_encriptado" => $encriptar_email
@@ -234,6 +235,25 @@ class controller_usuarios
                         $_SESSION["email"] = $respuesta["email"];
                         $_SESSION["password"] = $respuesta["password"];
                         $_SESSION["modo"] = $respuesta["modo"];
+
+                        /*------------FECHA LOGIN------------*/
+/* 
+                        date_default_timezone_set("America/Bogota");
+                        $fecha = date("y-m-d");
+                        $hora = date("H:i:s");
+                        $fecha_actual = $fecha."".$hora;
+                        $item1 = "ultimo_login";
+                        $valor1 = $fecha_actual;
+                        $item2 = "id";
+                        $valor2 = $respuesta["id"];
+
+                        $actualizar_login = ModeloUsuarios::mdlActualizarFechaLogin($tabla, $item1, $valor1, $item2, $valor2);
+
+                        if ($actualizar_login == "ok") {
+                            echo '<script>
+                            window.location="inicio";
+                            </script>';
+                        } */
 
                         echo '<script>
 
@@ -496,4 +516,62 @@ class controller_usuarios
             }
         }
     }
+
+    
+    /*=============================================
+    Registro de usuario por redes sociales
+    =============================================*/
+
+    static public function ctr_registro_red_social($datos){
+
+        $tabla = "usuarios";
+
+        $item = "email";
+        $valor = $datos["email"];
+        $email_repetido = false;
+
+        $respuesta0 = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
+
+        if ($respuesta0) {
+
+            $email_repetido = true;
+            
+        }else{
+            
+            $respuesta1 = ModeloUsuarios::mdlRegistroUsuario($tabla, $datos);
+        }
+
+
+        if ($email_repetido || $respuesta1 == "ok") {
+
+            $item = "email";
+            $valor = $datos["email"];
+
+            $respuesta2 = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
+
+            if ($respuesta2["modo"] == "facebook") {
+
+                session_start();
+                
+                $_SESSION["validar_sesion"] = "ok";
+                $_SESSION["id"] = $respuesta2["id"];
+                $_SESSION["nombre"] = $respuesta2["nombre"];
+                $_SESSION["foto"] = $respuesta2["foto"];
+                $_SESSION["email"] = $respuesta2["email"];
+                $_SESSION["password"] = $respuesta2["password"];
+                $_SESSION["modo"] = $respuesta2["modo"];
+
+                echo "ok";
+
+
+            }else{
+
+                echo "";
+            }
+
+        }
+
+    }
+
+
 }

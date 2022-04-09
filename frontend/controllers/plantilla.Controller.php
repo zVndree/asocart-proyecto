@@ -38,5 +38,6 @@ class ControllerPlantilla{
 		$respuesta = modeloPlantilla::mdlEstiloErrores($tabla);
 		return $respuesta;
 	}
+
 }
 

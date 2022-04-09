@@ -57,19 +57,27 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
         $titulos_modulos = array("LO MÁS VENDIDO", "LO MÁS VISTO");
         $ruta_modulos = array("lo-mas-vendido", "lo-mas-visto");
+
+        $base = 0;
+        $tope = 4;
         if ($titulos_modulos[0] == "LO MÁS VENDIDO") {
             $ordenar = "ventas";
-            $ventas = controladorProductos::ctr_mostrar_productos($ordenar);
+            $item = null;
+            $valor = null;
+            $ventas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope);
         }
 
         if ($titulos_modulos[1] == "LO MÁS VISTO") {
             $ordenar = "vistas";
-            $vistas = controladorProductos::ctr_mostrar_productos($ordenar);
+            $item = null;
+            $valor = null;
+            $vistas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope);
         }
         
         /* var_dump($productos); */
 
         $modulos = array($ventas, $vistas);
+        
         for ($i=0; $i < count($titulos_modulos) ; $i++) { 
             echo '
             <div class="container-fluid productos">

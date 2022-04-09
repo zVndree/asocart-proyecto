@@ -34,10 +34,10 @@ Top
 }
 
 .registro ul {
-	margin-top: 5px;
+	
 	font-size: 14px;
 	text-align: right;
-	background: var(--dark);
+
 }
 
 .registro img {
@@ -282,6 +282,7 @@ div.modal_formulario .regis_face p, .modal_formulario .regis_google p{
 	text-align: center;
 	line-height: 40px;
 	padding: 5px;
+	margin: 0px 20px;
 	font-size: 16px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -335,3 +336,7 @@ div.modal_formulario .modal-footer a:hover{
 	color: #e65d56;
 	transition: all 0.4s ease-in-out;
 }
+
+/*----------SECCION PERFIL----------*/
+
+

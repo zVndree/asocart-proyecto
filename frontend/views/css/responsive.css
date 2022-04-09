@@ -305,6 +305,16 @@ Responsive Configuration
 		opacity: 0;
 	}
 
+	/*------PERFIL ------*/
+
+	.nav_perfil ul{
+		text-align: center;
+	}
+
+	.navbar-login img{
+		padding-bottom: 10px;
+	}
+
 	/*------Plantilla-------*/
 
 	.col-sm-0 {
@@ -448,6 +458,22 @@ Responsive Configuration
 		align-items: center;
 	}
 
+	.nav_perfil ul{
+		text-align: center;
+	}
+
+	.navbar-login img{
+		padding-bottom: 10px;
+	}
+
+	.navbar-footer-content
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+	flex-direction: row;
+}
+
 	#correo {
 		display: none;
 	}
@@ -506,6 +532,13 @@ Responsive Configuration
 		top: 0;
 		right: 0;
 		z-index: 999;
+		border-radius: 3px;
+		background-color: #cabca37c;
+
+	}
+
+	.navbar-toggle{
+		text-align: center;
 	}
 
 	#menu {
@@ -527,6 +560,8 @@ Responsive Configuration
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
 	}
+
+
 	/*------Plantilla--------*/
 
 	.col-xs-0 {
@@ -549,6 +584,10 @@ Responsive Configuration
 		margin-top: 30px;
 		font-size: 30px;
 		text-shadow: 2px 2px 1px #dadada;
+	}
+
+    .fondoBreadcrumb{
+		font-size:12px;
 	}
 
 	/*-------Slides--------*/

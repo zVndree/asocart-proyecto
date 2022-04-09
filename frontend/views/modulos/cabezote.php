@@ -6,18 +6,16 @@ $url = Ruta::ctrRuta();
 INICIO DE SESIÓN USUARIO
 =============================================*/
 
-if(isset($_SESSION["validar_sesion"])){
+if (isset($_SESSION["validar_sesion"])) {
 
-	if($_SESSION["validar_sesion"] == "ok"){
+	if ($_SESSION["validar_sesion"] == "ok") {
 
 		echo '<script>
 		
-			localStorage.setItem("usuario","'.$_SESSION["id"].'");
+			localStorage.setItem("usuario","' . $_SESSION["id"] . '");
 
 		</script>';
-
 	}
-
 }
 ?>
 
@@ -33,8 +31,8 @@ Top
 			<div class="row">
 
 				<!--======================
-			Redes Sociales
-			=======================-->
+				Redes Sociales
+				=======================-->
 
 				<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 social">
 
@@ -59,14 +57,14 @@ Top
 							<a href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> <span id="telefono"><?php echo  $social["celular"]; ?></span> </a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true" ></i> <span id="correo"><?php echo  $social["correo"];  ?></span> </a>
+							<a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="correo"><?php echo  $social["correo"];  ?></span> </a>
 						</li>
 					</ul>
 				</div>
 
 				<!--=====================================
-			Registro
-			======================================-->
+				Registro
+				======================================-->
 
 				<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12 registro">
 					<ul>
@@ -85,34 +83,127 @@ Top
 								</ul>
 						</li> -->
 						<?php
-							if (isset($_SESSION["validar_sesion"])) {
-								if ($_SESSION["validar_sesion"] == "ok") {
-									if ($_SESSION["modo"] == "directo") {
-										if ($_SESSION["foto"] != "") {
-											echo '<li>
-											<img class="img-circle" src="'.$url.$_SESSION["foto"].'" width="10%">
-											</li>';
-											
-										}else{
-											echo '
-											<li><img class="img-circle" src="'.$server.'views/img/usuarios/default/user_icon.png" width="9%">
-											</li>';
-										}
+						if (isset($_SESSION["validar_sesion"])) {
+							if ($_SESSION["validar_sesion"] == "ok") {
+								if ($_SESSION["modo"] == "directo") {
+									if ($_SESSION["foto"] != "") {
 
-										echo '<li>|</li>
-											<li><a href="'.$url.'perfil">Ver perfil</a></li>
-											<li>|</li>
-											<li><a href="'.$url.'salir">Salir</a></li>
-											';
+										echo '<li>
+													<a href="' . $url . 'perfil">
+														<img class="img-circle" src="' . $url . $_SESSION["foto"] . '" width="8%">
+														' . $_SESSION["nombre"] . '
+													</a>
+												</li>
+												
+												';
+									} else {
+
+										echo '
+										<div class="col-xs-12 nav_perfil">
+											<ul class="nav navbar-nav navbar-right>
+												<li class=" dropdown">
+													<a href="' . $url . 'perfil" class="dropdown-toggle" data-toggle="dropdown">
+														<img class="img-circle" src="' . $server . 'views/img/usuarios/default/user_icon.png" width="9%">
+														' . $_SESSION["nombre"] . ' <i class="fa fa-caret-down" aria-hidden="true"></i>
+													</a>
+													<ul class="col-xs-12 dropdown-menu menu" style="background:'.$social["colorFondo"].';">
+														<li>
+															<div class="navbar-login">
+														
+																<div class="col-md-10 text-center">
+																	<img src="' . $server . 'views/img/usuarios/default/user_icon.png" width="80px" height="80px">
+									
+																	<div class="col-md-8">
+																		<p class="text-left" style="color:#212121; font-size: 16px;"><strong>' . $_SESSION["nombre"] . '</strong></p>
+																		<p class="text-muted text-left small">' . $_SESSION["email"] . '</p>
+																		<div class="divider">
+																		</div>
+																		<br>
+																		<p class="text-left">
+																			<a href="' . $url . 'perfil" class="btn btn-primary btn-block btn-sm"><i class="fa fa-user-o" aria-hidden="true"></i>Ver Perfil</a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<div class="navbar-footer">
+															<div class="navbar-footer-content">
+																<div class="row">
+																	<div class="col-md-6">
+																		<a href="' . $url . 'perfil" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Cambiar Contraseña</a>
+																	</div>
+																	<div class="col-md-6">
+																		<a href="' . $url . 'salir" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar Sesión</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</ul>
+												</li>
+											</ul>
+										</div>';
 									}
 								}
-							}else{
-								echo '<li><a href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
+
+								if ($_SESSION["modo"] == "facebook") {
+
+									echo '
+									<div class="col-xs-12 nav_perfil">
+											<ul class="nav navbar-nav navbar-right>
+												<li class=" dropdown">
+													<a href="' . $url . 'perfil" class="dropdown-toggle" data-toggle="dropdown">
+														<img class="img-circle" src="'.$_SESSION["foto"].'" width="9%">
+														' . $_SESSION["nombre"] . ' <i class="fa fa-caret-down" aria-hidden="true"></i>
+													</a>
+													<ul class="col-xs-12 dropdown-menu menu" style="background:'.$social["colorFondo"].';">
+														<li>
+															<div class="navbar-login">
+														
+																<div class="col-md-10 text-center">
+																	<img class="img-circle" src="'.$_SESSION["foto"].'" width="80px" height="80px">
+									
+																	<div class="col-md-8">
+																		<p class="text-left" style="color:#212121; font-size: 16px;"><strong>' . $_SESSION["nombre"] . '</strong></p>
+																		<p class="text-muted text-left small">' . $_SESSION["email"] . '</p>
+																		<div class="divider">
+																		</div>
+																		<br>
+																		<p class="text-left">
+																			<a href="' . $url . 'perfil" class="btn btn-primary btn-block btn-sm"><i class="fa fa-user-o" aria-hidden="true"></i>Ver Perfil</a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<div class="navbar-footer">
+															<div class="navbar-footer-content">
+																<div class="row">
+																	<div class="col-md-6">
+																		<a href="' . $url . 'perfil" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Cambiar Contraseña</a>
+																	</div>
+																	<div class="col-md-6">
+																		<a href="' . $url . 'salir" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar Sesión</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</ul>
+												</li>
+											</ul>
+										</div>';
+								}
+								echo '
+										<!---<li><a href="' . $url . 'perfil">Ver perfil</a></li>
+										<li>|</li>
+										<li><a href="' . $url . 'salir">Salir</a></li>---->';
+							}
+						} else {
+							echo '<li><a href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
 									<li>|</li>
 									<li><a href="#modal_registro" data-toggle="modal">Registrarse</a></li>';
-							}
+						}
 						?>
-	
+
 					</ul>
 				</div>
 			</div>
@@ -130,7 +221,7 @@ Header
 			Logotipo
 			======================================-->
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
-				<a href="<?php echo $url?>">
+				<a href="<?php echo $url ?>">
 					<img src="<?php echo $server . $social["logo"]; ?>" class="img-responsive" style="width:500px;height:100px">
 				</a>
 			</div>
@@ -148,7 +239,7 @@ Header
 					<span class="pull-right">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</span>
-					
+
 				</div>
 
 				<!--=====================================
@@ -174,7 +265,7 @@ Header
 				<a href="#">
 					<i style="color:<?php echo $social["barTop"] ?>" class="fa fa-heart">
 						<strong id="favoritos">Mis favoritos</strong>
-							<!-- <span class="cantidad_deseos"></span> -->
+						<!-- <span class="cantidad_deseos"></span> -->
 					</i>
 				</a>
 			</div>
@@ -183,7 +274,7 @@ Header
 			======================================-->
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
 				<a href="#">
-					<i style="color:<?php echo $social["barTop"]?>" class="fa fa-shopping-basket" aria-hidden="true"><strong id="items"> Items</strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span></i>
+					<i style="color:<?php echo $social["barTop"] ?>" class="fa fa-shopping-basket" aria-hidden="true"><strong id="items"> Items</strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span></i>
 				</a>
 
 			</div>
@@ -217,7 +308,7 @@ Header
 				/* var_dump($subcategorias); */
 				foreach ($subcategorias as $key => $value) {
 					echo '<li>
-						<a href='. $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
+						<a href=' . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
 						</a>
 						
 					</li>';
@@ -238,7 +329,7 @@ Header
 	</header>
 	<!-------BARRA DE NAVEGACION ----------->
 
-    <!-- <div class="nav_bar_down bar_down">
+	<!-- <div class="nav_bar_down bar_down">
         <ul id="nav-list" class="nav-menu">
             <li class="menu-item">
                 <a href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
@@ -306,7 +397,7 @@ VENTANA MODAL REGISTRO
 
 <!-- Modal -->
 <div class="modal fade modal_formulario" id="modal_registro" role="dialog">
-	<div class="modal-dialog" >
+	<div class="modal-dialog">
 
 		<!-- Modal content-->
 		<div class="modal-content">
@@ -407,7 +498,7 @@ VENTANA MODAL REGISTRO
 					<!-- <div class="col-xs-12">
 						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
 					</div> -->
-				
+
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -477,16 +568,16 @@ VENTANA MODAL LOGIN
 								<i class="glyphicon glyphicon-lock"></i>
 							</span>
 							<input type="password" class="form-control" name="ing_pass" id="ing_pass" placeholder="Contraseña" required="required">
-<!-- 							<span id="imgContrasena" data-activo=false><img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-09-256.png" class="icono-pass"></span>
+							<!-- 							<span id="imgContrasena" data-activo=false><img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-09-256.png" class="icono-pass"></span>
 -->
 						</div>
 					</div>
 
-				
+
 
 					<?php
 					$ingreso = new controller_usuarios();
-					$ingreso ->ctr_ingreso_usuarios();
+					$ingreso->ctr_ingreso_usuarios();
 					?>
 
 					<input type="submit" class="btn btn-default btn-block back_color btn_login" value="ENVIAR" style="font-weight: bold;"><br>
@@ -505,7 +596,7 @@ VENTANA MODAL LOGIN
 	</div>
 </div>
 
-	<!----=====================
+<!----=====================
 	VENTANA MODAL RECUPERAR CONTRA
 	========================--->
 
@@ -525,9 +616,9 @@ VENTANA MODAL LOGIN
 
 				<form method="post">
 
-				<label >
-					Escribe el correo electronico para que puedas recuperar tu contraseña
-				</label>
+					<label>
+						Escribe el correo electronico para que puedas recuperar tu contraseña
+					</label>
 
 					<!----=====================
 					INPUT CORREO
@@ -543,11 +634,11 @@ VENTANA MODAL LOGIN
 
 					<?php
 					$recuperar = new controller_usuarios();
-					$recuperar ->ctr_olvido_password();
+					$recuperar->ctr_olvido_password();
 					?>
 
 					<input type="submit" class="btn btn-default btn-block back_color" value="ENVIAR" style="font-weight: bold;">
-					
+
 				</form>
 			</div>
 			<div class="modal-footer">

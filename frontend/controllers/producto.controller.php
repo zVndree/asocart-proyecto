@@ -43,10 +43,10 @@ class controladorProductos
     Mostrar Productos
     ========================*/
 
-    static public function ctr_mostrar_productos($ordenar){
+    static public function ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope){
 
         $tabla = "productos";
-        $respuesta = modeloProductos::mdl_mostrar_productos($tabla, $ordenar);
+        $respuesta = modeloProductos::mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope);
         return $respuesta;
     }
 

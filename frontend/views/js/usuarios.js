@@ -3,7 +3,7 @@
     =============================*/
 
 var ruta_actual = location.href;
-$(".btn_login").click(function () {
+$(".btn_login, #btn_regis_face").click(function () {
 	localStorage.setItem("ruta_actual", ruta_actual);
 });
 
@@ -70,10 +70,15 @@ $("#regis_email").change(function () {
 
 					modo = "esta página";
 				}
+				if($(".alert").length){
+
+					$(".alert").remove();
+				}
 				$("#regis_email")
 					.parent()
 					.after(
-						'<div class="alert alert-danger"><strong><i class="fa fa-exclamation-circle"> ¡ERORR! </i></strong> El correo electrónico ya existe en la base de datos</div>'
+						
+						'<div class="alert alert-danger"><strong><i class="fa fa-exclamation-circle"> ¡ERORR! </i></strong> El correo electrónico ya existe en la base de datos, fue registrado a través de '+modo+', por favor ingrese otro diferente</div>'
 					);
 				val_email_duplicado = true;
 			}

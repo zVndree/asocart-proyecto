@@ -70,11 +70,22 @@ class modeloProductos
         Consulta para Mostrar Productos
     =============================================*/
 
-    static public function mdl_mostrar_productos($tabla, $ordenar){
+    static public function mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC LIMIT 4");
-        $stmt->execute();
-        return $stmt->fetchAll();
+        if($item != null){
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC LIMIT $base, $tope");
+            $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+            $stmt->execute();
+            return $stmt->fetchAll();
+            
+        }else{
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC LIMIT $base, $tope");
+            $stmt->execute();
+            return $stmt->fetchAll();
+
+        }
         $stmt -> close();
         $stmt = null;
 
