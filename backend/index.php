@@ -15,7 +15,9 @@ date_default_timezone_set("America/Bogota");
 
 require_once "controllers/admin_controller.php";
 require_once "controllers/plantilla.Controller.php";
+require_once "controllers/comercio.Controller.php";
 require_once "models/admin_model.php";
+require_once "models/comercio.Modelo.php";
 
 $plantilla = new ControllerPlantilla();
 $plantilla->plantilla();

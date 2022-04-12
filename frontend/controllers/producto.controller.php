@@ -50,6 +50,18 @@ class controladorProductos
         return $respuesta;
     }
 
+    
+    /*========================
+    Listar Productos
+    ========================*/
+
+    static public function ctr_listar_productos($ordenar, $item, $valor){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_listar_productos($tabla, $ordenar, $item, $valor);
+        return $respuesta;
+    }
+
     /*========================
     Mostrar Info Producto
     ========================*/

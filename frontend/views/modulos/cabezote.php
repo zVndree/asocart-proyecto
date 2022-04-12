@@ -249,7 +249,7 @@ Header
 				<div class="input-group col-lg-8 col-md-8 col-sm-7 col-xs-10" id="buscador">
 					<input type="search" name="buscar" class="form-control" placeholder="¿Qué estás buscando?">
 					<span class="input-group-btn">
-						<a href="#">
+						<a href="<?php echo $url; ?>buscador">
 							<button class="btn btn-default back_color" type="submit">
 								<i class="fa fa-search"></i>
 							</button>
@@ -296,7 +296,7 @@ Header
 
 				echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
 									<h4>
-										<a href="' . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
+										<a href="'. $url . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
 										<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 									</h4>
 									<br>
@@ -308,7 +308,7 @@ Header
 				/* var_dump($subcategorias); */
 				foreach ($subcategorias as $key => $value) {
 					echo '<li>
-						<a href=' . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
+						<a href='. $url . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
 						</a>
 						
 					</li>';
@@ -370,7 +370,7 @@ Header
 		<div class="et-hero-tabs-container" id="menu">
 
 			<a class=" et-hero-tab" href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
-			<a class="et-hero-tab" href="sobre-nosotros">Sobre Nosotros </a>
+			<a class="et-hero-tab" href="about">Sobre Nosotros </a>
 			<a class="et-hero-tab" href="<?php echo $url ?>#tienda">Tienda</a>
 			<a class="et-hero-tab" href="<?php echo $url ?>#eventos">Eventos</a>
 			<a class="et-hero-tab" href="directorio">Directorio</a>

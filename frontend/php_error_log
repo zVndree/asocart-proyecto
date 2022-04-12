@@ -2019,3 +2019,85 @@ Stack trace:
 #5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
 #6 {main}
   thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php on line 13
+[10-Apr-2022 19:38:24 America/Bogota] PHP Warning:  require_once(models/product.modelo.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\frontend\index.php on line 20
+[10-Apr-2022 19:38:25 America/Bogota] PHP Fatal error:  Uncaught Error: Failed opening required 'models/product.modelo.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\frontend\index.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\index.php on line 20
+[10-Apr-2022 23:08:10 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 75
+[10-Apr-2022 23:08:10 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 261
+[10-Apr-2022 23:19:00 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 75
+[10-Apr-2022 23:19:00 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 261
+[10-Apr-2022 23:30:05 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:30:05 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[10-Apr-2022 23:30:17 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:30:33 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:30:33 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[10-Apr-2022 23:35:29 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:35:41 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:44:51 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:45:16 America/Bogota] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string - int in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php:73
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(147): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 73
+[10-Apr-2022 23:45:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:45:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[10-Apr-2022 23:46:01 America/Bogota] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string - int in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php:73
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(147): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 73
+[10-Apr-2022 23:46:33 America/Bogota] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string - int in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php:73
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(147): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 73
+[10-Apr-2022 23:46:44 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[10-Apr-2022 23:46:44 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[11-Apr-2022 00:02:21 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:02:21 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[11-Apr-2022 00:02:30 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:02:30 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 263
+[11-Apr-2022 00:10:05 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:10:05 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 265
+[11-Apr-2022 00:10:19 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:10:19 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 265
+[11-Apr-2022 00:17:22 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:17:35 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:17:35 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 265
+[11-Apr-2022 00:17:59 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:18:12 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:18:21 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:18:21 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 265
+[11-Apr-2022 00:18:33 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:18:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:19:10 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:21:39 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:21:54 America/Bogota] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:22:17 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:22:40 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:22:57 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:22:57 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 79
+[11-Apr-2022 00:23:26 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:23:49 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:23:49 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 266
+[11-Apr-2022 00:27:08 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:27:11 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:27:16 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:27:30 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 00:27:30 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 266
+[11-Apr-2022 01:02:49 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 01:02:49 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 266
+[11-Apr-2022 01:25:51 America/Bogota] PHP Warning:  include(modulos/sobre-nosotros.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 153
+[11-Apr-2022 01:25:51 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/sobre-nosotros.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 153
+[11-Apr-2022 12:20:10 America/Bogota] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php on line 171
+[11-Apr-2022 12:20:35 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 12:20:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 78
+[11-Apr-2022 12:20:47 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\productos.php on line 266

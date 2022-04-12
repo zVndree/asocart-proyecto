@@ -4,7 +4,7 @@
 
 <ul class="sidebar-menu">
     <li class="active"><a href="inicio"><i class="fa fa-home"></i><span>Inicio</span></a></li>
-    <li><a href="comercio"><i class="fa fa-plane"></i><span>Comercio</span></a></li>
+    <li><a href="comercio"><i class="fa fa-cogs"></i><span>Comercio</span></a></li>
     <li><a href="slide"><i class="fa fa-edit"></i><span>Gestor Slide</span></a></li>
 
     <li class="treeview">

@@ -83,14 +83,14 @@
 	<?php
 
 	/*=============================================
-Cabezote
-=============================================*/
+	Cabezote
+	=============================================*/
 
 	include "modulos/cabezote.php";
 
 	/*=============================================
-Contenido Dinamico
-=============================================*/
+	Contenido Dinamico
+	=============================================*/
 
 	$rutas = array();
 	$ruta = null;
@@ -148,16 +148,10 @@ Contenido Dinamico
 		} else if ($info_producto != null) {
 
 			include "modulos/info_product.php";
-		} else if ($rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil") {
+		} else if ($rutas[0] == "buscador" || $rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil" || $rutas[0] == "about" || $rutas[0] == "directorio" || $rutas[0] == "todas-las-categorias") {
 
 			include "modulos/" . $rutas[0] . ".php";
 
-		} else if ($rutas[0] == "sobre-nosotros") {
-			include "modulos/about.php";
-		} else if ($rutas[0] == "todas-las-categorias") {
-			include "modulos/all_categories.php";
-		} else if ($rutas[0] == "directorio") {
-			include "modulos/directorio.php";
 		} else if ($rutas[0] == "inicio") {
 
 			include "modulos/slide.php";
@@ -191,6 +185,7 @@ Contenido Dinamico
 	<script src="<?php echo $url; ?>views/js/usuarios.js"></script>
 	<script src="<?php echo $url; ?>views/js/productos.js"></script>
 	<script src="<?php echo $url; ?>views/js/registro_fb.js"></script>
+	<script src="<?php echo $url; ?>views/js/buscador.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

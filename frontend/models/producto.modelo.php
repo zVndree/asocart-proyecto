@@ -93,6 +93,33 @@ class modeloProductos
     }
 
     /*=============================================
+        Consulta para Listar Productos
+    =============================================*/
+
+    static public function mdl_listar_productos($tabla, $ordenar, $item, $valor){
+
+        if ($item != null) {
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC");
+            $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+            $stmt ->execute();
+            return $stmt -> fetchAll();
+            
+        }else{
+
+            
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC");
+            $stmt ->execute();
+            return $stmt -> fetchAll();
+            
+
+        }
+
+        $stmt -> close();
+        $stmt = null;
+    }
+
+    /*=============================================
         Consulta para Mostrar La Info Producto
     =============================================*/
 

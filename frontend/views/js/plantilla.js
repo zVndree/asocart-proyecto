@@ -21,7 +21,7 @@ $(function () {
 });
 
 $.ajax({
-	url: "ajax/plantilla.ajax.php",
+	url: rutaOculta+"ajax/plantilla.ajax.php",
 	success: function (respuesta) {
 		var colorFondo = JSON.parse(respuesta).colorFondo;
 		var colorTexto = JSON.parse(respuesta).colorTexto;
@@ -61,9 +61,9 @@ $(".modal").on("hidden.bs.modal", function () {
 	/* $(".alert").remove();  */ //lo utilice para borrar la clase alert de mensaje de duplicidad
 });
 
-/*==================
-	Migas de pan 
-==================*/
+/*===========================
+	Migas de pan BREADCRUMBS
+============================*/
 
 var pag_activa = $(".pag_activa").html();
 
@@ -73,4 +73,17 @@ if (pag_activa != null) {
 	$(".pag_activa").html(reg_pag_activa);
 
 }
+
+/*===========================
+	ENLACES PAGINACION
+============================*/
+
+var url = window.location.href;
+
+var indice = url.split("/");
+
+$("#item"+indice.pop()).addClass("active");
+
+
+
 
