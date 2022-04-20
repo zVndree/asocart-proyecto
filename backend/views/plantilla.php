@@ -1,3 +1,10 @@
+<?php 
+
+session_start();
+$plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -23,6 +30,10 @@
   <link rel="stylesheet" href="views/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="views/dist/css/skins/skin-blue.min.css">
   <link rel="stylesheet" href="views/plugins/iCheck/square/blue.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="views/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="views/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
@@ -30,6 +41,7 @@
   ESTILOS PERSONALIZADOS 
   ========================-->
   <link rel="stylesheet" href="views/dist/css/style.css">
+  <link rel="stylesheet" href="views/css/plantilla.css">
   <!--=======================
   PLUGINS DE JAVASCRIPT
   ========================-->
@@ -46,6 +58,11 @@
   <script src="views/bower_components/raphael/raphael.min.js"></script>
     <!-- jQuery Knob Chart -->
   <script src="views/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <script src="views/plugins/sweetalert2/sweetalert2.all.js"></script>
+  <!-- bootstrap color picker https://farbelous.github.io/bootstrap-colorpicker/v2/-->
+  <script src="views/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <!-- bootstrap datetimepicker http://bootstrap-datepicker.readthedocs.io-->
+  <script src="views/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 </head>
 
 <body class="hold-transition sidebar-collapse skin-blue sidebar-mini fondo">
@@ -55,8 +72,6 @@
     -------------------------------->
 
   <?php
-
-  session_start();
 
   if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"] === "ok") {
 
@@ -80,7 +95,7 @@
 
     if (isset($_GET["ruta"])) {
       if ($_GET["ruta"] == "inicio"
-        || $_GET["ruta"] == "comercio"
+        || $_GET["ruta"] == "ajustes"
         || $_GET["ruta"] == "salir") {
 
         include "modulos/" . $_GET["ruta"] . ".php";
@@ -99,7 +114,12 @@
   }
   ?>
 
+  <!--=======================
+  JS PERSONALIZADOS 
+  ========================-->
+
   <script src="views/js/plantilla.js"></script>
+  <script src="views/js/gestorAjustes.js"></script>
 
 </body>
 

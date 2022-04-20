@@ -21,7 +21,7 @@ $(function () {
 });
 
 $.ajax({
-	url: rutaOculta+"ajax/plantilla.ajax.php",
+	url: rutaOculta + "ajax/plantilla.ajax.php",
 	success: function (respuesta) {
 		var colorFondo = JSON.parse(respuesta).colorFondo;
 		var colorTexto = JSON.parse(respuesta).colorTexto;
@@ -68,10 +68,8 @@ $(".modal").on("hidden.bs.modal", function () {
 var pag_activa = $(".pag_activa").html();
 
 if (pag_activa != null) {
-	
 	var reg_pag_activa = pag_activa.replace(/-/g, " ");
 	$(".pag_activa").html(reg_pag_activa);
-
 }
 
 /*===========================
@@ -82,8 +80,4 @@ var url = window.location.href;
 
 var indice = url.split("/");
 
-$("#item"+indice.pop()).addClass("active");
-
-
-
-
+$("#item" + indice.pop()).addClass("active");

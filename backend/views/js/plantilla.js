@@ -9,3 +9,6 @@ $('.knob').knob();
 
 /*sidebar menu */
 $('.sidebar-menu').tree();
+
+//Colorpicker
+$('.my-colorpicker').colorpicker();

@@ -1,0 +1,114 @@
+:root {
+	--amarillo: #ffbc42;
+	--primary: #c3b395;
+	--dark: #212121;
+	--red: #eb3127;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--cafe_claro: #5a3f30;
+	--cafe_oscuro: #3d1f1d;
+	--cafe_naranja: #ad613e;
+	--combu_green: #273c2c;
+	--dark_blue: #040926;
+	--dark_blue2: #172c59;
+	--blanco: #f8f5fe;
+	--gris: #747474;
+	--gris2: #8c8377;
+} 
+/*========================
+Redes Sociales
+========================*/
+
+.redSocial {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/*========================
+Facebook
+========================*/
+
+.facebookBlanco{
+	color:white;
+	background: var(--dark);
+}
+
+.facebookNegro{
+	color: var(--dark);
+}
+
+.facebookColor{
+	color:white;
+	background:#46639f;
+}
+
+.facebookPng{
+	color:white;
+}
+/*========================
+Youtube
+========================*/
+
+.youtube-playColor{
+	color:white;
+	background: #F10002;
+}
+
+.youtube-playBlanco{
+	color:white;
+	background: var(--dark);
+}
+
+.youtube-playNegro{
+	color: var(--dark);
+}
+
+.youtube-playPng{
+	color: white;
+}
+/*========================
+Instagram
+========================*/
+
+.instagramColor{
+	color:white;
+	background:linear-gradient(45deg, #fca925, #ee1d5f,  #6350a2);
+
+}
+
+.instagramBlanco{
+	color:white;
+	background: var(--dark);
+}
+
+.instagramNegro{
+	color: var(--dark);
+}
+
+.instagramPng{
+	color: white;
+}
+/*========================
+Pinterest
+========================*/
+
+.pinterestBlanco {
+	color: white;
+    background: var(--dark);
+}
+
+.pinterestNegro {
+	color: var(--dark);
+}
+
+.pinterestColor {
+	color: white;
+	background: #b7081b;
+}
+
+.pinterestPng {
+	color: white;
+}

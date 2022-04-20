@@ -446,7 +446,7 @@ Responsive Configuration
 
 	#top,
 	.registro {
-		border-top: 1px solid var(--dark);
+		border-bottom: 1px solid var(--dark);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -466,19 +466,14 @@ Responsive Configuration
 		padding-bottom: 10px;
 	}
 
-	.navbar-footer-content
-{
+	.navbar-footer-content{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
 	flex-direction: row;
-}
-
-	#correo {
-		display: none;
 	}
 
-	#telefono {
+	#contacto {
 		display: none;
 	}
 

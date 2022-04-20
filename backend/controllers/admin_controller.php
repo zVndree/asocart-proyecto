@@ -26,7 +26,7 @@ class controllerAdmin
 
                     $_SESSION["validarSesionBackend"] = "ok";
                     $_SESSION["id"] = $respuesta["id"];
-                    $_SESSION["nombre"] = $respuesta["nombre"];
+                    $_SESSION["name"] = $respuesta["name"];
                     $_SESSION["foto"] = $respuesta["foto"];
                     $_SESSION["email"] = $respuesta["email"];
                     $_SESSION["password"] = $respuesta["password"];

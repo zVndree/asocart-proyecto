@@ -43,22 +43,39 @@ Top
 						$jsonRedesSociales = json_decode($social["redesSociales"], true);
 
 						foreach ($jsonRedesSociales as $key => $value) {
-							/* var_dump($key,$value["red"]); */
 
-							echo '<li>
-								<a href="' . $value["url"] . '" target="_blank">
-									<i class="fa ' . $value["red"] . ' red_social ' . $value["estilo"] . '" aria-hidden="true"></i>
-								</a>
-							</li>';
+							if ($value["activo"] != 0) {
+								
+								/* var_dump($key,$value["red"]); */
+
+								echo '<li>
+									<a href="' . $value["url"] . '" target="_blank">
+										<i class="fa ' . $value["red"] . ' ' . $value["estilo"] . ' redSocial"></i>
+									</a>
+								</li>
+								
+								';
+
+							}
+						}
+
+						$jsonContacto = json_decode($social["contacto"], true);
+
+						foreach ($jsonContacto as $key => $value) {
+							
+							/* if ($value["activo"] != 0) { */
+								
+								echo '
+								<li>
+									<a href="' . $value["url"]. '" target="_blank">
+									<i class="fa ' . $value["icono"] .'" aria-hidden="true"></i> 
+									<span id="contacto"> ' .$value["contacto"]. '</span> </a>
+								</li>';
+							/* } */
 						}
 
 						?>
-						<li>
-							<a href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> <span id="telefono"><?php echo  $social["celular"]; ?></span> </a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="correo"><?php echo  $social["correo"];  ?></span> </a>
-						</li>
+
 					</ul>
 				</div>
 
@@ -263,8 +280,9 @@ Header
 			======================================-->
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-1 text-center" id="deseos">
 				<a href="#">
-					<i style="color:<?php echo $social["barTop"] ?>" class="fa fa-heart">
-						<strong id="favoritos">Mis favoritos</strong>
+				<strong style="color: <?php echo $social["colorTexto"]?>;" id="favoritos"> Mis favoritos </strong>
+					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-heart">
+						
 						<!-- <span class="cantidad_deseos"></span> -->
 					</i>
 				</a>
@@ -274,7 +292,9 @@ Header
 			======================================-->
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
 				<a href="#">
-					<i style="color:<?php echo $social["barTop"] ?>" class="fa fa-shopping-basket" aria-hidden="true"><strong id="items"> Items</strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span></i>
+				<strong style="color: <?php echo $social["colorTexto"]?>;" id="items"> Items </strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span>
+					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-shopping-basket" aria-hidden="true">
+					</i>
 				</a>
 
 			</div>
@@ -494,7 +514,7 @@ VENTANA MODAL REGISTRO
 					$registro->ctr_registro_usuarios();
 					?>
 
-					<input type="submit" class="btn btn-default btn-block back_color" value="ENVIAR" style="font-weight: bold;">
+					<input type="submit" class="btn btn-default btn-block back_color" value="REGISTRARSE" style="font-weight: bold;">
 					<!-- <div class="col-xs-12">
 						<a href="#modal_registro" class="btn btn-default btn-block back_color" style="margin: 8px 0px;" role="button" aria-pressed="true" onclick="registro_user();"><strong>ENVIAR</strong></a>
 					</div> -->

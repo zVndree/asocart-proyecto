@@ -1,22 +1,36 @@
 [
 	{
 		"red": "fa-facebook",
-		"estilo": "facebook_blanco",
+		"estilo": "facebookBlanco",
 		"url": "https://www.facebook.com/Artesniasgirardot"
 	},
 	{
 		"red": "fa-youtube",
-		"estilo": "youtube_blanco",
+		"estilo": "youtubeBlanco",
 		"url": "http://youtube.com/"
 	},
 	{
 		"red": "fa-instagram",
-		"estilo": "instagram_blanco",
+		"estilo": "instagramBlanco",
 		"url": "http://instagram.com/"
 	},
 	{
 		"red": "fa-pinterest",
-		"estilo": "pinterest_blanco",
+		"estilo": "pinterestBlanco",
 		"url": "htpp://pinterest.com/"
+	}
+],
+[
+	{
+		"nombre": "Celular",
+		"icono": "fa-phone",
+		"contacto": "3222256287",
+		"url": "https://www.apiwhatsaap"
+	},
+	{
+		"nombre": "Correo",
+		"icono": "fa-envelope",
+		"contacto": "art-girardot22@gmail.com",
+		"url": "https://www.correo.com"
 	}
 ]

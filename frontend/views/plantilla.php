@@ -22,8 +22,8 @@
 
 	$server = Ruta::ctr_ruta_servidor();
 
-	$icono = ControllerPlantilla::ctrEstiloPlantilla();
-	echo '<link rel="icon" href="' . $server . $icono["icono"] . '" >';
+	$plantilla = ControllerPlantilla::ctrEstiloPlantilla();
+	echo '<link rel="icon" href="' . $server . $plantilla["icono"] . '" >';
 
 	/*=============================================
 	Ruta fija del proyecto(estatica) LADO CLIENTE
