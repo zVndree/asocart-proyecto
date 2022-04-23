@@ -16,7 +16,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                 foreach ($servicios as $key => $value) {
                     echo '
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="item_service bar_service"  style="' . $plantilla["colorFondo"] . '"> 
+                            <div class="item_service bar_service"  style="' . $plantilla["colorFondo"] . '">
                                 <div class="sv_icon">
                                     <img src="' . $server . $value["icono"] . '">
                                 </div>
@@ -73,12 +73,12 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
             $valor = null;
             $vistas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope);
         }
-        
+
         /* var_dump($productos); */
 
         $modulos = array($ventas, $vistas);
-        
-        for ($i=0; $i < count($titulos_modulos) ; $i++) { 
+
+        for ($i=0; $i < count($titulos_modulos) ; $i++) {
             echo '
             <div class="container-fluid productos">
                 <div class="container">
@@ -115,7 +115,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                     <ul class="list_product">';
 
                         foreach ($modulos[$i] as $key => $value) {
-                            
+
                             echo '
                             <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">
                                 <figure>
@@ -139,7 +139,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                                     if ($value["oferta"] != 0) {
                                                         echo '<span class="label label-warning fontSize">'.$value["descuento_oferta"].'% off</span> ';
                                                     }
-                                                    
+
                                             echo '</a>
                                             </small>
                                         </h4>
@@ -160,7 +160,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                             echo '<h3><small><strong  style="color:#474747;">COP $'.$value["precio"].'</strong></samll></h3><br>';
                                         }
 
-                                            
+
                                         echo'</div>
 
                                         <div class="col-xs-6 enlaces">
@@ -184,7 +184,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
                                                     }
                                                 }
-                                                    
+
                                                 echo'<a href="'.$value["ruta"].'" class="pixelProducto">
                                                     <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
                                                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -196,7 +196,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                 </div>
                             </li>';
                         }
-                
+
                 echo '</ul>
                 </div>
             </div>';

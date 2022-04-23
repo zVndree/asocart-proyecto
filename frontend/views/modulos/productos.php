@@ -298,8 +298,8 @@ Listar Productos
 
                         /*================================================
                         LOS BOTONES DE LA MITAD DE PAGINAS HACIA ATRAS
-                        =================================================*/ 
-                        
+                        =================================================*/
+
                         else if (
                             $rutas[1] != $pag_products && $rutas[1] != 1
                             && $rutas[1] >= ($pag_products / 2)
@@ -331,7 +331,7 @@ Listar Productos
                         /*================================================
                         LOS BOTONES DE LAS ULTIMAS 4 PÁGINAS Y LA FIRST PÁG
                         =================================================*/ 
-                        
+
                         else {
 
                             $numPagActual = $rutas[1];

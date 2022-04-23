@@ -78,7 +78,7 @@ class modeloProductos
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetchAll();
-            
+
         }else{
 
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC LIMIT $base, $tope");
@@ -104,14 +104,14 @@ class modeloProductos
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt ->execute();
             return $stmt -> fetchAll();
-            
+
         }else{
 
-            
+
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC");
             $stmt ->execute();
             return $stmt -> fetchAll();
-            
+
 
         }
 

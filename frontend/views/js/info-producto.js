@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------------------- */
+/*                                info producto                               */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------- carrusel ----------------- */
+
+$(".flexslider").flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+})
+
+/* ------------- captura de indice ------------ */
+
+$(".flexslider ul li img").click(function(){
+
+	var capturaIndice = $(this).attr("value");
+
+	$(".infoproducto figure.visor img").hide();
+
+	$("#lupa"+capturaIndice).show();
+})
+
+/* ---------------- efecto zoom --------------- */
+
+$(".flexslider ul li img").mouseover(function (event) { 
+
+    var capturaImg = $(this).attr("src");
+    $(".lupa img").attr("src", capturaImg);
+    $(".lupa").fadeIn("fast");
+
+    $(".lupa").css({
+
+		"height":$(".visorImg").height()+"px",
+		"background":"#eee",
+		"width":"100%"
+
+	})
+    
+});
+
+/* --------------- ocultar zomm --------------- */
+
+$(".infoproducto figure.visor img").mouseout(function(event){
+
+	$(".lupa").fadeOut("fast");
+
+})
+
+/* ------ capturar la pocicion del mouse ------ */
+
+$(".infoproducto figure.visor img").mousemove(function(event){
+
+	var posX = event.offsetX;
+	var posY = event.offsetY;
+
+	$(".lupa img").css({
+
+		"margin-left":-posX+"px",
+		"margin-top":-posY+"px"
+
+	})
+
+})

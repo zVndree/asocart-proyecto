@@ -2127,3 +2127,60 @@ Stack trace:
 [15-Apr-2022 23:23:55 America/Bogota] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 79
 [15-Apr-2022 23:23:55 America/Bogota] PHP Warning:  Undefined array key "correo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 82
 [18-Apr-2022 00:59:07 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 210
+[21-Apr-2022 13:27:42 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 13:56:58 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 14:30:59 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 14:44:33 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12
+[21-Apr-2022 14:44:40 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12
+[21-Apr-2022 14:45:24 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12

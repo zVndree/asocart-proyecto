@@ -45,6 +45,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/plugins/sweetalert.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>views/css/plugins/ionicons.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>views/css/plugins/flexslider.css">
+
 	<!--=====================================
 	Google Fonts  
 	======================================-->
@@ -61,6 +63,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/evento.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/perfil.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/info-producto.css">
+
 
 
 	<!--=====================================
@@ -71,6 +75,7 @@
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.scrollUp.js"></script>
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/sweetalert.min.js"></script>
+	<script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.flexslider.js"></script>
 
 
 </head>
@@ -186,6 +191,8 @@
 	<script src="<?php echo $url; ?>views/js/productos.js"></script>
 	<script src="<?php echo $url; ?>views/js/registro_fb.js"></script>
 	<script src="<?php echo $url; ?>views/js/buscador.js"></script>
+	<script src="<?php echo $url; ?>views/js/info-producto.js"></script>
+
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
