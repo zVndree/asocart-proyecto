@@ -11,7 +11,7 @@ if (isset($_SESSION["validar_sesion"])) {
 	if ($_SESSION["validar_sesion"] == "ok") {
 
 		echo '<script>
-		
+
 			localStorage.setItem("usuario","' . $_SESSION["id"] . '");
 
 		</script>';
@@ -45,7 +45,7 @@ Top
 						foreach ($jsonRedesSociales as $key => $value) {
 
 							if ($value["activo"] != 0) {
-								
+
 								/* var_dump($key,$value["red"]); */
 
 								echo '<li>
@@ -53,7 +53,7 @@ Top
 										<i class="fa ' . $value["red"] . ' ' . $value["estilo"] . ' redSocial"></i>
 									</a>
 								</li>
-								
+
 								';
 
 							}
@@ -62,13 +62,13 @@ Top
 						$jsonContacto = json_decode($social["contacto"], true);
 
 						foreach ($jsonContacto as $key => $value) {
-							
+
 							/* if ($value["activo"] != 0) { */
-								
+
 								echo '
 								<li>
 									<a href="' . $value["url"]. '" target="_blank">
-									<i class="fa ' . $value["icono"] .'" aria-hidden="true"></i> 
+									<i class="fa ' . $value["icono"] .'" aria-hidden="true"></i>
 									<span id="contacto"> ' .$value["contacto"]. '</span> </a>
 								</li>';
 							/* } */
@@ -111,7 +111,7 @@ Top
 														' . $_SESSION["nombre"] . '
 													</a>
 												</li>
-												
+
 												';
 									} else {
 
@@ -126,10 +126,10 @@ Top
 													<ul class="col-xs-12 dropdown-menu menu" style="background:'.$social["colorFondo"].';">
 														<li>
 															<div class="navbar-login">
-														
+
 																<div class="col-md-10 text-center">
 																	<img src="' . $server . 'views/img/usuarios/default/user_icon.png" width="80px" height="80px">
-									
+
 																	<div class="col-md-8">
 																		<p class="text-left" style="color:#212121; font-size: 16px;"><strong>' . $_SESSION["nombre"] . '</strong></p>
 																		<p class="text-muted text-left small">' . $_SESSION["email"] . '</p>
@@ -175,10 +175,10 @@ Top
 													<ul class="col-xs-12 dropdown-menu menu" style="background:'.$social["colorFondo"].';">
 														<li>
 															<div class="navbar-login">
-														
+
 																<div class="col-md-10 text-center">
 																	<img class="img-circle" src="'.$_SESSION["foto"].'" width="80px" height="80px">
-									
+
 																	<div class="col-md-8">
 																		<p class="text-left" style="color:#212121; font-size: 16px;"><strong>' . $_SESSION["nombre"] . '</strong></p>
 																		<p class="text-muted text-left small">' . $_SESSION["email"] . '</p>
@@ -282,13 +282,13 @@ Header
 				<a href="#">
 				<strong style="color: <?php echo $social["colorTexto"]?>;" id="favoritos"> Mis favoritos </strong>
 					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-heart">
-						
+
 						<!-- <span class="cantidad_deseos"></span> -->
 					</i>
 				</a>
 			</div>
 			<!--=====================================
-			Carrito de compras 
+			Carrito de compras
 			======================================-->
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
 				<a href="#">
@@ -330,11 +330,11 @@ Header
 					echo '<li>
 						<a href='. $url . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
 						</a>
-						
+
 					</li>';
 				}
 				echo '</ul>
-							
+
 						</div>';
 			}
 			?>

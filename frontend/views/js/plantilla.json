@@ -2,22 +2,26 @@
 	{
 		"red": "fa-facebook",
 		"estilo": "facebookBlanco",
-		"url": "https://www.facebook.com/Artesniasgirardot"
+		"url": "https://www.facebook.com/Artesniasgirardot",
+		"activo": 1
 	},
 	{
 		"red": "fa-youtube",
 		"estilo": "youtubeBlanco",
-		"url": "http://youtube.com/"
+		"url": "http://youtube.com/",
+		"activo": 1
 	},
 	{
 		"red": "fa-instagram",
 		"estilo": "instagramBlanco",
-		"url": "http://instagram.com/"
+		"url": "http://instagram.com/",
+		"activo": 1
 	},
 	{
 		"red": "fa-pinterest",
 		"estilo": "pinterestBlanco",
-		"url": "htpp://pinterest.com/"
+		"url": "htpp://pinterest.com/",
+		"activo": 1
 	}
 ],
 [
@@ -33,4 +37,4 @@
 		"contacto": "art-girardot22@gmail.com",
 		"url": "https://www.correo.com"
 	}
-]
+],

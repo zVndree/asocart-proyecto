@@ -26,9 +26,9 @@ Error 404
             <div class="col-xs-12 text-center">
                 <a href="'.$url.'" class="btn btn-default back_color"><i class="fa fa-home"></i> <strong>Regresar al Inicio</strong></a>
             </div>
-        </div>  
+        </div>
             ';
-        
+
         ?>
     </div>
 </div>

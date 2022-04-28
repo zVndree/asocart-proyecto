@@ -2127,3 +2127,306 @@ Stack trace:
 [15-Apr-2022 23:23:55 America/Bogota] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 79
 [15-Apr-2022 23:23:55 America/Bogota] PHP Warning:  Undefined array key "correo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 82
 [18-Apr-2022 00:59:07 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\usuarios.controller.php on line 210
+[21-Apr-2022 13:27:42 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 13:56:58 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 14:30:59 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(10): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\conexion.php on line 14
+[21-Apr-2022 14:44:33 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12
+[21-Apr-2022 14:44:40 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12
+[21-Apr-2022 14:45:24 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.plantilla' doesn't exist in engine in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:12
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(12): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(25): modeloPlantilla::mdlEstiloPlantilla('plantilla')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(25): ControllerPlantilla::ctrEstiloPlantilla()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 12
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:27:01 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:27:01 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:27:01 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:27:42 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:27:42 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:27:42 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:29:21 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:29:21 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:29:21 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:21 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:21 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:51:21 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:36 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:36 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:51:36 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:40 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:51:40 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:51:40 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:53:32 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:53:32 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:53:32 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:55:03 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:55:03 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:55:03 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:55:03 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:55:09 America/Bogota] PHP Warning:  Undefined array key "contacto" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:55:09 America/Bogota] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 62
+[27-Apr-2022 14:55:09 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 64
+[27-Apr-2022 14:55:09 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:57:30 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 14:57:36 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.slides' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php:6
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php(6): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\slide.Controller.php(6): modelo_slide::mld_mostrar_slide('slides')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php(13): Controller_slide::ctr_mostrar_slide()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(173): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\slide.modelo.php on line 6
+[27-Apr-2022 15:18:56 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.servicios' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:63
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(63): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(38): modeloProductos::mdlListarServicios('servicios')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(14): controladorProductos::ctrListarServicios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(174): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 63
+[27-Apr-2022 15:19:02 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.servicios' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:63
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(63): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(38): modeloProductos::mdlListarServicios('servicios')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(14): controladorProductos::ctrListarServicios()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(174): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 63
+[27-Apr-2022 15:21:14 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.productos' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:85
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(49): modeloProductos::mdl_mostrar_productos('productos', 'ventas', NULL, NULL, 0, 4)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(174): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 85
+[27-Apr-2022 15:21:20 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.productos' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:85
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(49): modeloProductos::mdl_mostrar_productos('productos', 'ventas', NULL, NULL, 0, 4)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(174): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 85
+[27-Apr-2022 19:40:12 America/Bogota] PHP Warning:  Undefined array key "right" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php on line 37
+[27-Apr-2022 19:50:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php on line 40
+[27-Apr-2022 19:50:29 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\slide.php on line 40
+[27-Apr-2022 19:56:37 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.artesanos' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php:15
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\directorio.controller.php(10): modeloArtesanos::mdlListarArtesanos('artesanos', 'id_artesano')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\directorio.php(21): ControladorDirectorio::ctrListarArtesanos('id_artesano')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(158): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php on line 15
+[28-Apr-2022 16:39:30 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:30 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:30 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:30 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:32 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:58 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:58 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:58 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:58 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:59 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:59 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:59 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:39:59 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:47:54 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:47:54 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:47:54 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:47:54 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:48:43 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:48:43 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:48:43 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:48:43 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47

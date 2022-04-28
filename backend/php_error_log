@@ -89,3 +89,14 @@
 [15-Apr-2022 23:47:05 America/Bogota] PHP Warning:  Undefined array key "numero" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 182
 [15-Apr-2022 23:48:51 America/Bogota] PHP Warning:  Undefined array key "numero" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 184
 [15-Apr-2022 23:49:26 America/Bogota] PHP Warning:  Undefined array key "numero" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 185
+[28-Apr-2022 16:41:17 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.administradores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\backend\models\admin_model.php:15
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\admin_model.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\admin_controller.php(22): model_admin::mdl_mostrar_admin('administradores', 'email', 'admin@gmail.com')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\login.php(28): controllerAdmin->ctr_ingreso_admin()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(23): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\admin_model.php on line 15
+[28-Apr-2022 17:01:29 America/Bogota] PHP Warning:  Undefined array key "bar_down" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 50

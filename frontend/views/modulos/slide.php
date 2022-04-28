@@ -64,6 +64,7 @@ SLIDE
 				</div>
 			</div>
 		</section>
+
 	</div>
 	<!-- paginacion slides -->
 

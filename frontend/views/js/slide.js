@@ -115,7 +115,7 @@ $(document).ready(function () {
 	BOTON SUBIR
 	=============================*/
 
-const toTop = document.querySelector(".btn-up-top");
+/* const toTop = document.querySelector(".btn-up-top");
 window.addEventListener("scroll", () =>{
 
 	if (window.pageYOffset > 500) {
@@ -125,4 +125,4 @@ window.addEventListener("scroll", () =>{
 	}else{
 		toTop.classList.remove("active");
 	}
-})
+}) */
