@@ -69,7 +69,7 @@ Top
 								<li>
 									<a href="' . $value["url"]. '" target="_blank">
 									<i class="fa ' . $value["icono"] .'" aria-hidden="true"></i>
-									<span id="contacto"> ' .$value["contacto"]. '</span> </a>
+									<span class="lineas" id="contacto"> ' .$value["contacto"]. '</span> </a>
 								</li>';
 							/* } */
 						}
@@ -215,9 +215,9 @@ Top
 										<li><a href="' . $url . 'salir">Salir</a></li>---->';
 							}
 						} else {
-							echo '<li><a href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
+							echo '<li ><a id="ing" href="#modal_ingreso" data-toggle="modal">Ingresar</a></li>
 									<li>|</li>
-									<li><a href="#modal_registro" data-toggle="modal">Registrarse</a></li>';
+									<li><a id="reg" href="#modal_registro" data-toggle="modal">Registrarse</a></li>';
 						}
 						?>
 
@@ -266,7 +266,7 @@ Header
 				<div class="input-group col-lg-8 col-md-8 col-sm-7 col-xs-10" id="buscador">
 					<input type="search" name="buscar" class="form-control" placeholder="¿Qué estás buscando?">
 					<span class="input-group-btn">
-						<a href="<?php echo $url; ?>buscador">
+						<a href="<?php echo $url; ?>buscador/1/recientes">
 							<button class="btn btn-default back_color" type="submit">
 								<i class="fa fa-search"></i>
 							</button>
@@ -310,32 +310,39 @@ Header
 			$valor = null;
 			$categorias = controladorProductos::ctrListarCategorias($item, $valor);
 
+			
+
 			foreach ($categorias as $key => $value) {
+
+				if ($value["estado"] != 0) {
+					# code...
+				
 				/* $icon_categoria = controladorProductos::ctrListarCategorias($item, $valor);
 				$json_icon_categoria = json_decode($icon_categoria["icono"], true); */
 
-				echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
-									<h4>
-										<a href="'. $url . $value["ruta"] . '" class="pixel_categorias">' . $value["nombre"] . '
-										<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</h4>
-									<br>
-									<ul>';
-				$item = "id_categoria";
-				$valor = $value["id"];
-				$subcategorias = controladorProductos::ctrListarSubcategorias($item, $valor);
+					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+										<h4>
+											<a href="'. $url . $value["ruta"] . '" class="pixel_categorias color-categoria">' . $value["nombre"] . '
+											<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+										</h4>
+										<br>
+										<ul>';
+					$item = "id_categoria";
+					$valor = $value["id"];
+					$subcategorias = controladorProductos::ctrListarSubcategorias($item, $valor);
 
-				/* var_dump($subcategorias); */
-				foreach ($subcategorias as $key => $value) {
-					echo '<li>
-						<a href='. $url . $value["ruta"] . ' class="pixel_sub_categorias">' . $value["nombre"] . '
-						</a>
+					/* var_dump($subcategorias); */
+					foreach ($subcategorias as $key => $value) {
+						echo '<li>
+							<a href='. $url . $value["ruta"] . ' class="pixel_sub_categorias color-subcategorias">' . $value["nombre"] . '
+							</a>
 
-					</li>';
+						</li>';
+					}
+					echo '</ul>
+
+					</div>';
 				}
-				echo '</ul>
-
-						</div>';
 			}
 			?>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 all_categorias">

@@ -107,13 +107,17 @@ ol {
 	padding: 0px;
 }
 
+a:hover{
+	color: #273c2c;
+}
+
 a:active,
 a:focus,
 a:visited,
-a:hover,
 a:link {
 	list-style: none;
 	text-decoration: none;
+	
 }
 
 /* .form-control {

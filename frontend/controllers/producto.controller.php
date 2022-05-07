@@ -43,10 +43,10 @@ class controladorProductos
     Mostrar Productos
     ========================*/
 
-    static public function ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope){
+    static public function ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope, $modo){
 
         $tabla = "productos";
-        $respuesta = modeloProductos::mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope);
+        $respuesta = modeloProductos::mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope, $modo);
         return $respuesta;
     }
 
@@ -72,5 +72,29 @@ class controladorProductos
         $respuesta = modeloProductos::mdl_mostrar_info_productos($tabla, $item, $valor);
         return $respuesta;
 
+    }
+
+    /*========================
+    Buscador
+    ========================*/
+
+    static public function ctrBuscarProductos($busqueda, $ordenar, $modo, $base, $tope){
+
+        $tabla = "productos";
+
+        $respuesta = modeloProductos::mdlBuscarProductos($tabla, $busqueda, $ordenar, $modo, $base, $tope);
+        return $respuesta;
+
+    }
+
+    /*========================
+    Listar Productos Buscador
+    ========================*/
+
+    static public function ctrListarProductosBusqueda($busqueda){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdlListarProductos($tabla, $busqueda);
+        return $respuesta;
     }
 }

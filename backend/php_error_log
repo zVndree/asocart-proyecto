@@ -100,3 +100,5 @@ Stack trace:
 #6 {main}
   thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\admin_model.php on line 15
 [28-Apr-2022 17:01:29 America/Bogota] PHP Warning:  Undefined array key "bar_down" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 50
+[28-Apr-2022 23:11:41 America/Bogota] PHP Warning:  include(modulos/categorias.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 112
+[28-Apr-2022 23:11:41 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/categorias.php' for inclusion (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 112

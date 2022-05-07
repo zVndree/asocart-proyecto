@@ -32,8 +32,6 @@
 	$url = Ruta::ctrRuta();
 	/* var_dump($url); */
 
-
-
 	?>
 
 	<!--=====================================
@@ -64,8 +62,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/perfil.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/info-producto.css">
-
-
 
 	<!--=====================================
 	Plugins Javascript
@@ -116,7 +112,7 @@
 
 		$ruta_categorias = controladorProductos::ctrListarCategorias($item, $valor);
 
-		if (is_array($ruta_categorias) && $rutas[0] == $ruta_categorias["ruta"]) {
+		if (is_array($ruta_categorias) && $rutas[0] == $ruta_categorias["ruta"] && $ruta_categorias["estado"] == 1) {
 
 			$ruta = $rutas[0];
 		}
@@ -128,7 +124,7 @@
 
 		foreach ($ruta_subcategoria as $key => $value) {
 
-			if ($rutas[0] == $value["ruta"]) {
+			if ($rutas[0] == $value["ruta"] && $value["estado"] == 1) {
 				$ruta = $rutas[0];
 			}
 		}
@@ -139,7 +135,7 @@
 
 		$ruta_productos = controladorProductos::ctr_mostrar_info_productos($item, $valor);
 
-		if (is_array($ruta_productos) && $rutas[0] == $ruta_productos["ruta"]) {
+		if (is_array($ruta_productos) && $rutas[0] == $ruta_productos["ruta"] && $ruta_productos["estado"] == 1) {
 			$info_producto = $rutas[0];
 		}
 
@@ -150,6 +146,7 @@
 
 		if ($ruta != null || $rutas[0] == "lo-mas-vendido" || $rutas[0] == "lo-mas-visto") {
 			include "modulos/productos.php";
+			
 		} else if ($info_producto != null) {
 
 			include "modulos/info_product.php";

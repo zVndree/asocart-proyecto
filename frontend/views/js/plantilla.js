@@ -29,9 +29,117 @@ $.ajax({
 		var bar_down = JSON.parse(respuesta).bar_down;
 		var textoSuperior = JSON.parse(respuesta).textoSuperior;
 
-		$(".back_color, .back_color a").css({
+		$(".back_color, .back_color  a").css({
 			background: colorFondo,
 			color: colorTexto,
+		});
+
+		/* $("a").hover(function(){
+			$(this).css({color: colorFondo,});
+		}, function() {
+			$( this ).css( {color: colorFondo} ).last().remove();
+		}
+		); */
+
+		/* $("a").hover(function(){
+			$(this).css({color: colorFondo,});
+		}, function() {
+			$( this ).removeClass( "a" );
+		}
+		); */
+
+		/* $("a").on("mouseover", function () {
+			$(this).css({color: colorFondo,});
+		}); */
+
+		/*$("a").on({
+			mouseenter: function () {
+				$(this).css({color: colorFondo,});
+			},
+			mouseleave: function () {
+				/* $(this).removeAttr("color"); 
+				$("a").val("");
+			}
+		});*/
+		/* 
+				$("a").on({
+					mouseenter: function () {
+						$(this).css({color: colorFondo,});
+					},
+					mouseleave: function () {
+						$(this).remove(color); 
+					
+					}
+				}) */
+
+/*=============================
+Efecto HOVER 
+=============================*/
+		
+		$(".lineas").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		});
+
+		$("#ing").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		});
+
+		$("#reg").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		});
+
+		$("#catalogo").hover(function () {
+			$(this).css({color: bar_down,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+		$("#favoritos").hover(function () {
+			$(this).css({color: colorFondo,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+		$("#items").hover(function () {
+			$(this).css({color: colorFondo,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+		$(".fa-bars").hover(function () {
+			$(this).css({color: bar_down,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+		$(".fa-search").hover(function () {
+			$(this).css({color: bar_down,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+	/* 	$(".fa-phone").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		}); */
+
+		$(".color-categoria").hover(function () {
+			$(this).css({color: bar_down,});
+		}, function () {
+			$(this).css({color: colorTexto});
+		});
+
+		$(".color-subcategorias").hover(function () {
+			$(this).css({color: bar_down,});
+		}, function () {
+			$(this).css({color: colorTexto});
 		});
 
 		$(".bar_top, .bar_top a").css({

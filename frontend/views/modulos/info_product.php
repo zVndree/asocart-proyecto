@@ -33,6 +33,14 @@ INFOPRODUCTOS
     <div class="container">
         <div class="row">
 
+            <?php
+
+                $item = "ruta";
+                $valor = $rutas[0];
+                $infoproducto = controladorProductos::ctr_mostrar_info_productos($item, $valor);
+                /* var_dump($infoproducto); */
+            ?>
+
             <!--=====================================
 			VISOR DE PRODUCTOS
 			======================================-->
@@ -89,7 +97,7 @@ INFOPRODUCTOS
             PRODUCTO
             ======================================-->
 
-            <div class="col-md-7 col-sm-6 col-xs-12">
+            <div class="col-md-7 col-sm-6 col-xs-12 product-area">
 
                 <!--=====================================
                 REGRESAR A LA TIENDA
@@ -118,16 +126,69 @@ INFOPRODUCTOS
                             Facebook
                         </p>
 
-
-
-
-
-
-
-
                     </ul>
                 </div>
 
+                <div class="clearfix"></div>
+
+
+                <!--=====================================
+                Espacio para el prodcto
+                ======================================-->
+                
+                <?php
+                    
+
+                    if ($infoproducto["oferta"] == 0) {
+
+                        if ($infoproducto["nuevo"] == 0) {
+                            
+                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'</h1>';
+
+                        }else{
+
+                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                            <br>
+
+                            <small>
+                                <span class="label label-warning">Nuevo</span>
+                            </small>
+                            
+                            </h1>';
+
+                        }
+
+                    }else{
+
+                        if ($infoproducto["nuevo"] == 0){
+
+                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                        
+                            <br>
+    
+                            <small>
+                                <span class="label label-warning">'.$infoproducto["descuento_oferta"].'% off</span>
+                            </small>
+                            
+                            </h1>';    
+
+                        }else{
+
+                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                        
+                            <br>
+    
+                            <small>
+                                <span class="label label-warning">'.$infoproducto["descuento_oferta"].'% off</span>
+                                <span class="label label-warning">Nuevo</span>
+                            </small>
+                            
+                            </h1>';  
+                        }
+
+                    }
+                ?>
+                
                 <!--=====================================
                 ZONA DE LUPA
                 ======================================-->

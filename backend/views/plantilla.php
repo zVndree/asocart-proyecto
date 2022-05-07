@@ -19,6 +19,7 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   PLUGINS CSS 
   ================== -->
 
+  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="views/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="views/bower_components/font-awesome/css/font-awesome.min.css">
@@ -34,6 +35,9 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <link rel="stylesheet" href="views/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="views/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
@@ -63,6 +67,11 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
   <!-- bootstrap datetimepicker http://bootstrap-datepicker.readthedocs.io-->
   <script src="views/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <!-- DataTables https://datatables.net/-->
+  <script src="views/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="views/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="views/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+  <script src="views/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
 </head>
 
 <body class="hold-transition sidebar-collapse skin-blue sidebar-mini fondo">
@@ -96,6 +105,9 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
     if (isset($_GET["ruta"])) {
       if ($_GET["ruta"] == "inicio"
         || $_GET["ruta"] == "ajustes"
+        || $_GET["ruta"] == "categorias"
+        || $_GET["ruta"] == "productos"
+        || $_GET["ruta"] == "usuarios"
         || $_GET["ruta"] == "salir") {
 
         include "modulos/" . $_GET["ruta"] . ".php";
@@ -120,6 +132,10 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
 
   <script src="views/js/plantilla.js"></script>
   <script src="views/js/gestorAjustes.js"></script>
+  <script src="views/js/gestorProductos.js"></script>
+  <script src="views/js/gestorCategorias.js"></script>
+  <script src="views/js/gestorUsuarios.js"></script>
+
 
 </body>
 

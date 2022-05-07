@@ -210,8 +210,18 @@ $("input[name='colorRedSocial']").on("ifChecked", function () {
 
 	if (color == "color") {
 		colorRed = "Color";
+		/* $(".redSocial").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		}); */
     }else if (color == "png"){
         colorRed = "Png";
+		/* $("redSocial").hover(function () {
+			$(this).css({color: colorTexto,});
+		}, function () {
+			$(this).css({color: bar_down});
+		}); */
 	} else if (color == "blanco") {
 		colorRed = "Blanco";
 	} else {

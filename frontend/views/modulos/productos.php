@@ -20,8 +20,8 @@ Banner publicitario
 </section>
 
 <!--======================
-    Barra de productos
-    =======================-->
+Barra de productos
+=======================-->
 
 <div class="container-fluid well well-sm barraProductos">
     <div class="container">
@@ -32,8 +32,12 @@ Banner publicitario
                         Ordenar Productos <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><strong>Más reciente</strong></a></li>
-                        <li><a href="#"><strong>Más antiguo</strong></a></li>
+                    <?php
+					
+                        echo '<li><a href="'.$url.$rutas[0].'/1/recientes">Más reciente</a></li>
+                                <li><a href="'.$url.$rutas[0].'/1/antiguos">Más antiguo</a></li>';
+
+                    ?>
 
                     </ul>
                 </div>
@@ -56,9 +60,9 @@ Listar Productos
             Breadcrumb migas de pan
             =======================-->
 
-            <ul class="breadcrumb fondoBreadcrumb lead text-uppercase">
+            <ul class="breadcrumb fondoBreadcrumb text-uppercase">
                 <li><a href="<?php echo $url; ?>">INICIO</a></li>
-                <li class="active pag_activa"><?php echo $rutas[0]; ?></li>
+                <li style="color:<?php echo $plantilla["colorFondo"]?>" class="active pag_activa"><?php echo $rutas[0]; ?></li>
             </ul>
 
 
@@ -68,17 +72,48 @@ Listar Productos
             LLAMADO DE PAGINACIÓN
             =============================================*/
 
-            if (isset($rutas[1]) && preg_match('/^[0-9]+$/', $rutas[1])) {
+            if(isset($rutas[1]) && preg_match('/^[0-9]+$/', $rutas[1])){
 
-                $base = ($rutas[1] - 1) * 12;
-                $tope = 12;
-            } else {
+				if(isset($rutas[2])){
 
-                $rutas[1] = 1;
-                /* print_r($rutas[0]); */
-                $base = 0;
-                $tope = 12;
-            }
+					if($rutas[2] == "antiguos"){
+
+						$modo = "ASC";
+						$_SESSION["ordenar"] = "ASC";
+
+					}else{
+
+						$modo = "DESC";
+						$_SESSION["ordenar"] = "DESC";
+
+					}
+
+				}else{
+
+					if(isset($_SESSION["ordenar"])){
+
+						$modo = $_SESSION["ordenar"];
+
+					}else{
+
+						$modo = "DESC";
+
+					}		
+
+				}
+
+				$base = ($rutas[1] - 1)*12;
+				$tope = 12;
+
+			}else{
+
+				$rutas[1] = 1;
+				$base = 0;
+				$tope = 12;
+				$modo = "DESC";
+				$_SESSION["ordenar"] = "DESC";
+
+			}
 
             /*=============================================
             LLAMADO DE PRODUCTOS DE CATEGORÍAS, SUBCATEGORÍAS Y DESTACADOS
@@ -102,10 +137,6 @@ Listar Productos
 
                 $categoria = controladorProductos::ctrListarCategorias($item1, $valor1);
 
-                if (is_array($categoria)) {
-                    /* var_dump($categoria["id"]); */
-                }
-
                 /*  var_dump(is_array($categoria["id"]));*/
                 if (!is_array($categoria)) {
                     $sub_categoria = controladorProductos::ctrListarSubcategorias($item1, $valor1);
@@ -118,7 +149,7 @@ Listar Productos
                 }
             }
 
-            $productos = controladorProductos::ctr_mostrar_productos($ordenar, $item2, $valor2, $base, $tope);
+            $productos = controladorProductos::ctr_mostrar_productos($ordenar, $item2, $valor2, $base, $tope, $modo);
 
             $list_products = controladorProductos::ctr_listar_productos($ordenar, $item2, $valor2);
 
@@ -140,18 +171,18 @@ Listar Productos
                     echo '
                             <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">
                                 <figure>
-                                    <a href="' . $value["ruta"] . '" class="pixelProducto">
+                                    <a href="'.$url.$value["ruta"] . '" class="pixelProducto">
                                         <img src="' . $server . $value["img_producto"] . '" class="img-responsive" alt="productos">
                                     </a>
                                 </figure>
 
-                                ' . $value["id"] . '
+                                <!-- ' . $value["id"] . ' ---->
 
                                 <div class="col-xs-12" id="info_down">
                                     <div class="product-grid">
                                         <h4>
                                             <small>
-                                                <a href="' . $value["ruta"] . '" class="pixelProducto">
+                                                <a href="' .$url. $value["ruta"] . '" class="pixelProducto">
                                                     <strong>' . $value["titulo"] . '</strong><br>
                                                     <span style="color:rgba(0,0,0,0)">-</span>';
 

@@ -8,28 +8,30 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 =======================-->
 <main class="et-main">
     <div class="services_inline_home">
-        <div class="row">
+        <div class="container-fluid">
             <div class="container">
-                <?php
-                $servicios = controladorProductos::ctrListarServicios();
+                <div class="row">
+                    <?php
+                    $servicios = controladorProductos::ctrListarServicios();
 
-                foreach ($servicios as $key => $value) {
-                    echo '
-                        <div class="col-lg-3 col-md-6 ">
-                            <div class="item_service bar_service"  style="' . $plantilla["colorFondo"] . '">
-                                <div class="sv_icon">
-                                    <img src="' . $server . $value["icono"] . '">
-                                </div>
-                                <div class="info">
-                                    <h2>' . $value["titulo"] . '</h2>
-                                    <p>' . $value["descripcion"] . '</p>
+                    foreach ($servicios as $key => $value) {
+                        echo '
+                            <div class="col-lg-4 col-md-4 ">
+                                <div class="item_service"  style="background-color:' . $plantilla["colorFondo"] . ';">
+                                    <div class="sv_icon">
+                                        <img src="' . $server . $value["icono"] . '">
+                                    </div>
+                                    <div class="info">
+                                        <h2>' . $value["titulo"] . '</h2>
+                                        <p>' . $value["descripcion"] . '</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        ';
-                }
-                ?>
+                            ';
+                    }
+                    ?>
 
+                </div>
             </div>
         </div>
     </div>
@@ -38,11 +40,11 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 =======================-->
     <section id="section2">
         <figure class="banner">
-            <img src="<?php echo $server ?>views/img/banner/default.jpg" class="img-responsive" width="100%">
+            <img src="<?php echo $server ?>views/img/banner/oferta-banner.png" class="img-responsive" width="100%">
             <div class="text_banner text_der">
                 <h1 style="color:#eeeeee">Ofertas Especiales</h1>
                 <h2 style="color:#eeee"><strong>50% off</strong></h2>
-                <h3 style="color: #d1d1d1">Termina el 31 de marzo</h3>
+                <h3 style="color: #d1d1d1">Termina el 25 de mayo</h3>
             </div>
         </figure>
     </section>
@@ -53,7 +55,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
         VITRINA DE PRODUCTOS MÁS VENDIDOS
         ======================================-->
 
-    <?php
+        <?php
 
         $titulos_modulos = array("LO MÁS VENDIDO", "LO MÁS VISTO");
         $ruta_modulos = array("lo-mas-vendido", "lo-mas-visto");
@@ -64,14 +66,18 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
             $ordenar = "ventas";
             $item = null;
             $valor = null;
-            $ventas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope);
+            $modo = "DESC";
+
+            $ventas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope, $modo);
         }
 
         if ($titulos_modulos[1] == "LO MÁS VISTO") {
             $ordenar = "vistas";
             $item = null;
             $valor = null;
-            $vistas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope);
+            $modo = "DESC";
+            
+            $vistas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope, $modo);
         }
 
         /* var_dump($productos); */
@@ -203,6 +209,56 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
         }
     ?>
 
-    </section>
+        <div class="col-md-10 col-md-offset-1">
+            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="https://maxcdn.icons8.com/Color/PNG/96/Plants/onion-96.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="https://maxcdn.icons8.com/Color/PNG/96/Food/asparagus-96.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="https://maxcdn.icons8.com/Color/PNG/96/Plants/watermelon-96.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
+                                    src="https://maxcdn.icons8.com/Color/PNG/96/Food/eggplant-96.png"
+                                    class="img-responsive"></a></div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i
+                        class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
 
+    </section>
 </main>

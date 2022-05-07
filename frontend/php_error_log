@@ -2430,3 +2430,459 @@ Stack trace:
 [28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
 [28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
 [28-Apr-2022 16:52:02 America/Bogota] PHP Warning:  Undefined array key "activo" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php on line 47
+[29-Apr-2022 17:46:17 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.artesanos' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php:15
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\directorio.controller.php(10): modeloArtesanos::mdlListarArtesanos('artesanos', 'id_artesano')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\directorio.php(21): ControladorDirectorio::ctrListarArtesanos('id_artesano')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(158): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php on line 15
+[29-Apr-2022 22:28:10 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(167): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 20:49:59 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 20:50:17 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 20:53:43 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 20:54:06 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 20:54:25 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 21:18:08 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[02-May-2022 21:19:06 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.errores' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php:25
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(38): modeloPlantilla::mdlEstiloErrores('errores')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\error404.php(14): ControllerPlantilla::ctrEstiloErrores()
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(163): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\plantilla.modelo.php on line 25
+[04-May-2022 19:10:42 America/Bogota] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 92
+[04-May-2022 19:10:42 America/Bogota] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 92
+[04-May-2022 19:18:44 America/Bogota] PHP Warning:  Undefined variable $ordenar in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:44 America/Bogota] PHP Warning:  Undefined variable $item2 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:44 America/Bogota] PHP Warning:  Undefined variable $valor2 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:44 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC LIMIT 0, 12' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:85
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(49): modeloProductos::mdl_mostrar_productos('productos', NULL, NULL, NULL, 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(62): controladorProductos::ctr_mostrar_productos(NULL, NULL, NULL, 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(154): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 85
+[04-May-2022 19:18:57 America/Bogota] PHP Warning:  Undefined variable $ordenar in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:57 America/Bogota] PHP Warning:  Undefined variable $item2 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:57 America/Bogota] PHP Warning:  Undefined variable $valor2 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 62
+[04-May-2022 19:18:57 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC LIMIT 0, 12' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:85
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(49): modeloProductos::mdl_mostrar_productos('productos', NULL, NULL, NULL, 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(62): controladorProductos::ctr_mostrar_productos(NULL, NULL, NULL, 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(154): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 85
+[04-May-2022 20:11:49 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(154): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:14:06 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(154): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:18:19 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:18:38 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:19:35 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:22:29 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:33:20 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:33:27 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:33:43 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:193
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 193
+[04-May-2022 20:40:50 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1327 Undeclared variable: id in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdl_BuscarProductos('productos', 'abuela-navidad', 'id', 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('abuela-navidad', 'id', 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 20:41:10 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1327 Undeclared variable: id in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdl_BuscarProductos('productos', 'abuela', 'id', 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('abuela', 'id', 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 20:42:06 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[04-May-2022 20:42:06 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[04-May-2022 20:42:06 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[04-May-2022 20:48:59 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrBuscarProductos(), 4 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 101 and exactly 5 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:81
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 81
+[04-May-2022 20:49:28 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctrBuscarProductos(), 4 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 101 and exactly 5 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:81
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 81
+[04-May-2022 20:50:21 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdlBuscarProductos('productos', 'collar', 'id', 0, 12, 'DESC')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12, 'DESC')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 20:51:49 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 LIMIT 12, DESC' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdlBuscarProductos('productos', 'collar', 'id', 0, 12, 'DESC')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12, 'DESC')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 20:52:15 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 LIMIT 12, DESC' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdlBuscarProductos('productos', 'collar', 'id', 0, 12, 'DESC')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12, 'DESC')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 20:52:25 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 LIMIT 12, DESC' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(85): modeloProductos::mdlBuscarProductos('productos', 'collar', 'id', 0, 12, 'DESC')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('collar', 'id', 0, 12, 'DESC')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[04-May-2022 21:05:17 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[04-May-2022 21:05:17 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[04-May-2022 21:05:17 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[05-May-2022 01:48:47 America/Bogota] PHP Parse error:  syntax error, unexpected identifier "antiguos", expecting "," or ";" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 60
+[05-May-2022 01:48:51 America/Bogota] PHP Parse error:  syntax error, unexpected identifier "antiguos", expecting "," or ";" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 60
+[05-May-2022 01:48:52 America/Bogota] PHP Parse error:  syntax error, unexpected identifier "antiguos", expecting "," or ";" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 60
+[05-May-2022 01:49:00 America/Bogota] PHP Parse error:  syntax error, unexpected identifier "antiguos", expecting "," or ";" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 60
+[05-May-2022 02:00:56 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 02:00:56 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 02:00:56 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 44
+[05-May-2022 02:00:56 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:221
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 221
+[05-May-2022 02:01:11 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 02:01:11 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 02:01:11 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 44
+[05-May-2022 02:01:11 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:221
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 221
+[05-May-2022 02:13:11 America/Bogota] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_REFERER" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:47
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 47
+[05-May-2022 02:13:15 America/Bogota] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_REFERER" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:47
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 47
+[05-May-2022 02:13:24 America/Bogota] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_REFERER" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:47
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 47
+[05-May-2022 02:13:45 America/Bogota] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_REFERER" in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:46
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 46
+[05-May-2022 02:22:29 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php:53) in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 46
+[05-May-2022 02:24:34 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php:53) in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 44
+[05-May-2022 02:24:34 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php:53) in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 46
+[05-May-2022 02:27:23 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php:53) in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 44
+[05-May-2022 02:27:23 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\cabezote.php:53) in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 47
+[05-May-2022 16:17:48 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 16:17:48 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 16:17:48 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 43
+[05-May-2022 16:17:48 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[05-May-2022 17:15:16 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctr_mostrar_productos(), 5 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 67 and exactly 6 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:46
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(171): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 46
+[05-May-2022 17:15:33 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctr_mostrar_productos(), 5 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 67 and exactly 6 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:46
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(171): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 46
+[05-May-2022 17:25:08 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctr_mostrar_productos(), 5 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 67 and exactly 6 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:46
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(171): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 46
+[05-May-2022 17:28:03 America/Bogota] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controladorProductos::ctr_mostrar_productos(), 5 passed in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 67 and exactly 6 expected in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php:46
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(67): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4)
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(171): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php on line 46
+[05-May-2022 17:33:23 America/Bogota] PHP Warning:  Undefined variable $modo in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 67
+[05-May-2022 17:33:23 America/Bogota] PHP Warning:  Undefined variable $modo in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php on line 74
+[05-May-2022 17:36:14 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC LIMIT 0, 4' at line 1 in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:85
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(49): modeloProductos::mdl_mostrar_productos('productos', 'ventas', NULL, NULL, 0, 4, 'DESC')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\destacados.php(69): controladorProductos::ctr_mostrar_productos('ventas', NULL, NULL, 0, 4, 'DESC')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(171): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 85
+[05-May-2022 18:00:07 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'where clause' in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(86): modeloProductos::mdlBuscarProductos('productos', 'subcategorias', 'mochilas', 'id', 'DESC', 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('mochilas', 'id', 'DESC', 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[05-May-2022 18:00:19 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'where clause' in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php:144
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php(144): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\producto.controller.php(86): modeloProductos::mdlBuscarProductos('productos', 'subcategorias', 'mochilas', 'id', 'DESC', 0, 12)
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php(101): controladorProductos::ctrBuscarProductos('mochilas', 'id', 'DESC', 0, 12)
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\producto.modelo.php on line 144
+[05-May-2022 23:14:52 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 23:14:52 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 23:14:52 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 43
+[05-May-2022 23:14:52 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[05-May-2022 23:17:28 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 23:17:28 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 23:17:28 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 43
+[05-May-2022 23:17:28 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[05-May-2022 23:17:43 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 23:17:43 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 23:17:43 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 43
+[05-May-2022 23:17:43 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[05-May-2022 23:17:50 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 16
+[05-May-2022 23:17:50 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 17
+[05-May-2022 23:17:50 America/Bogota] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 43
+[05-May-2022 23:17:50 America/Bogota] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php:218
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\buscador.php on line 218
+[06-May-2022 19:02:03 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.artesanos' doesn't exist in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php:15
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php(15): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\directorio.controller.php(10): modeloArtesanos::mdlListarArtesanos('artesanos', 'id_artesano')
+#2 C:\xampp\htdocs\asocart-proyecto\frontend\views\modulos\directorio.php(21): ControladorDirectorio::ctrListarArtesanos('id_artesano')
+#3 C:\xampp\htdocs\asocart-proyecto\frontend\views\plantilla.php(155): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\frontend\controllers\plantilla.Controller.php(14): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\frontend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\frontend\models\directorio.modelo.php on line 15

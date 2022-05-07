@@ -5,6 +5,7 @@
 .infoproducto figure.visor img {
 	display: none;
 	cursor: crosshair;
+	
 }
 
 .infoproducto figure.visor img:first-child {
@@ -45,4 +46,13 @@
 	margin-top: 10px;
 	margin-bottom: 20px;
 	cursor: pointer;
+}
+
+.product-area{
+	padding-left: 10px;
+}
+
+.tittle_product{
+	position: absolute;
+	text-align: justify;
 }

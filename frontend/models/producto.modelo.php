@@ -70,18 +70,18 @@ class modeloProductos
         Consulta para Mostrar Productos
     =============================================*/
 
-    static public function mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope){
+    static public function mdl_mostrar_productos($tabla, $ordenar, $item, $valor, $base, $tope, $modo){
 
         if($item != null){
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetchAll();
 
         }else{
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt->execute();
             return $stmt->fetchAll();
 
@@ -130,6 +130,32 @@ class modeloProductos
         $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
         $stmt-> execute();
         return $stmt->fetch();
+        $stmt -> close();
+        $stmt = null;
+    }
+
+    /*=============================================
+    BUSCADOR
+    =============================================*/
+
+    static public function mdlBuscarProductos($tabla, $busqueda, $ordenar, $modo, $base, $tope){
+        
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' OR descripcion like '%$busqueda%' ORDER BY $ordenar $modo LIMIT $base, $tope");
+        $stmt-> execute();
+        return $stmt->fetchAll();
+        $stmt -> close();
+        $stmt = null;
+    }
+
+    /*=============================================
+    Listar Productos BUSCADOR
+    =============================================*/
+
+    static public function mdlListarProductos($tabla, $busqueda){
+        
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' OR descripcion like '%$busqueda%'");
+        $stmt-> execute();
+        return $stmt->fetchAll();
         $stmt -> close();
         $stmt = null;
     }
