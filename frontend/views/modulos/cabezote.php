@@ -397,11 +397,11 @@ Header
 		<div class="et-hero-tabs-container" id="menu">
 
 			<a class=" et-hero-tab" href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
-			<a class="et-hero-tab" href="about">Sobre Nosotros </a>
-			<a class="et-hero-tab" href="<?php echo $url ?>#tienda">Tienda</a>
-			<a class="et-hero-tab" href="<?php echo $url ?>#eventos">Eventos</a>
-			<a class="et-hero-tab" href="directorio">Directorio</a>
-			<a class="et-hero-tab" href="<?php echo $url ?>#contacto">Contacto</a>
+			<a class="et-hero-tab" href="<?php echo $url?>about">Sobre Nosotros </a>
+			<a class="et-hero-tab" href="<?php echo $url ?>tienda">Tienda</a>
+			<a class="et-hero-tab" href="<?php echo $url ?>eventos">Eventos</a>
+			<a class="et-hero-tab" href="<?php echo $url?>directorio">Directorio</a>
+			<a class="et-hero-tab" href="<?php echo $url ?>contacto">Contacto</a>
 			<!-- 			<a class="et-hero-tab" href="#registro_modal"><span class="glyphicon glyphicon-user" data-toggle="modal"></span> Sign Up</a>
 -->
 			<!-- 			<a class="et-hero-tab" href="#ingreso_modal"><span class="glyphicon glyphicon-log-in" data-toggle="modal"></span> Login</a>

@@ -102,3 +102,43 @@ Stack trace:
 [28-Apr-2022 17:01:29 America/Bogota] PHP Warning:  Undefined array key "bar_down" in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\ajustes\colores.php on line 50
 [28-Apr-2022 23:11:41 America/Bogota] PHP Warning:  include(modulos/categorias.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 112
 [28-Apr-2022 23:11:41 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/categorias.php' for inclusion (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 112
+[09-May-2022 15:05:11 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\backend\models\ajustes.Modelo.php(18): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\ajustes.Controller.php(17): ModeloAjustes::mdlSeleccionarPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(4): ControllerAjustes::ctrSeleccionarPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14
+[09-May-2022 15:05:15 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\backend\models\ajustes.Modelo.php(18): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\ajustes.Controller.php(17): ModeloAjustes::mdlSeleccionarPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(4): ControllerAjustes::ctrSeleccionarPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14
+[09-May-2022 15:05:19 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\backend\models\ajustes.Modelo.php(18): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\ajustes.Controller.php(17): ModeloAjustes::mdlSeleccionarPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(4): ControllerAjustes::ctrSeleccionarPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14
+[09-May-2022 15:05:23 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\backend\models\ajustes.Modelo.php(18): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\ajustes.Controller.php(17): ModeloAjustes::mdlSeleccionarPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(4): ControllerAjustes::ctrSeleccionarPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14

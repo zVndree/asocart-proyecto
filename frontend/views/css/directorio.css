@@ -1,0 +1,12 @@
+#card_artesano{
+    margin: 20px 0px;
+}
+
+#buscador{
+    text-align: center;
+}
+
+#buscador button{
+    border-radius: 0px 5px 5px 0px;
+}
+

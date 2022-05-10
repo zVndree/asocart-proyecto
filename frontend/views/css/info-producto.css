@@ -49,10 +49,18 @@
 }
 
 .product-area{
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
-.tittle_product{
+.product-area h4{
+	padding-left: 20px;
+}
+
+/* .tittle_product{
 	position: absolute;
 	text-align: justify;
+} */
+
+#seleccionarColor{
+	margin-left: 20px;
 }

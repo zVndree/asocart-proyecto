@@ -50,6 +50,42 @@ class controladorProductos
         return $respuesta;
     }
 
+    /*========================
+    Mostrar todos los Productos
+    ========================*/
+
+    static public function ctr_mostrar_all_productos($ordenar, $base, $tope, $modo){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_mostrar_all_productos($tabla, $ordenar, $base, $tope, $modo);
+        return $respuesta;
+    }
+
+    /*=============================================
+	MOSTRAR TOTAL PRODUCTOS
+	=============================================*/
+
+	static public function ctrMostrarTotalProductos($orden){
+
+		$tabla = "productos";
+
+		$respuesta = modeloProductos::mdlMostrarTotalProductos($tabla, $orden);
+
+		return $respuesta;
+
+	}
+
+    /*========================
+    Listar todos los Productos
+    ========================*/
+
+    static public function ctr_listar_all_productos($ordenar,){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_listar_all_productos($tabla, $ordenar);
+        return $respuesta;
+    }
+
     
     /*========================
     Listar Productos
@@ -95,6 +131,28 @@ class controladorProductos
 
         $tabla = "productos";
         $respuesta = modeloProductos::mdlListarProductos($tabla, $busqueda);
+        return $respuesta;
+    }
+
+    /*========================
+    Mostrar Ofertas
+    ========================*/
+
+    static public function ctr_mostrar_ofertas($ordenar, $item, $valor, $base, $tope, $modo, $rango){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_mostrar_ofertas($tabla, $ordenar, $item, $valor, $base, $tope, $modo, $rango);
+        return $respuesta;
+    }
+
+    /*========================
+    Listar Ofertas
+    ========================*/
+
+    static public function ctr_listar_ofertas($ordenar, $item, $valor){
+
+        $tabla = "productos";
+        $respuesta = modeloProductos::mdl_listar_ofertas($tabla, $ordenar, $item, $valor);
         return $respuesta;
     }
 }

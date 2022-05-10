@@ -26,7 +26,7 @@ class TablaProductos{
 
     $productos = ControllerProductos::ctrMostrarProductos($item, $valor);
 
-
+  
     }
 
 }

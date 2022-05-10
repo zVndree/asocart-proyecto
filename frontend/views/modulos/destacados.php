@@ -57,12 +57,22 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
         <?php
 
-        $titulos_modulos = array("LO MÁS VENDIDO", "LO MÁS VISTO");
-        $ruta_modulos = array("lo-mas-vendido", "lo-mas-visto");
+        $titulos_modulos = array("PRODUCTOS EN OFERTA","LO MÁS VENDIDO", "LO MÁS VISTO");
+        $ruta_modulos = array("ofertas", "lo-mas-vendido", "lo-mas-visto");
 
         $base = 0;
         $tope = 4;
-        if ($titulos_modulos[0] == "LO MÁS VENDIDO") {
+
+        if ($titulos_modulos[0] == "PRODUCTOS EN OFERTA") {
+            $ordenar = "descuento_oferta";
+            $item = null;
+            $valor = null;
+            $modo = "DESC";
+
+            $ofertas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope, $modo);
+
+        }
+        if ($titulos_modulos[1] == "LO MÁS VENDIDO") {
             $ordenar = "ventas";
             $item = null;
             $valor = null;
@@ -71,7 +81,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
             $ventas = controladorProductos::ctr_mostrar_productos($ordenar, $item, $valor, $base, $tope, $modo);
         }
 
-        if ($titulos_modulos[1] == "LO MÁS VISTO") {
+        if ($titulos_modulos[2] == "LO MÁS VISTO") {
             $ordenar = "vistas";
             $item = null;
             $valor = null;
@@ -82,7 +92,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
         /* var_dump($productos); */
 
-        $modulos = array($ventas, $vistas);
+        $modulos = array($ofertas, $ventas, $vistas);
 
         for ($i=0; $i < count($titulos_modulos) ; $i++) {
             echo '
@@ -122,6 +132,10 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
                         foreach ($modulos[$i] as $key => $value) {
 
+                            $price = $value["precio"];
+                            /* include_once("moneda.php"); */
+                            $money = number_format($price, 0, '.', '.');
+
                             echo '
                             <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">
                                 <figure>
@@ -153,17 +167,18 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                         <div class="col-xs-6 precio">';
 
                                         if($value["oferta"] != 0){
+                                        
 
                                             echo '
                                             <h3>
                                                 <small>
-                                                    <strong class="oferta">COP $'.$value["precio"].'</strong>
+                                                    <strong class="oferta">COP $'.$money.'</strong>
                                                 </small><br>
 
                                                 <small><strong  style="color:#474747;">$'.$value["precio_oferta"].'</strong></small>
                                             </h3>';
                                         }else{
-                                            echo '<h3><small><strong  style="color:#474747;">COP $'.$value["precio"].'</strong></samll></h3><br>';
+                                            echo '<h3><small><strong  style="color:#474747;">COP $'.$money.'</strong></samll></h3><br>';
                                         }
 
 
@@ -184,7 +199,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                                     }else{
                                                         echo'
                                                         <div class="product-content">
-                                                            <a href="'.$value["ruta"].'" class="add-to-cart agregarCarrito" idProducto="'.$value["id"].'" imagen="'.$server.$value["img_producto"].'" titulo="'.$value["titulo"].'" precio="'.$value["precio"].'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                            <a href="'.$value["ruta"].'" class="add-to-cart agregarCarrito" idProducto="'.$value["id"].'" imagen="'.$server.$value["img_producto"].'" titulo="'.$value["titulo"].'" precio="'.$money.'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                             <i class="fa fa-shopping-cart"></i></a>
                                                         </div>';
 
@@ -200,65 +215,23 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                                         </div>
                                     </div>
                                 </div>
-                            </li>';
+                            </li>
+                            ';
+                            
                         }
 
                 echo '</ul>
                 </div>
             </div>';
-        }
-    ?>
 
-        <div class="col-md-10 col-md-offset-1">
-            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="<?php echo $server?>views/img/products/peluches/cerdo.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="https://maxcdn.icons8.com/Color/PNG/96/Plants/onion-96.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="https://maxcdn.icons8.com/Color/PNG/96/Food/asparagus-96.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="https://maxcdn.icons8.com/Color/PNG/96/Plants/watermelon-96.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img
-                                    src="https://maxcdn.icons8.com/Color/PNG/96/Food/eggplant-96.png"
-                                    class="img-responsive"></a></div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i
-                        class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i
-                        class="glyphicon glyphicon-chevron-right"></i></a>
-            </div>
-        </div>
+            
+        }
+
+    
+
+        
+    ?>
 
     </section>
 </main>
+

@@ -5,9 +5,12 @@
 /* ----------------- carrusel ----------------- */
 
 $(".flexslider").flexslider({
+
     animation: "slide",
+    controlNav: true,
     animationLoop: false,
-    itemWidth: 210,
+    slideshow: false,
+    itemWidth: 100,
     itemMargin: 5
 })
 
@@ -24,7 +27,7 @@ $(".flexslider ul li img").click(function(){
 
 /* ---------------- efecto zoom --------------- */
 
-$(".flexslider ul li img").mouseover(function (event) { 
+$(".infoproducto figure.visor img").mouseover(function (event) { 
 
     var capturaImg = $(this).attr("src");
     $(".lupa img").attr("src", capturaImg);
@@ -63,3 +66,7 @@ $(".infoproducto figure.visor img").mousemove(function(event){
 	})
 
 })
+
+
+/*----------- SELECT 2 --------------*/
+

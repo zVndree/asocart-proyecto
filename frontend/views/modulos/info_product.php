@@ -135,19 +135,32 @@ INFOPRODUCTOS
                 <!--=====================================
                 Espacio para el prodcto
                 ======================================-->
+
+                
                 
                 <?php
-                    
+
+                    /*=====================================
+                    FORMATEAR EL PRECIO A PESOS COLOMBIANOS
+                    ======================================*/
+
+
+                    $price = $infoproducto["precio"];
+                    require_once("moneda.php");
+
+                    /*=====================================
+                    TITULO DEL PRODUCTO
+                    ======================================*/
 
                     if ($infoproducto["oferta"] == 0) {
 
                         if ($infoproducto["nuevo"] == 0) {
                             
-                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'</h1>';
+                            echo '<h1 class="text-muted">'.$infoproducto["titulo"].'</h1>';
 
                         }else{
 
-                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                            echo '<h1 class="text-muted">'.$infoproducto["titulo"].'
                             <br>
 
                             <small>
@@ -162,7 +175,7 @@ INFOPRODUCTOS
 
                         if ($infoproducto["nuevo"] == 0){
 
-                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                            echo '<h1 class="text-muted">'.$infoproducto["titulo"].'
                         
                             <br>
     
@@ -174,7 +187,7 @@ INFOPRODUCTOS
 
                         }else{
 
-                            echo '<h1 class="text-muted tittle_product">'.$infoproducto["titulo"].'
+                            echo '<h1 class="text-muted">'.$infoproducto["titulo"].'
                         
                             <br>
     
@@ -187,7 +200,147 @@ INFOPRODUCTOS
                         }
 
                     }
+
+                    /*=====================================
+                    PRECIO DEL PRODUCTO
+                    ======================================*/
+
+                    if ($infoproducto["precio"] == 0){
+
+                    }else{
+
+                        if ($infoproducto["oferta"] == 0) {
+
+                            echo '<h3 >COP$ '.$money.'</h3>';
+                        }else{
+                            echo '<h2 class="text-muted">
+                            <span>
+
+                                <strong class="oferta">COP $'.$money.'</strong>
+
+                            </span>
+
+                            <span>
+                                
+                                $'. $infoproducto["precio_oferta"].'
+
+                            </span>
+                            
+                            </h2>';
+                        }
+
+                    
+                    /* echo $money;
+
+                    $infoproducto["precio"] = "COP $" .number_format(2, ','.$infoproducto["precio"].'.'); */
+
+                    /* $precio_cop = $infoproducto["precio"];
+                        setlocale(LC_MONETARY, "es_CO");
+                        money_format("%.2n", $precio_cop) . "\n"; */
+
+                    /*  echo '<h2 class="text-muted">'.$infoproducto["precio"].'</h2>';*/
+                    }
+
+                    /*=====================================
+                    DESCRIPCION DEL PRODUCTO
+                    ======================================*/
+
+                    echo '<p>'.$infoproducto["descripcion"].'</p>';
+
                 ?>
+
+                <!--=====================================
+                CARACTERISTICAS DEL PRODUCTO
+                ======================================-->
+
+                <div class="form-group row">
+
+                <?php
+                    
+                    if ($infoproducto["detalles"] != null) {
+                        
+                        $detalles = json_decode($infoproducto["detalles"], true);
+
+                        /* var_dump($detalles); */
+
+                        if ($detalles["Color"] != null) {
+                            
+                            echo'<div class="col-md-3 col-xs-12">
+                            
+                                <select class="form-control seleccionarDetalle" id="seleccionarColor">
+                                
+                                    <option value="">Color</option>';
+
+                                    for ($i=0; $i <= count($detalles["Color"]); $i++) { 
+                                        
+                                        echo '<option value="'.$detalles["Color"][$i].'">'.$detalles["Color"][$i].'</option>';
+                                    }
+                                echo'</select><br>
+                            </div>';
+                            
+                        }
+                    }
+
+
+                    /*=====================================
+                    INFORMACION DE ENTREGA
+                    ======================================*/
+
+                    if ($infoproducto["entrega"] == 0) {
+                        echo '<h4 class="col-xs-12">
+
+                        <span class="label label-default">
+                            <i class="fa fa-clock-o"  style="margin-right: 5px"></i>
+                            Entrega Inmediata |
+                            <i class="fa fa-shopping-cart" style="margin: 0px 5px"></i>
+                            '.$infoproducto["ventas"]. ' vendidos |
+                            <i class="fa fa-eye" style="margin: 0px 5px"></i>
+                            visto por '.$infoproducto["vistas"]. ' personas
+                        
+                        </span>
+
+                        </h4>';
+
+                    }else{
+                        echo '<h4 class="col-xs-12">
+
+                        <span class="label label-default">
+                            <i class="fa fa-clock-o"  style="margin-right: 5px"></i>
+                            '.$infoproducto["entrega"]. ' Días hábiles para la entrega
+                            <i class="fa fa-shopping-cart" style="margin: 0px 5px"></i>
+                            '.$infoproducto["ventas"]. ' vendidos |
+                            <i class="fa fa-eye" style="margin: 0px 5px"></i>
+                            visto por '.$infoproducto["vistas"]. ' personas
+                        
+                        </span>
+
+                        </h4>';
+                    }
+                ?>
+
+                </div>
+
+                <!--=====================================
+                BOTONES DE COMPRA
+                ======================================-->
+
+                <div class="row ">
+
+                    <?php
+                        if ($infoproducto["precio"] != 0 || $infoproducto["precio"] != null) {
+
+                            echo '<div class="col-md-5 col-xs-12" style="margin: 10px 20px;">
+                            <button class="btn btn-default btn-block btn-lg bar_top">COMPRAR AHORA</button>
+                        </div>
+                        
+                        <div class="col-md-5 col-xs-12" style="margin: 10px 20px;">
+                            <button class="btn btn-default btn-block btn-lg back_color">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
+                        </div>';
+                        }
+                    ?>
+
+                    
+                </div>
                 
                 <!--=====================================
                 ZONA DE LUPA

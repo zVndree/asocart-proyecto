@@ -9,16 +9,18 @@ Barra de productos
 <div class="container-fluid well well-sm barraProductos">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-xs-12">
+            <div class="text-right col-xs-12">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <button type="button" style="background-color: <?php echo $plantilla["barTop"]?>" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         Ordenar Productos <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul style="background-color:<?php echo $plantilla["colorFondo"]?>"class="dropdown-menu" role="menu">
                     <?php
 					
-						echo '<li><a href="'.$url.$rutas[0].'/1/recientes/'.$rutas[3].'">Más reciente</a></li>
-							<li><a href="'.$url.$rutas[0].'/1/antiguos/'.$rutas[3].'">Más antiguo</a></li>';
+						echo '
+                        <li class="dropdown-header"><strong>Precio</strong></li>
+                        <li><a href="'.$url.$rutas[0].'/1/mas-caro/'.$rutas[3].'">Más Caro</a></li>
+							<li><a href="'.$url.$rutas[0].'/1/mas-barato/'.$rutas[3].'">Más Barato</a></li>';
 
 						?>
                     </ul>
@@ -58,7 +60,7 @@ Listar Productos
 
 				if(isset($rutas[2])){
 
-					if($rutas[2] == "antiguos"){
+					if($rutas[2] == "mas-barato"){
 
 						$modo = "ASC";
 						$_SESSION["ordenar"] = "ASC";
@@ -95,7 +97,7 @@ Listar Productos
             $productos = null;
             $list_products = null;
 
-            $ordenar = "id";
+            $ordenar = "precio";
 
 
             if (isset($rutas[3])) {
@@ -104,9 +106,9 @@ Listar Productos
                 
                 $productos = controladorProductos::ctrBuscarProductos($busqueda, $ordenar, $modo, $base, $tope);
                 $list_products = controladorProductos::ctrListarProductosBusqueda($busqueda);
-            }
+            }else{
 
-            
+            }
 
             if (!$productos) {
 
@@ -121,8 +123,12 @@ Listar Productos
 
                 foreach ($productos as $key => $value) {
 
+                    $price = $value["precio"];
+                    /* include_once("moneda.php"); */
+                    $money_buscador = number_format($price, 0, '.', '.');
+
                     echo '
-                            <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">
+                            <li class="col-md-3 col-sm-6 col-xs-6" id="card_product">
                                 <figure>
                                     <a href="' . $url.$value["ruta"] . '" class="pixelProducto">
                                         <img src="' . $server . $value["img_producto"] . '" class="img-responsive" alt="productos">
@@ -158,13 +164,13 @@ Listar Productos
                         echo '
                                                     <h3>
                                                         <small>
-                                                            <strong class="oferta">COP $' . $value["precio"] . '</strong>
+                                                            <strong class="oferta">COP $' . $money_buscador. '</strong>
                                                         </small><br>
 
                                                         <small><strong  style="color:#474747;">$' . $value["precio_oferta"] . '</strong></small>
                                                     </h3>';
                     } else {
-                        echo '<h3><small><strong  style="color:#474747;">COP $' . $value["precio"] . '</strong></samll></h3><br>';
+                        echo '<h3><small><strong  style="color:#474747;">COP $' . $money_buscador . '</strong></samll></h3><br>';
                     }
 
                     echo '</div>
@@ -185,7 +191,7 @@ Listar Productos
                         } else {
                             echo '
                                                             <div class="product-content">
-                                                                <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $value["precio"] . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                                <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_buscador . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                                 <i class="fa fa-shopping-cart"></i></a>
                                                             </div>';
                         }

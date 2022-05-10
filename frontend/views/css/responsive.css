@@ -651,6 +651,10 @@ Responsive Configuration
 		height: 100px;
 	}
 
+	.banner-gremio {
+		height: 1em;
+	}
+
 	.banner .text_der,
 	.banner .text_center,
 	.banner .text_izq {
