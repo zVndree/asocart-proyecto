@@ -129,6 +129,32 @@ Responsive Configuration
 	.banner {
 		height: 260px;
 	}
+
+	.banner-gremio {
+		height: 460px;
+	}
+
+	.banner-gremio {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.text-banner-gremio{
+		margin-top: 5rem;
+	}
+
+	/*--------DIRECTORIO---------*/
+
+	.list_artesanos{
+		margin-left: 4rem;
+	}
+
+	.card{
+		width: 30.30%;
+    	height: 250px;
+		margin: 4rem 0rem 0 2.5rem;
+	}
+
 }
 
 /*---- Pantallas Medianas MD >=1024px ----*/
@@ -249,9 +275,34 @@ Responsive Configuration
 		height: 260px;
 	}
 
+	.list_artesanos{
+		margin-left: 2.5rem;
+	}
+
 	.item_service {
 		text-align: center;
 		margin: 10px 10px;
+	}
+
+	/*------------ABOUT-------------*/
+
+	.banner-gremio {
+		height: 460px;
+	}
+
+	.banner-gremio {
+		position: relative;
+		overflow: hidden;
+	}
+
+	/*--------DIRECTORIO---------*/
+
+
+	.card{
+		width: 46%;
+    	height: 250px;
+		margin: 4rem 0rem 0 2rem;
+		
 	}
 }
 
@@ -422,6 +473,30 @@ Responsive Configuration
 	.item_service {
 		text-align: center;
 		margin: 20px 0px;
+	}
+
+	/*------------ABOUT-------------*/
+
+	.banner-gremio {
+		height: 460px;
+	}
+
+	.banner-gremio {
+		position: relative;
+		overflow: hidden;
+	}
+
+	/*--------DIRECTORIO---------*/
+
+	.list_artesanos{
+		margin-left: 2rem;
+	}
+
+	.card{
+		width: 46%;
+    	height: 250px;
+		margin: 4rem 0rem 0 2rem;
+		
 	}
 
 	/*-------EVENTOS-------*/
@@ -651,10 +726,6 @@ Responsive Configuration
 		height: 100px;
 	}
 
-	.banner-gremio {
-		height: 1em;
-	}
-
 	.banner .text_der,
 	.banner .text_center,
 	.banner .text_izq {
@@ -717,6 +788,30 @@ Responsive Configuration
 	.titulo_evento h1 {
 		font-size: 2em;
 		margin: 30px 0px;
+	}
+
+	/*------------ABOUT-------------*/
+
+	.banner-gremio {
+		height: 140px;
+	}
+
+	.banner-gremio {
+		position: relative;
+		overflow: hidden;
+	}
+
+	/*--------DIRECTORIO---------*/
+
+	.list_artesanos{
+		margin-left: 2rem;
+	}
+
+	.card{
+		width: 80%;
+    	height: 250px;
+		margin: 4rem 6rem 0 4rem;
+		
 	}
 }
 

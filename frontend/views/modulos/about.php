@@ -27,7 +27,7 @@
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" style="padding: 15px;">
                 <h1 class="text-center" style="color: <?php echo $plantilla["colorFondo"] ?>"> VISIÓN</h1>
 
 

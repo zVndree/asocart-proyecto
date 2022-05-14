@@ -28,49 +28,20 @@ $.ajax({
 		var barTop = JSON.parse(respuesta).barTop;
 		var bar_down = JSON.parse(respuesta).bar_down;
 		var textoSuperior = JSON.parse(respuesta).textoSuperior;
+		var verde = JSON.parse(respuesta).verde;
+		var verde_claro = JSON.parse(respuesta).verde_claro;
+		var rojo_claro = JSON.parse(respuesta).rojo_claro;
+
 
 		$(".back_color, .back_color  a").css({
 			background: colorFondo,
 			color: colorTexto,
 		});
 
-		/* $("a").hover(function(){
-			$(this).css({color: colorFondo,});
-		}, function() {
-			$( this ).css( {color: colorFondo} ).last().remove();
-		}
-		); */
-
-		/* $("a").hover(function(){
-			$(this).css({color: colorFondo,});
-		}, function() {
-			$( this ).removeClass( "a" );
-		}
-		); */
-
-		/* $("a").on("mouseover", function () {
-			$(this).css({color: colorFondo,});
-		}); */
-
-		/*$("a").on({
-			mouseenter: function () {
-				$(this).css({color: colorFondo,});
-			},
-			mouseleave: function () {
-				/* $(this).removeAttr("color"); 
-				$("a").val("");
-			}
-		});*/
-		/* 
-				$("a").on({
-					mouseenter: function () {
-						$(this).css({color: colorFondo,});
-					},
-					mouseleave: function () {
-						$(this).remove(color); 
-					
-					}
-				}) */
+		$(".verde").css({
+			background: verde,
+			color: bar_down,
+		})
 
 /*=============================
 Efecto HOVER 
@@ -156,6 +127,42 @@ Efecto HOVER
 			background: colorFondo,
 			color: colorTexto,
 		});
+
+		$(".add-to-cart").hover(function () {
+				
+				$(this).css({background: verde});
+				$(this).css({color: bar_down});
+				
+			}, function () {
+				$(this).css({background: bar_down});
+				$(this).css({color: verde});
+				
+			}
+		);
+
+		$(".add_cart").hover(function () {
+				
+			$(this).css({background: verde_claro});
+			$(this).css({color: bar_down});
+			
+		}, function () {
+			$(this).css({background: verde});
+			$(this).css({color: bar_down});
+			
+		}
+		);
+
+		$(".btn_comprar").hover(function () {
+				
+			$(this).css({background: rojo_claro});
+			$(this).css({color: bar_down});
+			
+		}, function () {
+			$(this).css({background: barTop});
+			$(this).css({color: bar_down});
+			
+		}
+		);
 	},
 });
 

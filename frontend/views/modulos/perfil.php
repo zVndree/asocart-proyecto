@@ -84,7 +84,7 @@ if (!isset($_SESSION["validar_sesion"])) {
                                         echo '<img src="' . $url . $_SESSION["foto"] . '" class="img-thumbnail">';
                                     } else {
                                         echo '<img src="' . $server . 'views/img/usuarios/default/user_icon.png" class="img-thumbnail"><br>
-                                            <button class="btn btn-success" id="btn_cambiar_foto"><span class="glyphicon glyphicon-refresh"></span> Cambiar foto</button>
+                                            <button class="btn verde" id="btn_cambiar_foto"><span class="glyphicon glyphicon-refresh"></span> Cambiar foto</button>
                                             ';
                                     }
                                 } else {

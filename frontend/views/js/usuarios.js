@@ -3,7 +3,7 @@
     =============================*/
 
 var ruta_actual = location.href;
-$(".btn_login, #btn_regis_face").click(function () {
+$(".btn_login, .regis_face, .regis_google").click(function () {
 	localStorage.setItem("ruta_actual", ruta_actual);
 });
 

@@ -79,7 +79,7 @@ class controladorProductos
     Listar todos los Productos
     ========================*/
 
-    static public function ctr_listar_all_productos($ordenar,){
+    static public function ctr_listar_all_productos($ordenar){
 
         $tabla = "productos";
         $respuesta = modeloProductos::mdl_listar_all_productos($tabla, $ordenar);

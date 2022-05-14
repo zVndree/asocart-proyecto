@@ -107,7 +107,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
                         <div class="col-xs-12">
                             <div class="col-xs-12">
                                 <a href="'.$ruta_modulos[$i].'">
-                                    <button class="btn btn-default back_color pull-right">
+                                    <button class="btn btn-default verde pull-right">
                                         VER MÁS <span class="fa fa-chevron-right"></span>
                                     </button>
                                 </a>
@@ -115,7 +115,7 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
 
                             <div class="col-xs-12 titulo">
                                 <h1>'.$titulos_modulos[$i].'</h1>
-                                <hr class="back_color">
+                                <hr class="verde">
                             </div>
 
                         </div>

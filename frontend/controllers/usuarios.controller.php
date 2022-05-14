@@ -104,11 +104,11 @@ class controller_usuarios
                         echo '<script>
                 
                             swal({
-                                tittle: "¡ERROR!",
-                                text: "¡No se ha podido finalizar con el envio de la verificacion al correo electronico ' . $_POST["regis_user"] . $mail->ErrorInfo . '!. Vuelva a intentar",
-                                type: "error",
-                                confirmButtonText: "Cerrar",
-                                closeOnConfirm: false
+                                    title: "¡ERROR!",
+                                    text: "¡No se ha podido finalizar con el envio de la verificacion al correo electronico ' . $_POST["regis_user"] . $mail->ErrorInfo . '!. Vuelva a intentar",
+                                    type: "error",
+                                    confirmButtonText: "Cerrar",
+                                    closeOnConfirm: false
 
                                 },
                                 function(isConfirm){
@@ -116,26 +116,27 @@ class controller_usuarios
                                         history.back();
                                     }
                             });
+
                         </script>';
+
                     } else {
+                        echo '<script>
 
-                        echo '<script> 
-
-                            swal({
-                                title: "¡Registro Exitoso!",
-                                text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["regis_email"] . ' para verificar la cuenta!",
-                                type:"success",
-                                confirmButtonText: "Cerrar",
-                                closeOnConfirm: false
+							swal({
+                                    title: "¡REGISTRO EXITOSO!",
+                                    text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["regis_email"] . ' para verificar la cuenta!",
+                                    type: "success",
+                                    confirmButtonText: "Cerrar",
+                                    closeOnConfirm: false
                                 },
 
                                 function(isConfirm){
-
-                                    if(isConfirm){
+                                    if (isConfirm) {	   
                                         history.back();
-                                    }
-                            });
-					    </script>';
+                                    } 
+						    });
+
+						</script>';
                     }
                 }
             } else {
@@ -143,7 +144,7 @@ class controller_usuarios
                 echo '<script>
                 
                         swal({
-                            tittle: "¡ERROR!",
+                            title: "¡ERROR!",
                             text: "¡Error al registrar el usuario, no se permiten caracteres especiales!",
                             type: "error",
                             confirmButtonText: "Cerrar",
@@ -285,7 +286,7 @@ class controller_usuarios
                 echo '<script>
                 
                         swal({
-                            tittle: "¡ERROR!",
+                            title: "¡ERROR!",
                             text: "¡Error al ingresar al sistema!",
                             type: "error",
                             confirmButtonText: "Cerrar",
@@ -434,24 +435,23 @@ class controller_usuarios
 
 
                             } else {
-
                                 echo '<script> 
 
                                     swal({
-                                        title: "¡Envio Exitoso!",
+                                        title: "¡ENVIO EXITOSO!",
                                         text: "¡Por favor revise la bandeja de entrada o la carpeta de SPAM de su correo electrónico ' . $_POST["pass_email"] . ' para su cambio de contraseña!",
                                         type:"success",
                                         confirmButtonText: "Cerrar",
                                         closeOnConfirm: false
-                                        },
+                                    },
 
-                                        function(isConfirm){
-
+                                    function(isConfirm){
                                             if(isConfirm){
                                                 history.back();
                                             }
                                     });
-                                </script>';
+
+                                    </script>';
                             }
                         }
                     }else{
@@ -531,10 +531,33 @@ class controller_usuarios
         $email_repetido = false;
 
         $respuesta0 = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
-
         if ($respuesta0) {
+            if ($respuesta0["modo"] != $datos["modo"]) {
+                echo '<script> 
 
-            $email_repetido = true;
+                swal({
+                    title: "¡ERROR!",
+                    text: "¡El correo electrónico '.$datos["email"].', ya está registrado en el sistema con un método diferente a Google!",
+                    type:"error",
+                    confirmButtonText: "Cerrar",
+                    closeOnConfirm: false
+                },
+
+                function(isConfirm){
+                        if(isConfirm){
+                            history.back();
+                        }
+                });
+
+                </script>';
+                
+                        
+                        $email_repetido = false;
+            }else{
+                $email_repetido = true;
+            }
+        
+            
             
         }else{
             
@@ -562,7 +585,17 @@ class controller_usuarios
                 $_SESSION["modo"] = $respuesta2["modo"];
 
                 echo "ok";
+            }elseif($respuesta2["modo"] == "google") {
+                
+                $_SESSION["validar_sesion"] = "ok";
+                $_SESSION["id"] = $respuesta2["id"];
+                $_SESSION["nombre"] = $respuesta2["nombre"];
+                $_SESSION["foto"] = $respuesta2["foto"];
+                $_SESSION["email"] = $respuesta2["email"];
+                $_SESSION["password"] = $respuesta2["password"];
+                $_SESSION["modo"] = $respuesta2["modo"];
 
+                echo "<span style='color:white'>ok</span>";
 
             }else{
 

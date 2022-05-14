@@ -12,55 +12,158 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
         <!--             <h3 style="color: #a87d57; font-weight: bold;">Encuentra a los mejores maestros artesanos de Girardot</h3> -->
     </div>
 </figure>
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
+<!-----------END BANNER DIRECTORIO--------------->
 
-                <h3 class="text-center text-muted">En esta página podrás encontrar y conocer a nuestros artesanos de la
-                    ciudad de Girardot.</h3>
+<!-----------BUSCADOR DIRECTORIO--------------->
 
-                <!--=====================================
-                Buscador
-                ======================================-->
+<div class="container-fluid" style="background-color:#c4d5c4">
+    <div class="row">
+        <div class="container">
 
-                <div class="input-group col-md-6 col-sm-7 col-xs-10" id="buscador">
-                    <input type="search" name="buscar" class="form-control" placeholder="Buscar Palabra Clave">
-                    <span class="input-group-btn">
-                        <a href="<?php echo $url; ?>buscador/1/recientes">
-                            <button class="btn btn-default back_color" type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </a>
-                    </span>
+            <h4 class="text-center text-banner-gremio">En esta página podrás filtrar, encontrar y conocer a nuestros
+                artesanos de la
+                ciudad de Girardot.</h4>
+
+            <!--=====================================
+                    Buscador
+                    ======================================-->
+
+            <div class="col-md-8 col-xs-12 buscador-content">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input  id="buscador" type="search" name="buscar" class="form-control" placeholder="Buscar Palabra Clave">
+                        <span class="input-group-btn">
+                            <a href="<?php echo $url; ?>buscador/1/recientes">
+                                <button class="btn btn-default back_color" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </a>
+                        </span>
+                    </div>
                 </div>
 
 
+                <div class="col-md-2 filtro">
+
+                    <div class="btn-group">
+                        <button type="button"
+                            class="btn dropdown-toggle verde" data-toggle="dropdown">
+                            Especialidad <span class="caret"></span>
+                        </button>
+                        <ul style="background-color:<?php echo $plantilla["colorFondo"]?>" class="dropdown-menu"
+                            role="menu">
+                            <!-- <li class="dropdown-header"><strong>Oferta</strong></li> -->
+                            <li><a href="'.$url.$rutas[0].'/1/desde-5">Desde 5% OFF</a></li>
+                            <li><a href="'.$url.$rutas[0].'/1/desde-30">Desde 30% OFF</a></li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
 
+        <ul class="list_artesanos">
+            <?php
 
-            <ul class="list_artesanos">
-                <?php
-
-                $ordenar = "id";
-                $artesano = ControladorDirectorio::ctrListarArtesanos($ordenar);
-
-
+                $item = null;
+                $valor = null;
+                $artesano = ControladorDirectorio::ctrListarArtesanos($item, $valor);
+                
                 foreach ($artesano as $key => $value) {
+                    /* $item2 = null;
+                    $valor2 = null;
+                    $especialidad = ControladorDirectorio::ctrListarEspecialidades($item2, $valor2);
+                    
+                    foreach ($especialidad as $key => $especialidad) { */
+                        # code...
+                    
 
-                    echo '
-                    <li class="col-md-4 col-sm-6 col-xs-12" id="card_artesano">
-                        <figure>
-                            <a href="' . $value["ruta"] . '">
-                                <img src="' . $server . $value["foto_portada"] . '" class="img-responsive">
-                            </a>
-                        </figure>
-                    </li>';
+                        echo '
+                        
+                                <li class="col-md-4 col-sm-6 col-xs-12 card">
+
+                                    <div class="additional" style="background-color: #d9cab0;">
+                                    
+                                        <div class="user-card">
+                                    
+                                            <img src="'.$server. $value["foto_portada"] . '" alt="'.$value["nombre"].'">
+                                        </div>
+                                            
+                                        <div class="more-info">
+                                            
+                                            <h1> '.$value["nombre"].' </h1>
+                                            
+                                            <!----
+                                            <div class="coords">
+                                                <span>Joined January 2019</span>
+                                            </div>
+
+                                            <div class="coords">
+                                                <span>Position/Role</span>
+                                                <span>City, Country</span>
+                                            </div>
+
+                                            <div class="stats">
+                                                <div>
+                                                    <div class="title">Awards</div>
+                                                    <i class="fa fa-trophy"></i>
+                                                    <div class="value">2</div>
+                                                </div>
+                                                <div>
+                                                        <div class="title">Matches</div>
+                                                        <i class="fa fa-gamepad"></i>
+                                                        <div class="value">27</div>
+                                                </div>
+                                                <div>
+                                                    <div class="title">Pals</div>
+                                                    <i class="fa fa-group"></i>
+                                                    <div class="value">123</div>
+                                                </div>
+                                                <div>
+                                                    <div class="title">Coffee</div>
+                                                    <i class="fa fa-coffee"></i>
+                                                    <div class="value infinity">∞</div>
+                                                </div>
+                                            </div>--->
+                                        </div>
+                        
+                                    </div>
+
+                                    <div class="general">
+                                        <h1>'.$value["nombre"].'</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam
+                                            vestibulum sodales odio ut pulvinar.</p>
+                                        <span class="more">Mouse over the card for more info</span>
+                                    </div>
+                            
+
+                                <!--   <figure>
+                                            <a href="' . $value["ruta"] . '">
+                                                <img src="' . $server . $value["foto_portada"] . '" class="img-responsive">
+                                            </a>
+                                        </figure> -->
+                            </li>
+                        ';
+                   /*  } */
+
+
+                    /* $item = "id_artesano";
+                    $valor = $value["id"] ;
+                    $item2 = "id_especialidad";
+                    $valor2 = $especialidad["id"] ;
+                    var_dump($valor,$item,$valor2,$item2);*/
+                    
+                    
+                /*     $art_espe = ControladorDirectorio::ctrListarArt_Espe();
+                    var_dump($art_espe); */
+
+                
+                    
                 }
 
                 ?>
 
-            </ul>
-        </div>
+
+        </ul>
     </div>
 </div>

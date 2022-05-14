@@ -270,7 +270,8 @@ Listar Productos
                                             <img src="' . $server . $value["img_producto"] . '" class="img-responsive" alt="productos">
                                         </a>
                                     </figure>
-                                    <!-- ' . $value["id"] . ' ---->
+                                
+                                
                                     <div class="col-xs-12" id="info_down">
                                     <div class="product-grid">
                                         <h4>

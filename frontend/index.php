@@ -25,6 +25,8 @@ require_once "models/directorio.modelo.php";
 require_once "models/rutas.php";
 
 require_once "include/PHPMailer/PHPMailerAutoload.php";
+require_once "include/vendor/autoload.php";
+
 
 
 

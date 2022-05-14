@@ -58,7 +58,7 @@ Barra de productos
             </div>
             <div class="col-md-6 col-xs-12 text-right">
                 <div class="btn-group">
-                    <button type="button" style="background-color: <?php echo $plantilla["barTop"]?>; margin-top: 10px;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <button type="button" style="margin-top: 10px;" class="btn btn-default dropdown-toggle verde" data-toggle="dropdown">
                         Ordenar Productos <span class="caret"></span>
                     </button>
                     <ul style="background-color:<?php echo $plantilla["colorFondo"]?>" class="dropdown-menu" role="menu">

@@ -190,7 +190,7 @@ Lista de productos
 
 .product-grid .add-to-cart {
 	position: absolute;
-	color: #bcbcbc;
+	color: #008F24;
 	background: #f4f4f4;
 	font-size: 18px;
 	text-align: center;
@@ -208,10 +208,10 @@ Lista de productos
 	border-radius: 10px;
 }
 
-.product-grid:hover .add-to-cart {
+/* .product-grid:hover .add-to-cart {
 	color: #fff;
 	background: #78bf00;
-}
+} */
 
 /*===============STYLE SLIDE CARD PRODUCTS==============*/
 

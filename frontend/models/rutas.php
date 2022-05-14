@@ -8,7 +8,7 @@
     
         static public function ctrRuta(){
     
-            return "http://localhost/asocart-proyecto/frontend/";
+            return "https://localhost/asocart-proyecto/frontend/";
         
         }
 
@@ -18,7 +18,7 @@
     
         static public function ctr_ruta_servidor(){
     
-            return "http://localhost/asocart-proyecto/backend/";
+            return "https://localhost/asocart-proyecto/backend/";
         
         }
     }

@@ -17,7 +17,74 @@ if (isset($_SESSION["validar_sesion"])) {
 		</script>';
 	}
 }
+
+/*=============================================
+API DE GOOGLE
+=============================================*/
+
+/*=============================================
+CREAR EL OBJETO DE LA API GOOGLE
+=============================================*/
+
+$cliente = new Google_Client();
+$cliente->setAuthConfig('models/client_secret.json');
+$cliente->setAccessType("offline");
+$cliente->setScopes(['profile','email']);
+
+/*=============================================
+RUTA PARA EL LOGIN DE GOOGLE
+=============================================*/
+
+$rutaGoogle = $cliente->createAuthUrl();
+
+/*=============================================
+RECIBIMOS LA VARIABLE GET DE GOOGLE LLAMADA CODE
+=============================================*/
+
+if(isset($_GET["code"])){
+
+	$token = $cliente->authenticate($_GET["code"]);
+
+	$_SESSION['id_token_google'] = $token;
+
+	$cliente->setAccessToken($token);
+
+}
+
+/*=============================================
+RECIBIMOS LOS DATOS CIFRADOS DE GOOGLE EN UN ARRAY
+=============================================*/
+
+if($cliente->getAccessToken()){
+
+	$item = $cliente->verifyIdToken();
+	/* var_dump($item["email"]); */
+
+	$datos = array("nombre"=>$item["name"],
+				   "email"=>$item["email"],
+				   "foto"=>$item["picture"],
+				   "password"=>"null",
+				   "modo"=>"google",
+				   "verificacion"=>0,
+				   "email_encriptado"=>"null");
+
+	$respuesta = controller_usuarios::ctr_registro_red_social($datos);
+
+	echo '<script>
+		
+	setTimeout(function(){
+
+		window.location = localStorage.getItem("ruta_actual");
+
+	},1000);
+
+ 	</script>';
+
+}
+
 ?>
+
+
 
 
 
@@ -209,6 +276,54 @@ Top
 											</ul>
 										</div>';
 								}
+
+								if($_SESSION["modo"] == "google"){
+									echo '
+									<div class="col-xs-12 nav_perfil">
+											<ul class="nav navbar-nav navbar-right>
+												<li class=" dropdown">
+													<a href="' . $url . 'perfil" class="dropdown-toggle" data-toggle="dropdown">
+														<img class="img-circle" src="'.$_SESSION["foto"].'" width="10%">
+														' . $_SESSION["nombre"] . ' <i class="fa fa-caret-down" aria-hidden="true"></i>
+													</a>
+													<ul class="col-xs-12 dropdown-menu menu" style="background:'.$social["colorFondo"].';">
+														<li>
+															<div class="navbar-login">
+
+																<div class="col-md-10 text-center">
+																	<img class="img-circle" src="'.$_SESSION["foto"].'" width="80px" height="80px">
+
+																	<div class="col-md-8">
+																		<p class="text-left" style="color:#212121; font-size: 16px;"><strong>' . $_SESSION["nombre"] . '</strong></p>
+																		<p class="text-muted text-left small">' . $_SESSION["email"] . '</p>
+																		<div class="divider">
+																		</div>
+																		<br>
+																		<p class="text-left">
+																			<a href="' . $url . 'perfil" class="btn btn-primary btn-block btn-sm"><i class="fa fa-user-o" aria-hidden="true"></i>Ver Perfil</a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<div class="navbar-footer">
+															<div class="navbar-footer-content">
+																<div class="row">
+																	<div class="col-md-6">
+																		<a href="' . $url . 'perfil" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Cambiar Contraseña</a>
+																	</div>
+																	<div class="col-md-6">
+																		<a href="' . $url . 'salir" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar Sesión</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</ul>
+												</li>
+											</ul>
+										</div>';
+									
+								}
 								echo '
 										<!---<li><a href="' . $url . 'perfil">Ver perfil</a></li>
 										<li>|</li>
@@ -310,7 +425,6 @@ Header
 			$valor = null;
 			$categorias = controladorProductos::ctrListarCategorias($item, $valor);
 
-			
 
 			foreach ($categorias as $key => $value) {
 
@@ -444,13 +558,14 @@ VENTANA MODAL REGISTRO
 				<!----=====================
 				Registro con Google
 				========================--->
-				<div class="col-sm-6 col-xs-12 regis_google" id="btn_regis_google">
-					<p>
-						<i class="fa fa-google"></i>
-						Regístrate con Google
-					</p>
-				</div>
-
+				<a href="<?php echo $rutaGoogle; ?>">
+					<div class="col-sm-6 col-xs-12 regis_google" id="btn_regis_google">
+						<p>
+							<i class="fa fa-google"></i>
+							Regístrate con Google
+						</p>
+					</div>
+				</a>
 				<!----=====================
 				Registro con correo
 				========================--->
@@ -561,12 +676,14 @@ VENTANA MODAL LOGIN
 				<!----=====================
 				Ingreso con Google
 				========================--->
-				<div class="col-sm-6 col-xs-12 regis_google" id="btn_regis_google">
-					<p>
-						<i class="fa fa-google"></i>
-						Ingreso con Google
-					</p>
-				</div>
+				<a href="<?php echo $rutaGoogle; ?>">
+					<div class="col-sm-6 col-xs-12 regis_google" id="btn_regis_google">
+						<p>
+							<i class="fa fa-google"></i>
+							Ingreso con Google
+						</p>
+					</div>
+				</a>
 
 				<!----=====================
 				INGRESO CON CORREO

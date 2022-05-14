@@ -330,11 +330,11 @@ INFOPRODUCTOS
                         if ($infoproducto["precio"] != 0 || $infoproducto["precio"] != null) {
 
                             echo '<div class="col-md-5 col-xs-12" style="margin: 10px 20px;">
-                            <button class="btn btn-default btn-block btn-lg bar_top">COMPRAR AHORA</button>
+                            <button style="color:'.$plantilla["bar_down"].';background: '.$plantilla["barTop"].'" class="btn_comprar btn btn-default btn-block btn-lg">COMPRAR AHORA</button>
                         </div>
                         
                         <div class="col-md-5 col-xs-12" style="margin: 10px 20px;">
-                            <button class="btn btn-default btn-block btn-lg back_color">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
+                            <button style="color:'.$plantilla["bar_down"].';background: '.$plantilla["verde"].'" class="add_cart btn btn-default btn-block btn-lg ">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
                         </div>';
                         }
                     ?>
