@@ -72,18 +72,23 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/perfil.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/info-producto.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/directorio.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>views/css/carrito.css">
+
+
 
     <!--=====================================
 	Plugins Javascript
 	======================================-->
 
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.scrollUp.js"></script>
+    <!--     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.scrollUp.js"></script>
+ -->
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.flexslider.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/select2.min.js"></script>
-	<!-- Swiper JS -->
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
@@ -92,7 +97,22 @@
 <body>
 
     <div class="preloader"></div>
+    <!----=================----
+BOTON DE SUBIR 
+------=================--->
+    <a href="#" class="btn-up-top"
+        style="color: <?php echo $plantilla["bar_down"]?>; background-color: <?php echo $plantilla["barTop"]?>"
+        id="btn_up">
+        <i class="fa fa-angle-double-up icono-up"></i>
+    </a>
+    <!----=================----
+BOTON DE WHATSAPP
+------=================--->
 
+    <a href="https://api.whatsapp.com/send?phone=+57 3222256287&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto."
+        data-toggle="tooltip" data-placement="left" title="¿En que podemos ayudarte?" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <?php
 
@@ -168,7 +188,7 @@
 		}else if ($info_producto != null) {
 
 			include "modulos/info_product.php";
-		} else if ($rutas[0] == "buscador" || $rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil" || $rutas[0] == "about" || $rutas[0] == "directorio" || $rutas[0] == "todas-las-categorias" || $rutas[0] == "tienda") {
+		} else if ($rutas[0] == "buscador" || $rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil" || $rutas[0] == "about" || $rutas[0] == "directorio" || $rutas[0] == "tienda" || $rutas[0] == "carrito-de-compras") {
 
 			include "modulos/" . $rutas[0] . ".php";
 
@@ -188,7 +208,10 @@
 		include "modulos/slide.php";
 		include "modulos/destacados.php";
 		include "modulos/eventos.php";
+		
 	}
+
+	include "modulos/footer.php";
 
 
 	?>

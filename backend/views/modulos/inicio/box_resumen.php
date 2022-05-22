@@ -1,6 +1,9 @@
 <?php
     $clientes = ControllerUsuarios::ctrMostrarTotalUsuarios("id");
     $total_clientes = count($clientes);
+
+    $productos = ControllerProductos::ctrMostrarTotalProductos("id");
+    $totalProductos = count($productos);
 ?>
 
 <div class="col-lg-3 col-xs-6">
@@ -47,19 +50,36 @@
         <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
     </div>
 </div>
-<!-- ./box 3 -->
-<div class="col-lg-3 col-xs-6">
-    <!-- box 4 VISITAS -->
-    <div class="small-box bg-red">
-        <div class="inner">
-            <h3>65</h3>
+<!--===========================================================================-->
 
-            <p>Unique Visitors</p>
+<!-- col -->
+<div class="col-lg-3 col-xs-6">
+
+    <!-- small box -->
+    <div class="small-box bg-red">
+
+        <!-- inner -->
+        <div class="inner">
+
+            <h3><?php echo number_format($totalProductos); ?></h3>
+
+            <p>Productos</p>
+
         </div>
+        <!-- inner -->
+
+        <!-- icon -->
         <div class="icon">
+
             <i class="ion ion-pie-graph"></i>
+
         </div>
-        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        <!-- icon -->
+
+        <a href="productos" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+
     </div>
+    <!-- small box -->
+
 </div>
-<!-- ./box 4 -->
+<!-- col -->

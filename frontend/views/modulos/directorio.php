@@ -16,7 +16,7 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
 
 <!-----------BUSCADOR DIRECTORIO--------------->
 
-<div class="container-fluid" style="background-color:#c4d5c4">
+<div class="container-fluid">
     <div class="row">
         <div class="container">
 
@@ -131,9 +131,8 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
 
                                     <div class="general">
                                         <h1>'.$value["nombre"].'</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam
-                                            vestibulum sodales odio ut pulvinar.</p>
-                                        <span class="more">Mouse over the card for more info</span>
+                                        <p>'.$value["reseña"].'</p>
+                                        <!---<span class="more">Mouse over the card for more info</span>--->
                                     </div>
                             
 

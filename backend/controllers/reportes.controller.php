@@ -169,7 +169,7 @@ class ControladorReportes
 			REPORTE DE USUARIOS
 			=============================================*/
 
-            if ($_GET["reporte"] == "usuarios") {
+            if ($_GET["reporte"] == "clientes") {
 
                 echo utf8_decode("<table border='0'> 
 

@@ -104,14 +104,20 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
 
     if (isset($_GET["ruta"])) {
       if ($_GET["ruta"] == "inicio"
-        || $_GET["ruta"] == "ajustes"
+        || $_GET["ruta"] == "clientes"
+        || $_GET["ruta"] == "artesanos"
         || $_GET["ruta"] == "categorias"
         || $_GET["ruta"] == "productos"
-        || $_GET["ruta"] == "usuarios"
+        || $_GET["ruta"] == "ajustes"
+        || $_GET["ruta"] == "perfiles"
         || $_GET["ruta"] == "salir") {
 
         include "modulos/" . $_GET["ruta"] . ".php";
+      }else{
+        include "modulos/404.php";
       }
+    }else{
+      include "modulos/inicio.php";
     }
 
     /*==============================
@@ -135,6 +141,7 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/js/gestorProductos.js"></script>
   <script src="views/js/gestorCategorias.js"></script>
   <script src="views/js/gestorUsuarios.js"></script>
+  <script src="views/js/gestorAdministradores.js"></script>
 
 
 </body>

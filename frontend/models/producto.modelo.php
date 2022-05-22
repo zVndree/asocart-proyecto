@@ -96,11 +96,21 @@ class modeloProductos
         Consulta para Mostrar todos los Productos
     =============================================*/
 
-    static public function mdl_mostrar_all_productos($tabla, $ordenar, $base, $tope, $modo){
+    static public function mdl_mostrar_all_productos($tabla, $ordenar, $item, $valor, $base, $tope, $modo){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
-        $stmt->execute();
-        return $stmt->fetchAll();
+        if($item != null){
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+            $stmt->execute();
+            return $stmt->fetchAll();
+
+        }else{
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt->execute();
+            return $stmt->fetchAll();
+        }
         $stmt -> close();
         $stmt = null;
 
@@ -111,11 +121,21 @@ class modeloProductos
         Consulta para Listar todos los Productos
     =============================================*/
 
-    static public function mdl_listar_all_productos($tabla, $ordenar){
+    static public function mdl_listar_all_productos($tabla, $ordenar, $item, $valor){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar DESC");
-        $stmt ->execute();
-        return $stmt -> fetchAll();
+        if ($item != null) {
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar >0 ORDER BY $ordenar DESC");
+            $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+            $stmt ->execute();
+            return $stmt -> fetchAll();
+
+        }else{
+
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar DESC");
+            $stmt ->execute();
+            return $stmt -> fetchAll();
+        }
         $stmt -> close();
         $stmt = null;
     }
@@ -147,7 +167,7 @@ class modeloProductos
 
         if ($item != null) {
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar DESC");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt ->execute();
             return $stmt -> fetchAll();
@@ -155,7 +175,7 @@ class modeloProductos
         }else{
 
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar DESC");
             $stmt ->execute();
             return $stmt -> fetchAll();
 
@@ -242,7 +262,7 @@ class modeloProductos
 
         if ($item != null) {
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY $ordenar ASC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar ASC");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt ->execute();
             return $stmt -> fetchAll();
@@ -250,7 +270,7 @@ class modeloProductos
         }else{
 
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $ordenar ASC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar ASC");
             $stmt ->execute();
             return $stmt -> fetchAll();
 

@@ -28,13 +28,22 @@
 	{
 		"nombre": "Celular",
 		"icono": "fa-phone",
-		"contacto": "3222256287",
-		"url": "https://www.apiwhatsaap"
+		"contacto": "3148421926",
+		"url": "https://api.whatsapp.com/send?phone=+57 3148421926&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto"
 	},
 	{
 		"nombre": "Correo",
 		"icono": "fa-envelope",
-		"contacto": "art-girardot22@gmail.com",
+		"contacto": "artesanosgirardot2022@gmail.com",
 		"url": "https://www.correo.com"
 	}
+],
+
+[
+	{
+		
+		"facebook": "",
+		"instagram": ""
+	},
+	
 ],

@@ -8,7 +8,7 @@ class ControllerUsuarios{
 
 	static public function ctrMostrarTotalUsuarios($orden){
 
-		$tabla = "usuarios";
+		$tabla = "clientes";
 
 		$respuesta = ModeloUsuarios::mdlMostrarTotalUsuarios($tabla, $orden);
 
@@ -22,7 +22,7 @@ class ControllerUsuarios{
 
 	static public function ctrMostrarUsuarios($item, $valor){
 
-		$tabla = "usuarios";
+		$tabla = "clientes";
 
 		$respuesta = ModeloUsuarios::mdlMostrarUsuarios($tabla, $item, $valor);
 

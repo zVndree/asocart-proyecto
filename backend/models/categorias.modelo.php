@@ -52,4 +52,72 @@ class ModeloCategorias{
         $stmt ->close();
         $stmt = null;
     }
+
+    
+	/*=============================================
+	CREAR CATEGORIA
+	=============================================*/
+
+	static public function mdlIngresarCategoria($tabla, $datos){
+
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre, ruta, estado, oferta, precioOferta, descuentoOferta, imgOferta, finOferta) VALUES (:nombre, :ruta, :estado, :oferta, :precioOferta, :descuentoOferta, :imgOferta, :finOferta)");
+
+		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+		$stmt->bindParam(":ruta", $datos["ruta"], PDO::PARAM_STR);
+		$stmt->bindParam(":estado", $datos["estado"], PDO::PARAM_STR);
+		$stmt->bindParam(":oferta", $datos["oferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":precioOferta", $datos["precioOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":descuentoOferta", $datos["descuentoOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":imgOferta", $datos["imgOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":finOferta", $datos["finOferta"], PDO::PARAM_STR);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		$stmt = null;
+
+	}
+
+    /*=============================================
+	EDITAR CATEGORIA
+	=============================================*/
+
+    static public function mdlEditarCategoria($tabla, $datos){
+
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, ruta = :ruta, estado = :estado, oferta = :oferta, precioOferta = :precioOferta, descuentoOferta = :descuentoOferta, imgOferta = :imgOferta, finOferta = :finOferta WHERE id = :id");
+
+		$stmt -> bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+		$stmt->bindParam(":ruta", $datos["ruta"], PDO::PARAM_STR);
+		$stmt->bindParam(":estado", $datos["estado"], PDO::PARAM_STR);
+		$stmt->bindParam(":oferta", $datos["oferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":precioOferta", $datos["precioOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":descuentoOferta", $datos["descuentoOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":imgOferta", $datos["imgOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":finOferta", $datos["finOferta"], PDO::PARAM_STR);
+		$stmt -> bindParam(":id", $datos["id"], PDO::PARAM_INT);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		$stmt = null;
+
+	
+
+    }
 }

@@ -31,7 +31,7 @@ class controller_usuarios
                     "email_encriptado" => $encriptar_email
                 );
 
-                $tabla = "usuarios";
+                $tabla = "clientes";
 
                 $respuesta = ModeloUsuarios::mdlRegistroUsuario($tabla, $datos);
 
@@ -40,7 +40,7 @@ class controller_usuarios
                 if ($respuesta == "ok") {
 
 
-                /*=============================================
+                    /*=============================================
                 Verificacion del correo
                 =============================================*/
 
@@ -118,7 +118,6 @@ class controller_usuarios
                             });
 
                         </script>';
-
                     } else {
                         echo '<script>
 
@@ -167,7 +166,7 @@ class controller_usuarios
 
     static public function ctrMostrarUsuario($item, $valor)
     {
-        $tabla = "usuarios";
+        $tabla = "clientes";
         $respuesta = ModeloUsuarios::mdlMostrarUsuario($tabla, $item, $valor);
         return $respuesta;
     }
@@ -178,7 +177,7 @@ class controller_usuarios
 
     static public function ctrActualizarUsuario($id, $item, $valor)
     {
-        $tabla = "usuarios";
+        $tabla = "clientes";
         $respuesta = ModeloUsuarios::mdlActualizarUsuario($tabla, $id, $item, $valor);
         return $respuesta;
     }
@@ -200,7 +199,7 @@ class controller_usuarios
                 $encriptar = crypt($_POST["ing_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
                 $2a$07$asxx54ahjppf45sd87a5auxq/SS293XhTEeizKWMnfhnpfay0AALe');
 
-                $tabla = "usuarios";
+                $tabla = "clientes";
 
                 $item = "email";
                 $valor = $_POST["ing_email"];
@@ -238,7 +237,7 @@ class controller_usuarios
                         $_SESSION["modo"] = $respuesta["modo"];
 
                         /*------------FECHA LOGIN------------*/
-/* 
+                        /* 
                         date_default_timezone_set("America/Bogota");
                         $fecha = date("y-m-d");
                         $hora = date("H:i:s");
@@ -335,7 +334,7 @@ class controller_usuarios
                 $encriptar = crypt($nueva_pass, '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$
                 $2a$07$asxx54ahjppf45sd87a5auxq/SS293XhTEeizKWMnfhnpfay0AALe');
 
-                $tabla = "usuarios";
+                $tabla = "clientes";
 
                 $item1 = "email";
                 $valor1 = $_POST["pass_email"];
@@ -346,12 +345,12 @@ class controller_usuarios
                     $id = $respuesta1["id"];
                     $item2 = "password";
                     $valor2 = $encriptar;
-                    
+
                     $respuesta2 = ModeloUsuarios::mdlActualizarUsuario($tabla, $id, $item2, $valor2);
 
                     if ($respuesta1["verificacion"] == "0") {
-                        
-                        
+
+
                         if ($respuesta2 == "ok") {
 
                             /*=============================================
@@ -432,8 +431,6 @@ class controller_usuarios
                                     });
 
                                     </script>';
-
-
                             } else {
                                 echo '<script> 
 
@@ -454,7 +451,7 @@ class controller_usuarios
                                     </script>';
                             }
                         }
-                    }else{
+                    } else {
                         echo '<script>
 
 							swal({
@@ -472,9 +469,7 @@ class controller_usuarios
 							});
 
 							</script>';
-
                     }
-
                 } else {
                     echo '<script>
 
@@ -494,7 +489,6 @@ class controller_usuarios
 
 							</script>';
                 }
-
             } else {
                 echo '<script> 
 
@@ -517,14 +511,15 @@ class controller_usuarios
         }
     }
 
-    
+
     /*=============================================
     Registro de usuario por redes sociales
     =============================================*/
 
-    static public function ctr_registro_red_social($datos){
+    static public function ctr_registro_red_social($datos)
+    {
 
-        $tabla = "usuarios";
+        $tabla = "clientes";
 
         $item = "email";
         $valor = $datos["email"];
@@ -537,7 +532,7 @@ class controller_usuarios
 
                 swal({
                     title: "¡ERROR!",
-                    text: "¡El correo electrónico '.$datos["email"].', ya está registrado en el sistema con un método diferente a Google!",
+                    text: "¡El correo electrónico ' . $datos["email"] . ', ya está registrado en el sistema con un método diferente a Google!",
                     type:"error",
                     confirmButtonText: "Cerrar",
                     closeOnConfirm: false
@@ -550,17 +545,14 @@ class controller_usuarios
                 });
 
                 </script>';
-                
-                        
-                        $email_repetido = false;
-            }else{
+
+
+                $email_repetido = false;
+            } else {
                 $email_repetido = true;
             }
-        
-            
-            
-        }else{
-            
+        } else {
+
             $respuesta1 = ModeloUsuarios::mdlRegistroUsuario($tabla, $datos);
         }
 
@@ -575,7 +567,7 @@ class controller_usuarios
             if ($respuesta2["modo"] == "facebook") {
 
                 session_start();
-                
+
                 $_SESSION["validar_sesion"] = "ok";
                 $_SESSION["id"] = $respuesta2["id"];
                 $_SESSION["nombre"] = $respuesta2["nombre"];
@@ -585,8 +577,8 @@ class controller_usuarios
                 $_SESSION["modo"] = $respuesta2["modo"];
 
                 echo "ok";
-            }elseif($respuesta2["modo"] == "google") {
-                
+            } elseif ($respuesta2["modo"] == "google") {
+
                 $_SESSION["validar_sesion"] = "ok";
                 $_SESSION["id"] = $respuesta2["id"];
                 $_SESSION["nombre"] = $respuesta2["nombre"];
@@ -596,15 +588,131 @@ class controller_usuarios
                 $_SESSION["modo"] = $respuesta2["modo"];
 
                 echo "<span style='color:white'>ok</span>";
-
-            }else{
+            } else {
 
                 echo "";
             }
-
         }
-
     }
 
+    /*=============================================
+    FORMULARIO CONTACTENOS
+    =============================================*/
 
+    public function ctrFormularioContactenos()
+    {
+
+        if (isset($_POST['mensajeContactenos'])) {
+
+            if (
+                preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nombreContactenos"]) &&
+                preg_match('/^[,\\.\\a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["mensajeContactenos"]) &&
+                preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["emailContactenos"])
+            ) {
+
+
+                /*=============================================
+                ENVÍO CORREO ELECTRÓNICO
+                =============================================*/
+
+                date_default_timezone_set("America/Bogota");
+                $url = Ruta::ctrRuta();
+                $mail = new PHPMailer;
+                $mail->CharSet = 'UTF-8';
+                $mail->isMail();
+                $mail->setFrom('artesanias-girardot@gmail.com', 'Artesanias Girardot');
+                $mail->addReplyTo('artesanias-girardot@gmail.com', 'Artesanias Girardot');
+                $mail->Subject = ('nuevo mensaje del cliente:'.$_POST["emailContactenos"]);
+                $mail->addAddress("contacto@tiendaenlinea.com");
+                $mail->msgHTML('
+                <div style="width:100%; background:#eee; position:relative; font-family:sans-serif; padding-bottom:40px">
+
+                    <center><img style="padding:20px; width:10%" src="http://www.tutorialesatualcance.com/tienda/logo.png"></center>
+
+                    <div style="position:relative; margin:auto; width:600px; background:white; padding-bottom:20px">
+
+                        <center>
+
+                        <img style="padding-top:20px; width:15%" src="http://www.tutorialesatualcance.com/tienda/icon-email.png">
+
+
+                        <h3 style="font-weight:100; color:#999;">HA RECIBIDO UNA CONSULTA</h3>
+
+                        <hr style="width:80%; border:1px solid #ccc">
+
+                        <h4 style="font-weight:100; color:#999; padding:0px 20px; text-transform:uppercase">'.$_POST["nombreContactenos"].'</h4>
+
+                        <h4 style="font-weight:100; color:#999; padding:0px 20px;">De: '.$_POST["emailContactenos"].'</h4>
+
+                        <h4 style="font-weight:100; color:#999; padding:0px 20px">'.$_POST["mensajeContactenos"].'</h4>
+
+                        <hr style="width:80%; border:1px solid #ccc">
+
+                        </center>
+
+                    </div>
+
+                </div>');
+
+                $envio = $mail->Send();
+
+                if (!$envio) {
+                    echo '<script>
+
+                        swal({
+                            title: "¡ERROR!",
+                            text: "¡Ha ocurrido un problema enviando enviando el mensaje!",
+                            type: "error",
+                            confirmButtonText: "Cerrar",
+                            closeOnConfirm: false
+                        },
+
+                        function(isConfirm){
+                                if (isConfirm) {	   
+                                    history.back();
+                                } 
+                        });
+
+                        </script>';
+                } else {
+                    echo '<script> 
+
+                        swal({
+                            title: "¡ENVIO EXITOSO!",
+                            text: "¡Su mensaje ha sido enviado, muy pronto le responderemos!",
+                            type:"success",
+                            confirmButtonText: "Cerrar",
+                            closeOnConfirm: false
+                        },
+
+                        function(isConfirm){
+                                if(isConfirm){
+                                    history.back();
+                                }
+                        });
+
+                        </script>';
+                }
+            } else {
+
+                echo '<script>
+
+					swal({
+						  title: "¡ERROR!",
+						  text: "¡Problemas al enviar el mensaje, revise que no tenga caracteres especiales!",
+						  type: "error",
+						  confirmButtonText: "Cerrar",
+						  closeOnConfirm: false
+					},
+
+					function(isConfirm){
+							 if (isConfirm) {	   
+							   	window.location =  history.back();
+							  } 
+					});
+
+					</script>';
+            }
+        }
+    }
 }

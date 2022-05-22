@@ -41,7 +41,7 @@ Barra de productos
                 <li><a href="'.$url.$rutas[0].'/1/antiguos">Más antiguo</a></li>---->
                 <div class="col-xs-12 text-right">
                     <div class="btn-group">
-                        <button type="button" style="background-color:'.$plantilla["barTop"].'" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <button type="button" style="background-color:'.$plantilla["verde"].'; color:'.$plantilla["bar_down"].'" class="btn dropdown-toggle" data-toggle="dropdown">
                             Ordenar Productos <span class="caret"></span>
                         </button>
                         <ul style="background-color:'.$plantilla["colorFondo"].'" class="dropdown-menu" role="menu">
@@ -117,14 +117,14 @@ Listar Productos
 
                         $modo = "ASC";
                         $_SESSION["ordenar"] = "ASC";
-                        $ordenar = "descuento_oferta";
+                        $ordenar = "descuentoOferta";
                         $rango = 5;
 
                     }else if($rutas[2] == "desde-30"){
                         
 						$modo = "ASC";
 						$_SESSION["ordenar"] = "ASC";
-                        $ordenar = "descuento_oferta";
+                        $ordenar = "descuentoOferta";
                         $rango = 30;
 
 
@@ -164,7 +164,7 @@ Listar Productos
 					if(isset($_SESSION["ordenar"])){
 
 						$modo = $_SESSION["ordenar"];
-                        $ordenar = "descuento_oferta";
+                        $ordenar = "descuentoOferta";
                         $rango = 5;
                         $_SESSION["rango"] = 5;
 
@@ -199,9 +199,9 @@ Listar Productos
 
             if ($rutas[0] == "ofertas") {
                 
-                $item2 = null;
-                $valor2 = null;
-                $ordenar = "descuento_oferta";
+                $item2 = "estado";
+                $valor2 = 1;
+                $ordenar = "descuentoOferta";
 
             } else {
                 
@@ -239,101 +239,106 @@ Listar Productos
 
                 foreach ($ofertas as $key => $value) {
 
-                    $price = $value["precio"];
-                    $money_product = number_format($price, 0, '.', '.');
+                    if ($value["estado"] != 0) {
+                        $estado = 1;
+                    
+                        $precioOferta = $value["precioOferta"];
+                        $moneyPrecioOferta = number_format($precioOferta, 0, '.', '.');
+                        $price = $value["precio"];
+                        $money_product = number_format($price, 0, '.', '.');
 
-                    echo '
-                            <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">';
+                        echo '
+                                <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">';
 
-                            if ($rutas[0] == "ofertas") {
-                                if ($value["descuento_oferta"] > 0) {
+                                if ($rutas[0] == "ofertas") {
+                                    if ($value["descuentoOferta"] > 0) {
 
-                                    echo '
-                                    <figure>
-                                        <a href="'.$url.$value["ruta"] . '" class="pixelProducto">
-                                            <img src="' . $server . $value["img_producto"] . '" class="img-responsive" alt="productos">
-                                        </a>
-                                    </figure>
-                                    <!-- ' . $value["id"] . ' ---->
-                                    <div class="col-xs-12" id="info_down">
-                                    <div class="product-grid">
-                                        <h4>
-                                            <small>
-                                                <a href="' .$url. $value["ruta"] . '" class="pixelProducto">
-                                                    <strong>' . $value["titulo"] . '</strong><br>
-                                                    <span style="color:rgba(0,0,0,0)">-</span>';
-    
-                                        if ($value["nuevo"] != 0) {
-                                            echo '<span class="label label-warning fontSize">Nuevo</span> ';
-                                        }
-                        
-                                        if ($value["oferta"] != 0) {
-                                            echo '<span class="label label-warning fontSize">' . $value["descuento_oferta"] . '% off</span> ';
-                                        }
-                        
-                                        echo '</a>
-                                                                </small>
-                                                            </h4>
-                        
-                                                            <div class="col-xs-6 precio">';
-                        
-                                        if ($value["oferta"] != 0) {    
-                        
-                                            echo '
-                                                    <h3>
-                                                        <small>
-                                                            <strong class="oferta">COP $'.$money_product.'</strong>
-                                                        </small><br>
-    
-                                                        <small><strong  style="color:#474747;">$' . $value["precio_oferta"] . '</strong></small>
-                                                    </h3>';
-                                        } else {
-                                            echo '<h3><small><strong  style="color:#474747;">COP $'.$money_product.'</strong></samll></h3><br>';
-                                        }
-                        
-                                        echo '</div>
-    
-                                        <div class="col-xs-6 enlaces">
-                                            <div class="btn-group pull-right">
-                                                <button type="button" class="btn btn-default btn-xs deseos" idProducto="' . $value["id"] . '" data-toggle="tooltip" title="Agregar a mi lista de deseos">
-                                                    <i class="fa fa-heart" aria-hidden="true"></i>
-                                                </button>';
-    
-                                        if ($value["precio"] != 0) {
-                                            if ($value["oferta"] != 0) {
-                                                echo '
-                                                    <div class="product-content">
-                                                        <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $value["precio_oferta"] . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
-                                                        <i class="fa fa-shopping-cart"></i></a>
-                                                    </div>';
-                                            } else {
-                                                echo '
-                                                    <div class="product-content">
-                                                        <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_product . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
-                                                        <i class="fa fa-shopping-cart"></i></a>
-                                                    </div>';
+                                        echo '
+                                        <figure>
+                                            <a href="'.$url.$value["ruta"] . '" class="pixelProducto">
+                                                <img src="' . $server . $value["img_producto"] . '" class="img-responsive" alt="productos">
+                                            </a>
+                                        </figure>
+                                        <!-- ' . $value["id"] . ' ---->
+                                        <div class="col-xs-12" id="info_down">
+                                        <div class="product-grid">
+                                            <h4>
+                                                <small>
+                                                    <a href="' .$url. $value["ruta"] . '" class="pixelProducto">
+                                                        <strong>' . $value["titulo"] . '</strong><br>
+                                                        <span style="color:rgba(0,0,0,0)">-</span>';
+        
+                                            if ($value["nuevo"] != 0) {
+                                                echo '<span class="label label-warning fontSize">Nuevo</span> ';
                                             }
-                                        }
-            
-                                        echo '<a href="' . $value["ruta"] . '" class="pixelProducto">
-                                                                <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
-                                                                    <i class="fa fa-eye" aria-hidden="true"></i>
-                                                                </button>
-                                                            </a>
+                            
+                                            if ($value["oferta"] != 0) {
+                                                echo '<span class="label label-warning fontSize">' . $value["descuentoOferta"] . '% off</span> ';
+                                            }
+                            
+                                            echo '</a>
+                                                                    </small>
+                                                                </h4>
+                            
+                                                                <div class="col-xs-6 precio">';
+                            
+                                            if ($value["oferta"] != 0) {    
+                            
+                                                echo '
+                                                        <h3>
+                                                            <small>
+                                                                <strong class="oferta">COP $'.$money_product.'</strong>
+                                                            </small><br>
+        
+                                                            <small><strong  style="color:#474747;">$' . $moneyPrecioOferta . '</strong></small>
+                                                        </h3>';
+                                            } else {
+                                                echo '<h3><small><strong  style="color:#474747;">COP $'.$money_product.'</strong></samll></h3><br>';
+                                            }
+                            
+                                            echo '</div>
+        
+                                            <div class="col-xs-6 enlaces">
+                                                <div class="btn-group pull-right">
+                                                    <button type="button" class="btn btn-default btn-xs deseos" idProducto="' . $value["id"] . '" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                    </button>';
+        
+                                            if ($value["precio"] != 0) {
+                                                if ($value["oferta"] != 0) {
+                                                    echo '
+                                                        <div class="product-content">
+                                                            <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $moneyPrecioOferta . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                            <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>';
+                                                } else {
+                                                    echo '
+                                                        <div class="product-content">
+                                                            <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_product . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                            <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>';
+                                                }
+                                            }
+                
+                                            echo '<a href="' . $value["ruta"] . '" class="pixelProducto">
+                                                                    <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+                                                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    ';
+                                        </li>
+                                        ';
+                            
+                                    }
+                                
+                                }else{
+
                         
                                 }
-                            
-                            }else{
-
-                    
-                            }
-                                
+                    }                
                 }
                 echo '</ul>';
             }

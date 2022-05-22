@@ -1,1 +1,0 @@
-<h1>aqui iran todas las categorias</h1>

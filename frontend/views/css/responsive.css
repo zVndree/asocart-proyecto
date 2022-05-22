@@ -150,10 +150,21 @@ Responsive Configuration
 	}
 
 	.card{
-		width: 30.30%;
+		width: 30.40%;
     	height: 250px;
 		margin: 4rem 0rem 0 2.5rem;
 	}
+
+	.card .general p{
+		font-size:14px;
+		
+	}
+
+	.card .general {
+
+		right: 7%;
+	}
+	
 
 }
 

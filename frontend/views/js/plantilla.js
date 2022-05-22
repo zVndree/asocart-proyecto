@@ -163,11 +163,46 @@ Efecto HOVER
 			
 		}
 		);
+
+		$(".btn-up-top").hover(function () {
+				
+			$(this).css({background: colorFondo});
+			$(this).css({color: bar_down});
+			
+		}, function () {
+			$(this).css({background: barTop});
+			$(this).css({color: bar_down});
+			
+		}
+		);
 	},
 });
 
+/*===========================
+	SCROLL UP
+============================*/
+
+/* $(function(){
+	$.scrollUp({
+	scrollText:"",
+	scrollSpeed: 2000,
+	easingType: "easeOutQuint"
+	});
+   }); */
+
+const toTop = document.querySelector(".btn-up-top");
+window.addEventListener("scroll", () =>{
+
+	if (window.pageYOffset > 500) {
+		toTop.classList.add("active");
+		
+		
+	}else{
+		toTop.classList.remove("active");
+	}
+})
 /*=============================================
-LIMPIA EL FORMULARIO DE INGRESO DE PARQUES MEMORIALES
+LIMPIA EL FORMULARIO 
 =============================================*/
 
 $(".modal").on("hidden.bs.modal", function () {
@@ -196,3 +231,6 @@ var url = window.location.href;
 var indice = url.split("/");
 
 $("#item" + indice.pop()).addClass("active");
+
+
+

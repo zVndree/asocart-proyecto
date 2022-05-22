@@ -219,33 +219,92 @@ function registro_user() {
 	}
 	return true;
 
-	/*  return true; */
+}
 
-	/* if (valido == 1) {
-        alert("entro 1 condicion");
-		var datos = 'regis_user=' + regis_user + '&regis_email=' + regis_email +  '&regis_pass=' + regis_pass;
-        alert("entro ajax datos condicion");
-        $.ajax({
-            
-			type: "POST",
-			url: "controllers/usuarios.controller.php",
-			data: datos,
-			success: function(res) {
-                alert("entro 2 condicion");
-				if (parseInt(res) == 1) {
-                    
-					$('.alerta_correcto').css('display','block');
-				}else{
-					$('.alerta_incorrecto').css('display','block');
-					
-				}
-			},
-			error: function(res) {
-                alert("entro 3 condicion");
-				$('.alerta_incorrecto').css('display','block');
-			}
-		});
+/*=============================================
+VALIDACIÓN FORMULARIO CONTACTENOS
+=============================================*/		
+
+function validarContactenos(){
+
+	var nombre = $("#nombreContactenos").val();
+	var email = $("#emailContactenos").val();
+	var mensaje = $("#mensajeContactenos").val();
+
+	/*=============================================
+	VALIDACIÓN DEL NOMBRE
+	=============================================*/	
+
+	if(nombre != ""){
+		var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+		if ($(".alert").length) {
+			$(".alert").remove();
+		}
+		if(!expresion.test(nombre)){
+
+			$("#nombreContactenos").before('<h6 class="alert alert-danger">Escriba por favor sólo letras sin caracteres especiales</h6>');
+
+			return false;
+
+		}
+
+	}else{
+		$("#nombreContactenos").before('<h6 class="alert alert-danger">Escriba por favor el nombre</h6>');
+		return false;
+		
 	}
 
- */
+	/*=============================================
+	VALIDACIÓN DEL EMAIL
+	=============================================*/	
+
+	if(email != ""){
+
+		var expresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+		if ($(".alert").length) {
+			$(".alert").remove();
+		}
+
+		if(!expresion.test(email)){
+			
+			$("#emailContactenos").before('<h6 class="alert alert-danger">Escriba por favor correctamente el correo electrónico</h6>');
+			
+			return false;
+		}
+
+	}else{
+
+		$("#emailContactenos").before('<h6 class="alert alert-danger">Escriba por favor el email</h6>');
+		
+		return false;	
+
+	}
+
+	/*=============================================
+	VALIDACIÓN DEL MENSAJE
+	=============================================*/	
+
+	if(mensaje != ""){
+		var expresion = /^[,\\.\\a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]*$/;
+		if ($(".alert").length) {
+			$(".alert").remove();
+		}
+
+		if(!expresion.test(mensaje)){
+			
+			$("#mensajeContactenos").before('<h6 class="alert alert-danger">Escriba el mensaje sin caracteres especiales</h6>');
+			
+			return false;
+		}
+
+	}else{
+
+		$("#mensajeContactenos").before('<h6 class="alert alert-danger">Escriba por favor un mensaje</h6>');
+		
+		return false;
+
+	}
+
+	return true;
+
 }

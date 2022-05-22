@@ -142,3 +142,188 @@ Stack trace:
 #5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
 #6 {main}
   thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14
+[15-May-2022 20:47:40 America/Bogota] PHP Notice:  Undefined index: editarIdCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 101
+[15-May-2022 20:47:40 America/Bogota] PHP Notice:  Undefined index: editarTituloCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 102
+[15-May-2022 20:47:54 America/Bogota] PHP Notice:  Undefined index: editarIdCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 101
+[15-May-2022 20:47:54 America/Bogota] PHP Notice:  Undefined index: editarTituloCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 102
+[15-May-2022 20:48:24 America/Bogota] PHP Notice:  Undefined index: editarIdCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 101
+[15-May-2022 20:48:24 America/Bogota] PHP Notice:  Undefined index: editarTituloCategoria in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 102
+[15-May-2022 22:54:05 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:54:08 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:54:13 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:54:38 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:55:57 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:56:42 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[15-May-2022 22:57:20 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorCategorias' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php:476
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php on line 476
+[16-May-2022 18:26:36 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method ModeloCategorias::mdlEditarCategoria() in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php:263
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 263
+[16-May-2022 18:26:57 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method ModeloCategorias::mdlEditarCategoria() in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php:263
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 263
+[17-May-2022 02:40:48 America/Bogota] PHP Warning:  unlink(views/img/ofertas/jugueteria.png): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[17-May-2022 02:40:48 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(269): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[17-May-2022 02:41:41 America/Bogota] PHP Warning:  unlink(views/img/ofertas/jugueteria.png): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[17-May-2022 02:41:41 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(269): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[17-May-2022 02:48:39 America/Bogota] PHP Warning:  unlink(views/img/ofertas/jugueteria.png): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[17-May-2022 02:48:39 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'precioOferta' in 'field list' in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(269): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[17-May-2022 02:53:00 America/Bogota] PHP Warning:  unlink(views/img/ofertas/jugueteria.png): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[18-May-2022 00:34:03 America/Bogota] PHP Warning:  unlink(): Invalid argument in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[18-May-2022 02:00:07 America/Bogota] PHP Warning:  unlink(): Invalid argument in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[18-May-2022 02:06:42 America/Bogota] PHP Warning:  unlink(): Invalid argument in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[18-May-2022 02:11:47 America/Bogota] PHP Warning:  unlink(): Invalid argument in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 178
+[18-May-2022 02:37:16 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(286): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...', '30008', '50')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[18-May-2022 02:37:29 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(286): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...', '30008', '50')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[18-May-2022 02:38:20 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php:76
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php(76): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php(286): modeloProductos::mdlActualizarOfertaProductos('productos', Array, 'ofertadoPorCate...', '30008', '50')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\categorias.php(372): ControllerCategorias::ctrEditarCategoria()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(113): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\productos.modelo.php on line 76
+[19-May-2022 17:22:29 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'ControladorAdministradores' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php:52
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(114): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php on line 52
+[19-May-2022 22:53:30 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method controllerAdmin::ctrCrearPerfil() in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php:228
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(114): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php on line 228
+[19-May-2022 22:54:32 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method controllerAdmin::ctrCrearPerfil() in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php:228
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(114): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php on line 228
+[19-May-2022 22:56:00 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method controllerAdmin::ctrCrearPerfil() in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php:228
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(114): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\perfiles.php on line 228
+[21-May-2022 17:10:58 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\error404.php:5
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\error404.php on line 5
+[22-May-2022 00:53:17 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php:14
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php(14): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\asocart-proyecto\backend\models\ajustes.Modelo.php(18): Conexion::conectar()
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\ajustes.Controller.php(17): ModeloAjustes::mdlSeleccionarPlantilla('plantilla')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(4): ControllerAjustes::ctrSeleccionarPlantilla()
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14

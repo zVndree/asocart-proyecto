@@ -406,7 +406,7 @@ Header
 			Carrito de compras
 			======================================-->
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
-				<a href="#">
+				<a href="<?php echo $url; ?>carrito-de-compras">
 				<strong style="color: <?php echo $social["colorTexto"]?>;" id="items"> Items </strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span>
 					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-shopping-basket" aria-hidden="true">
 					</i>

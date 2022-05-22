@@ -1,9 +1,19 @@
 <?php
     class ControllerSubcategorias{
 
-        static public function ctrMostrarSubcategorias($item, $valor){
-            $respuesta = ModeloSubcategorias::mdlMostrarSubcategorias($item, $valor);
-        }
+    /*=============================================
+	MOSTRAR SUBCATEGORIAS
+	=============================================*/
+
+	static public function ctrMostrarSubCategorias($item, $valor){
+
+		$tabla = "subcategorias";
+
+		$respuesta = ModeloSubCategorias::mdlMostrarSubCategorias($tabla, $item, $valor);
+
+		return $respuesta;
+	
+	}
 
     }
 ?>

@@ -1,3 +1,7 @@
+<?php
+	$plantilla = ControllerPlantilla::ctrEstiloPlantilla();
+?>
+
 <!--======================
 SLIDE
 =======================-->
@@ -80,16 +84,3 @@ SLIDE
 </div>
 </div>
 
-<!----=================----
-BOTON DE SUBIR 
-------=================--->
-<a href="#" class="btn-up-top" id="btn_up">
-	<i class="fa fa-angle-double-up icono-up"></i>
-</a>
-<!----=================----
-BOTON DE WHATSAPP
-------=================--->
-
-<a href="https://api.whatsapp.com/send?phone=+57 3222256287&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto." data-toggle="tooltip" data-placement="left" title="¿En que podemos ayudarte?" class="float" target="_blank">
-	<i class="fa fa-whatsapp my-float"></i>
-</a>

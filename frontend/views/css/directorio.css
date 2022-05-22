@@ -1,3 +1,4 @@
+
 .buscador-content {
     position: relative;
     top: 50%;
@@ -17,8 +18,8 @@
 }
 
 .card {
-    background-color: #fff;
-    background: linear-gradient(#f8f8f8, #fff);
+    background-color: #c4d5c4;
+    background: linear-gradient(#c4d5c4,  #c7ecd8);
     box-shadow: 0 2px 6px 0px hsla(0, 0%, 0%, 0.2);
     border-radius: 5px;
     border: 0;
@@ -43,14 +44,12 @@
 
 }
 
-
-
-.card:hover .additional {
+/* .card:hover .additional {
     width: 100%;
     border-radius: 0 5px 5px 0;
     background-image: url("../img/plantilla/aztec.svg");
     
-}
+} */
 
 .card .additional .user-card {
     width: 150px;
@@ -66,7 +65,7 @@
     top: 10%;
     right: -2px;
     height: 80%;
-    border-left: 2px solid rgba(0,0,0,0.025);*/
+    border-left: 2px solid rgba(0,0,0,0.025);
 }
 
 .card .additional .more-info {
@@ -105,18 +104,18 @@
     color: #fff;
 }
 
-
 .card .general {
     width: 300px;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
     z-index: 1;
     box-sizing: border-box;
     padding: 1rem;
     padding-top: 0;
 }
+
+
 
 .card .general .more {
     position: absolute;

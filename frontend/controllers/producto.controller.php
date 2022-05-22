@@ -54,10 +54,10 @@ class controladorProductos
     Mostrar todos los Productos
     ========================*/
 
-    static public function ctr_mostrar_all_productos($ordenar, $base, $tope, $modo){
+    static public function ctr_mostrar_all_productos($ordenar,$item, $valor, $base, $tope, $modo){
 
         $tabla = "productos";
-        $respuesta = modeloProductos::mdl_mostrar_all_productos($tabla, $ordenar, $base, $tope, $modo);
+        $respuesta = modeloProductos::mdl_mostrar_all_productos($tabla, $ordenar, $item, $valor, $base, $tope, $modo);
         return $respuesta;
     }
 
@@ -79,10 +79,10 @@ class controladorProductos
     Listar todos los Productos
     ========================*/
 
-    static public function ctr_listar_all_productos($ordenar){
+    static public function ctr_listar_all_productos($ordenar, $item, $valor){
 
         $tabla = "productos";
-        $respuesta = modeloProductos::mdl_listar_all_productos($tabla, $ordenar);
+        $respuesta = modeloProductos::mdl_listar_all_productos($tabla, $ordenar, $item, $valor);
         return $respuesta;
     }
 

@@ -26,8 +26,6 @@ Slide
 	height: 60px;
 	right: 0;
 	bottom: 10px;
-	background-color: var(--dark);
-	color: var(--amarillo);
 	text-align: center;
 	opacity: 0;
 	pointer-events: none;
@@ -46,11 +44,11 @@ Slide
 
 }
 
-.btn-up-top:hover{
+/* .btn-up-top:hover{
 	text-decoration: none;
 	color: var(--dark);
 	background-color: var(--amarillo);
-}
+} */
 
 /*-----Boton de Whatsapp-------*/
 

@@ -48,7 +48,7 @@ class TablaCategorias{
                 if($categorias[$i]["precioOferta"] != 0){
 
                     $tipoOferta = "PRECIO";
-                    $valorOferta = "$ ".number_format($categorias[$i]["precioOferta"],2);
+                    $valorOferta = "$ ".number_format($categorias[$i]["precioOferta"],0, '.', '.');
 
                 }else{
 
@@ -79,8 +79,8 @@ class TablaCategorias{
             CREAR LAS ACCIONES
             =============================================*/
 
-            $acciones = "<div class='btn-group'><button class='btn btn-warning btnEditarCategoria' idCategoria='".$categorias[$i]["id"]."' data-toggle='modal' data-target='#modalEditarCategoria'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarCategoria' idCategoria='".$categorias[$i]["id"]." rutaCabecera='".$categorias[$i]["ruta"]."' imgOferta='".$categorias[$i]["imgOferta"]."'><i class='fa fa-times'></i></button></div>";
-
+            $acciones = "<div class='btn-group'><button class='btn btn-warning btnEditarCategoria' idCategoria='".$categorias[$i]["id"]."' data-toggle='modal' data-target='#modalEditarCategoria'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarCategoria' idCategoria='".$categorias[$i]["id"]."' nombreCategoria='".$categorias[$i]["nombre"]."' rutaCabecera='".$categorias[$i]["ruta"]."' imgOferta='".$categorias[$i]["imgOferta"]."'><i class='fa fa-times'></i></button></div>";
+        
             $datosJson  .= '[
                     "'.($i+1).'",
                     "'.$categorias[$i]["nombre"].'",
