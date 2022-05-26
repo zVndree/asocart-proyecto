@@ -371,10 +371,17 @@ MODAL EDITAR CATEGORÍA
             $editarCategoria = new ControllerCategorias();
             $editarCategoria -> ctrEditarCategoria(); 
 
-    ?>
+            ?>
 
         </div>
 
     </div>
 
 </div>
+
+<?php
+    
+$eliminarCategoria = new ControllerCategorias();
+$eliminarCategoria -> ctrEliminarCategoria(); 
+
+?>

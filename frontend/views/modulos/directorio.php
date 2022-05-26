@@ -70,6 +70,10 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
                 $artesano = ControladorDirectorio::ctrListarArtesanos($item, $valor);
                 
                 foreach ($artesano as $key => $value) {
+
+                    if ($value["estado"] == 0) {
+                        
+                    
                     /* $item2 = null;
                     $valor2 = null;
                     $especialidad = ControladorDirectorio::ctrListarEspecialidades($item2, $valor2);
@@ -156,7 +160,7 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
                 /*     $art_espe = ControladorDirectorio::ctrListarArt_Espe();
                     var_dump($art_espe); */
 
-                
+                    }
                     
                 }
 

@@ -3,6 +3,7 @@
 session_start();
 $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
 
+
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +75,7 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
 </head>
 
-<body class="hold-transition sidebar-collapse skin-blue sidebar-mini fondo">
+<body  style="background-color: #d9cab0" class="hold-transition sidebar-collapse sidebar-mini">
 
   <!-------------------------------
     Modulo Login
@@ -107,6 +108,7 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
         || $_GET["ruta"] == "clientes"
         || $_GET["ruta"] == "artesanos"
         || $_GET["ruta"] == "categorias"
+        || $_GET["ruta"] == "subcategorias"
         || $_GET["ruta"] == "productos"
         || $_GET["ruta"] == "ajustes"
         || $_GET["ruta"] == "perfiles"
@@ -140,7 +142,9 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/js/gestorAjustes.js"></script>
   <script src="views/js/gestorProductos.js"></script>
   <script src="views/js/gestorCategorias.js"></script>
+  <script src="views/js/gestorSubcategorias.js"></script>
   <script src="views/js/gestorUsuarios.js"></script>
+  <script src="views/js/gestorArtesanos.js"></script>
   <script src="views/js/gestorAdministradores.js"></script>
 
 

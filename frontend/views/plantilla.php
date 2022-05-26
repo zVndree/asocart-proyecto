@@ -88,6 +88,7 @@
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/jquery.flexslider.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>views/js/plugins/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -230,6 +231,8 @@ BOTON DE WHATSAPP
     <script src="<?php echo $url; ?>views/js/registro_fb.js"></script>
     <script src="<?php echo $url; ?>views/js/buscador.js"></script>
     <script src="<?php echo $url; ?>views/js/info-producto.js"></script>
+	<script src="<?php echo $url; ?>views/js/carrito.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

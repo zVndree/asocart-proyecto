@@ -112,3 +112,20 @@ Pinterest
 .pinterestPng {
 	color: white;
 }
+
+/*========================
+SIDEBAR MENU
+========================*/
+
+.sidebar_menu li a{
+	background: #d9cab0;
+}
+
+.sidebar_menu i, span{
+	color: #5E574D;
+}
+
+
+
+
+

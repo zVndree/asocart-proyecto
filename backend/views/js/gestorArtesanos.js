@@ -40,3 +40,50 @@ $(".tablaArtesanos").DataTable({
 		},
 	},
 });
+
+/*=============================================
+ACTIVAR O DESACTIVAR ARTESANOS
+=============================================*/
+
+$(".tablaArtesanos tbody").on("click", ".btnActivar", function () {
+
+	var idArtesano = $(this).attr("idArtesano");
+	var estadoArtesano = $(this).attr("estadoArtesano");
+
+	var datos = new FormData();
+	datos.append("activarId", idArtesano);
+	datos.append("activarArtesano", estadoArtesano);
+
+	$.ajax({
+
+		url: "ajax/artesanos.ajax.php",
+		method: "POST",
+		data: datos,
+		cache: false,
+		contentType: false,
+		processData: false,
+		success: function (respuesta) {
+
+			// console.log("respuesta", respuesta);
+
+		}
+
+	});
+
+	if (estadoArtesano == 1) {
+
+		$(this).removeClass('btn-success');
+		$(this).addClass('btn-danger');
+		$(this).html('Desactivado');
+		$(this).attr('estadoArtesano', 0);
+
+	} else {
+
+		$(this).addClass('btn-success');
+		$(this).removeClass('btn-danger');
+		$(this).html('Activado');
+		$(this).attr('estadoArtesano', 1);
+
+	}
+
+})

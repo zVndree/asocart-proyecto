@@ -334,4 +334,89 @@ class ControllerCategorias{
         }
     }
 
+    /*=============================================
+	ELIMINAR CATEGORIA
+	=============================================*/
+
+	static public function ctrEliminarCategoria(){
+        if(isset($_GET["idCategoria"])){
+
+            /*=============================================
+			ELIMINAR IMAGEN OFERTA
+			=============================================*/
+
+			if($_GET["imgOferta"] != ""){
+
+				unlink($_GET["imgOferta"]);		
+
+			}
+
+            /*=============================================
+			QUITAR LAS CATEGORIAS DE LAS SUBCATEGORIAS
+			=============================================*/
+
+			$traerSubCategorias = ModeloSubcategorias::mdlMostrarSubCategorias("subcategorias",  "id_categoria", $_GET["idCategoria"]);
+
+            if($traerSubCategorias){
+
+				foreach ($traerSubCategorias as $key => $value) {
+
+					$item1 = "id_categoria";
+					$valor1 = 0;
+					$item2 = "id";
+					$valor2 = $value["id"];
+
+					ModeloSubCategorias::mdlActualizarSubCategorias("subcategorias", $item1, $valor1, $item2, $valor2);
+
+				}
+
+			}
+
+            /*=============================================
+			QUITAR LAS CATEGORIAS DE LOS PRODUCTOS
+			=============================================*/
+
+			$traerProductos = ModeloProductos::mdlMostrarProductos("productos", "id_categoria", $_GET["idCategoria"]);
+
+			if($traerProductos){
+
+				foreach ($traerProductos as $key => $value) {
+
+					$item1 = "id_categoria";
+					$valor1 = 0;
+					$item2 = "id";
+					$valor2 = $value["id"];
+
+					ModeloProductos::mdlActualizarProductos("productos", $item1, $valor1, $item2, $valor2);	
+				
+				}
+
+			}
+
+            $respuesta = ModeloCategorias::mdlEliminarCategoria("categorias", $_GET["idCategoria"]);
+            
+            if($respuesta == "ok"){
+
+				echo'<script>
+
+				swal({
+					  type: "success",
+					  title: "La categoría ha sido borrada correctamente",
+					  showConfirmButton: true,
+					  confirmButtonText: "Cerrar"
+					  }).then(function(result){
+								if (result.value) {
+
+								window.location = "categorias";
+
+								}
+							})
+
+				</script>';
+
+			}
+        }
+
+    }
+
 }

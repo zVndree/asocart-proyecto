@@ -4,7 +4,7 @@
 <div class="content-wrapper">
 
 <!-- Contenido encabezado dash -->
-    <section class="content-header">
+    <section  class="content-header">
         <h1>
             DashBoard
             <small>Panel de Control</small>

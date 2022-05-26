@@ -20,22 +20,29 @@ FOOTER
 
                 foreach ($categorias as $key => $value) {
 
-                    echo '<div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                    if ($value["estado"] != 0) {
+                
+                        echo '<div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
 
-                            <h4><a href="'.$url.$value["ruta"].'">'.$value["nombre"].'</a> </h4>
+                                <h4><a href="'.$url.$value["ruta"].'">'.$value["nombre"].'</a> </h4>
+                            
+                                <ul>';
 
-                            <ul>';
-                            $item = "id_categoria";
-					$valor = $value["id"];
-					$subcategorias = controladorProductos::ctrListarSubcategorias($item, $valor);
+                        $item = "id_categoria";
+                        $valor = $value["id"];
+                        $subcategorias = controladorProductos::ctrListarSubcategorias($item, $valor);
 
-					/* var_dump($subcategorias); */
-					foreach ($subcategorias as $key => $value) {
-                                echo'<li><a href="'. $url . $value["ruta"] . '">'.$value["nombre"].'</a></li>';
+                        /* var_dump($subcategorias); */
+                        foreach ($subcategorias as $key => $value) {
+
+                            if ($value["estado"] != 0) {
+                                    echo'<li><a href="'. $url . $value["ruta"] . '">'.$value["nombre"].'</a></li>';
+                            }
+                        }
+                            echo'</ul>
+                        
+                            </div>';
                     }
-                        echo'</ul>
-                    
-                        </div>';
                 }
             ?>
 

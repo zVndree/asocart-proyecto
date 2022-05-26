@@ -1,3 +1,6 @@
+<?php
+	$plantilla = ControllerPlantilla::ctrEstiloPlantilla();
+?>
 <!--=====================================
 BREADCRUMB CARRITO DE COMPRAS
 ======================================-->
@@ -33,32 +36,36 @@ TABLA CARRITO DE COMPRAS
 			CABECERA CARRITO DE COMPRAS
 			======================================-->
 
-			<div class="panel-heading cabeceraCarrito">
+			<div class="back_color panel-heading cabeceraCarrito">
+				<h4 class="panel-title"><strong>Tu carrito de compras</strong></h4><br>
 				<div class="col-md-6 col-sm-7 col-xs-12 text-center">
-					<h3>
-						<small>PRODUCTO</small>
-					</h3>
+					<h5>
+						<strong>PRODUCTO</strong>
+					</h5>
 				</div>
 
-				<div class="col-md-2 col-sm-1 col-xs-0 text-center">
+				<div class="col-md-2 col-sm-1 col-xs-0 text-left">
 					
-					<h3>
-						<small>PRECIO</small>
-					</h3>
+					<h5>
+						
+						<strong>PRECIO</strong>
+					</h5>
 
 				</div>
 
-				<div class="col-sm-2 col-xs-0 text-center">		
-					<h3>
-						<small>CANTIDAD</small>
-					</h3>
+				<div class="col-sm-2 col-xs-0 text-left">		
+					<h5>
+						<strong>CANTIDAD</strong>
+					</h5>
 				</div>
 
-				<div class="col-sm-2 col-xs-0 text-center">		
-					<h3>
-						<small>SUBTOTAL</small>
-					</h3>
+				<div class="col-sm-2 col-xs-0 text-left">		
+					<h5>
+						<strong>SUBTOTAL</strong>
+					</h5>
 				</div>
+
+				
 			</div>
 
 			<!--=====================================
@@ -67,29 +74,37 @@ TABLA CARRITO DE COMPRAS
 
 			<div class="panel-body cuerpoCarrito">
 
-				<!-- item1 -->				
-				<div clas="row itemCarrito">
-					<div class="col-sm-1 col-xs-12">						
-						<br>
+				
+			</div>
 
-						<center>							
-							<button class="btn btn-default bar_top">							
-								<i class="fa fa-times"></i>
-							</button>
-						</center>	
+			<!--=====================================
+			SUMA DEL TOTAL DE PRODUCTOS
+			======================================-->
 
+			<div class="panel-body sumaCarrito">
+				<div class="col-md-4 col-sm-6 col-xs-12 pull-right well">				
+					<div class="col-xs-6">
+						
+						<h4>TOTAL:</h4>
 					</div>
 
-					<div class="col-sm-1 col-xs-12">
-						
-						<figure>
+					<div class="col-xs-6">
+						<h4 class="sumaSubTotal">
 							
-							<img src="http://localhost/asocart-proyecto/backend/views/img/products/modayaccesorios/pulsera1.png" class="img-thumbnail">
-
-						</figure>
-
+							
+						</h4>
 					</div>
 				</div>
+			</div>
+
+			<!--=====================================
+			BOTÓN CHECKOUT
+			======================================-->
+
+			<div class="panel-heading cabeceraCheckout">
+				
+				<button style="color: <?php echo $plantilla["bar_down"]; ?>; background: <?php echo $plantilla["verde"];?>;" class="add_cart btn btn-default btn-lg pull-right">Realizar Pago</button>
+
 			</div>
 		</div>
 	</div>

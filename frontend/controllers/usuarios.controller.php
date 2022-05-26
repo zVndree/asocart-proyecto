@@ -715,4 +715,61 @@ class controller_usuarios
             }
         }
     }
+
+    /*=============================================
+    Actualizar Perfil
+    =============================================*/
+
+    public function ctrActualizarPerfil() {
+
+        if (isset($_POST["edit_name"])) {
+            if ($_POST["edit_pass"] == "") {
+
+                $password = $_POST["passUsuario"];
+
+            }else{
+
+                $password = crypt($_POST["edit_pass"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
+
+            }
+            $datos = array("nombre" => $_POST["edit_name"], 
+                            "email" => $_POST["edit_email"],
+                            "password" => $password,
+                            "foto" => "",
+                            "id" => $_POST["idUsuario"]);
+            
+            $tabla = "clientes";
+            $respuesta = ModeloUsuarios::mdlActualizarPerfil($tabla, $datos);
+
+            if($respuesta == "ok"){
+
+                $_SESSION["validarSesion"] = "ok";
+				$_SESSION["id"] = $datos["id"];
+				$_SESSION["nombre"] = $datos["nombre"];
+				$_SESSION["foto"] = $datos["foto"];
+				$_SESSION["email"] = $datos["email"];
+				$_SESSION["password"] = $datos["password"];
+				$_SESSION["modo"] = $_POST["modoUsuario"];
+
+                echo '<script> 
+
+						swal({
+                            title: "¡OK!",
+                            text: "¡Su cuenta ha sido actualizada correctamente!",
+                            type:"success",
+                            confirmButtonText: "Cerrar",
+                            closeOnConfirm: false
+							},
+
+							function(isConfirm){
+
+								if(isConfirm){
+									history.back();
+								}
+						});
+
+				</script>';
+            }
+        }
+    }
 }

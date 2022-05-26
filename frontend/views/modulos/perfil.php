@@ -48,9 +48,11 @@ if (!isset($_SESSION["validar_sesion"])) {
             <li>
                 <a data-toggle="tab" href="#perfil"><i class="fa fa-user"></i> Editar Perfil</a>
             </li>
-            <li>
-                <a data-toggle="tab" href="#deseos"><i class="fa fa-gift"></i> Mi Lista de Deseos</a>
+            <li> 				
+                <a data-toggle="tab" href="#deseos">
+                <i class="fa fa-gift"></i> MI LISTA DE DESEOS</a>
             </li>
+    
             <li>
                 <a href="<?php echo $url ?>ofertas"><i class="fa fa-star"></i> Ver Ofertas</a>
             </li>
@@ -77,6 +79,10 @@ if (!isset($_SESSION["validar_sesion"])) {
                             <figure id="img_perfil">
 
                                 <?php
+                                echo '<input type="hidden" value="'.$_SESSION["id"].'" name="idUsuario">
+                                    <input type="hidden" value="'.$_SESSION["password"].'" name="passUsuario">
+                                    <input type="hidden" value="'.$_SESSION["foto"].'" name="fotoUsuario">
+                                    <input type="hidden" value="'.$_SESSION["modo"].'" name="modoUsuario">';
                                 if ($_SESSION["modo"] == "directo") {
 
                                     if ($_SESSION["foto"] != "") {
@@ -170,6 +176,11 @@ if (!isset($_SESSION["validar_sesion"])) {
 
 
                         </div>
+
+                        <?php
+                            $actualizarPerfil = new controller_usuarios();
+                            $actualizarPerfil->ctrActualizarPerfil();
+                        ?>
                     </form>
                     <button class="btn btn-danger btn-md pull-right" id="delete_user">Eliminar cuenta</button>
                 </div>

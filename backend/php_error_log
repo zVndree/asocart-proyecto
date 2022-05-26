@@ -327,3 +327,623 @@ Stack trace:
 #5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
 #6 {main}
   thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\conexion.php on line 14
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:29 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[23-May-2022 01:15:30 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 01:20:21 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\sidebar\menu.php:2
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\sidebar.php(4): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(99): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\sidebar\menu.php on line 2
+[26-May-2022 01:22:20 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php:5
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 5
+[26-May-2022 01:23:02 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php:5
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 5
+[26-May-2022 01:23:07 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php:5
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 5
+[26-May-2022 01:23:09 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php:5
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#2 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 5
+[26-May-2022 02:28:04 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 02:28:08 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 02:28:15 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 02:28:34 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 03:24:41 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 03:24:56 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 03:25:29 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 03:25:37 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'controllerArtesanos' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php:205
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\index.php(32): ControllerPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php on line 205
+[26-May-2022 03:32:00 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 03:32:15 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 03:33:17 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 03:40:14 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 03:40:26 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 14:00:06 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php:84
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php(84): PDOStatement->execute()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\controllers\artesanos.controller.php(93): modeloArtesanos::mdlIngresarArtesanoNuevo('artesanos', Array)
+#2 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\artesanos.php(206): controllerArtesanos::ctrCrearArtesano()
+#3 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\models\artesanos.modelo.php on line 84
+[26-May-2022 14:11:07 America/Bogota] PHP Fatal error:  Uncaught Error: Class 'Ruta' not found in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\inicio\last_user_add.php:9
+Stack trace:
+#0 C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\inicio.php(40): include()
+#1 C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php(116): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\asocart-proyecto\backend\controllers\plantilla.Controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\asocart-proyecto\backend\index.php(34): ControllerPlantilla->plantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\asocart-proyecto\backend\views\modulos\inicio\last_user_add.php on line 9
+[26-May-2022 14:46:37 America/Bogota] PHP Warning:  include(modulos/subcategorias.php): failed to open stream: No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 117
+[26-May-2022 14:46:37 America/Bogota] PHP Warning:  include(): Failed opening 'modulos/subcategorias.php' for inclusion (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\asocart-proyecto\backend\views\plantilla.php on line 117
+[26-May-2022 14:54:20 America/Bogota] PHP Warning:  unlink(views/img/ofertas/mesa-y-sala.png): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 350
+[26-May-2022 15:02:06 America/Bogota] PHP Warning:  unlink(views/img/ofertas/hogar-y-cocina.jpg): No such file or directory in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 350
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: precioOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285
+[26-May-2022 16:09:33 America/Bogota] PHP Notice:  Undefined variable: descuentoOfertaActualizado in C:\xampp\htdocs\asocart-proyecto\backend\controllers\categorias.controller.php on line 285

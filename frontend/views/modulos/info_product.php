@@ -317,7 +317,7 @@ INFOPRODUCTOS
                         </div>
                         
                         <div class="col-md-5 col-xs-12" style="margin: 10px 20px;">
-                            <button style="color:' . $plantilla["bar_down"] . ';background: ' . $plantilla["verde"] . '" class="add_cart btn btn-default btn-block btn-lg ">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
+                            <button style="color:' . $plantilla["bar_down"] . ';background: ' . $plantilla["verde"] . '" class="agregarCarrito add_cart btn btn-default btn-block btn-lg "idProducto="'.$infoproducto["id"].'" imagen="'.$server.$infoproducto["img_producto"].'" titulo="'.$infoproducto["titulo"].'" precio="'.$moneyPrecioOferta.'" peso="'.$infoproducto["peso"].'">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
                         </div>';
                     }
                     ?>

@@ -283,13 +283,13 @@ Listar Productos
                                                         if ($value["oferta"] != 0) {
                                                             echo '
                                                             <div class="product-content">
-                                                                <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $moneyPrecioOferta. '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                                <a class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $moneyPrecioOferta. '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                                 <i class="fa fa-shopping-cart"></i></a>
                                                             </div>';
                                                         } else {
                                                             echo '
                                                             <div class="product-content">
-                                                                <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_buscador . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                                <a class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_buscador . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                                 <i class="fa fa-shopping-cart"></i></a>
                                                             </div>';
                                                         }

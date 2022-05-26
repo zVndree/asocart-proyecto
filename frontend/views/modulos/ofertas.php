@@ -243,9 +243,9 @@ Listar Productos
                         $estado = 1;
                     
                         $precioOferta = $value["precioOferta"];
-                        $moneyPrecioOferta = number_format($precioOferta, 0, '.', '.');
+                        $moneyPrecioOferta = number_format($precioOferta, 0, ',', '.');
                         $price = $value["precio"];
-                        $money_product = number_format($price, 0, '.', '.');
+                        $money_product = number_format($price, 0, ',', '.');
 
                         echo '
                                 <li class="col-md-3 col-sm-6 col-xs-12" id="card_product">';
@@ -308,13 +308,13 @@ Listar Productos
                                                 if ($value["oferta"] != 0) {
                                                     echo '
                                                         <div class="product-content">
-                                                            <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $moneyPrecioOferta . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                            <a class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $moneyPrecioOferta . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                             <i class="fa fa-shopping-cart"></i></a>
                                                         </div>';
                                                 } else {
                                                     echo '
                                                         <div class="product-content">
-                                                            <a href="' . $value["ruta"] . '" class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_product . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
+                                                            <a class="add-to-cart agregarCarrito" idProducto="' . $value["id"] . '" imagen="' . $server . $value["img_producto"] . '" titulo="' . $value["titulo"] . '" precio="' . $money_product . '" peso="' . $value["peso"] . '" data-toggle="tooltip" title="Agregar al carrito de compras">
                                                             <i class="fa fa-shopping-cart"></i></a>
                                                         </div>';
                                                 }

@@ -1,25 +1,25 @@
 <?php
 
-class Ruta{
+	class Ruta{
 
-	/*=============================================
-	RUTA LADO DEL CLIENTE
-	=============================================*/	
+		/*=============================================
+		RUTA LADO DEL CLIENTE
+		=============================================*/	
 
-	static public function ctrRuta(){
+		static public function ctrRuta(){
 
-		return "http://localhost/asocart-proyecto/frontend/";
-	
+			return "http://localhost/asocart-proyecto/frontend/";
+		
+		}
+
+		/*=============================================
+		RUTA LADO DEL SERVIDOR
+		=============================================*/	
+
+		static public function ctrRutaServidor(){
+
+			return "http://localhost/asocart-proyecto/backend/";
+		
+		}
+
 	}
-
-	/*=============================================
-	RUTA LADO DEL SERVIDOR
-	=============================================*/	
-
-	static public function ctrRutaServidor(){
-
-		return "http://localhost/asocart-proyecto/backend/";
-	
-	}
-
-}

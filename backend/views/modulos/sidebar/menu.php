@@ -1,15 +1,16 @@
+
 <!-----==============================
 =                MENU               =
 ================================---->
 
-<ul class="sidebar-menu">
+<ul class="sidebar-menu sidebar_menu">
     <li class="active"><a href="inicio"><i class="fa fa-home"></i><span>Inicio</span></a></li>
     <li><a href="clientes"><i class="fa fa-users"></i><span>Gestor Clientes</span></a></li>
-    <li><a href="artesanos"><i class="glyphicon glyphicon-font"></i><span>Gestor Artesanos</span></a></li>
+    <li><a href="artesanos"><img src="http://localhost/asocart-proyecto/backend/views/img/plantilla/florero.png"><span> Gestor Artesanos</span></a></li>
 
     <li class="treeview">
         <a href="">
-            <i class="fa fa-th"></i>
+            <i class="fa fa-list-ul"></i>
             <span>Categorias</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -21,7 +22,7 @@
         </ul>
     </li>
 
-    <li><a href="productos"><i class="fa fa-product-hunt"></i><span>Productos</span></a></li>
+    <li><a href="productos"><i class="fa fa-cubes"></i><span> Gestor Productos</span></a></li>
     <li><a href="banner"><i class="fa fa-map-o"></i><span>Gestor Banners</span></a></li>
     <li><a href="ventas"><i class="fa fa-money"></i><span>Gestor Ventas</span></a></li>
     <li><a href="visitas"><i class="fa fa-map-marker"></i><span>Gestor Visitas</span></a></li>

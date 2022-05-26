@@ -343,8 +343,8 @@ Top
 	</div>
 
 	<!--=====================================
-Header
-======================================-->
+	Header
+	======================================-->
 
 	<header class="container-fluid bar_down">
 
@@ -407,8 +407,8 @@ Header
 			======================================-->
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1 text-center" id="carrito">
 				<a href="<?php echo $url; ?>carrito-de-compras">
-				<strong style="color: <?php echo $social["colorTexto"]?>;" id="items"> Items </strong><span class="cantidad_cesta"></span> <span class="suma_cesta"></span>
-					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-shopping-basket" aria-hidden="true">
+				<strong style="color: <?php echo $social["colorTexto"]?>;" id="items"> <span class="cantidadCesta"></span> Items</strong>
+					<i style="color:<?php echo $social["colorFondo"] ?>" class="fa fa-shopping-basket" aria-hidden="true"> $<span  class="sumaCesta"></span>
 					</i>
 				</a>
 
@@ -459,11 +459,11 @@ Header
 				}
 			}
 			?>
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 all_categorias">
+			<!-- <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 all_categorias">
 				<h5>
 					<a href="todas-las-categorias">Ver mas categorias...</a>
 				</h5>
-			</div>
+			</div> -->
 		</div>
 
 

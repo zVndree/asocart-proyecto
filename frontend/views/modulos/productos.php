@@ -259,9 +259,9 @@ Listar Productos
                     $estado = 1;
                     
                     $precioOferta = $value["precioOferta"];
-                    $moneyPrecioOferta = number_format($precioOferta, 0, '.', '.');
+                    $moneyPrecioOferta = number_format($precioOferta, 0, ',', '.');
                     $price = $value["precio"];
-                    $money_product = number_format($price, 0, '.', '.');
+                    $money_product = number_format($price, 0, ',', '.');
 
                         echo '<li class="col-md-3 col-sm-6 col-xs-12" id="card_product">';
 
