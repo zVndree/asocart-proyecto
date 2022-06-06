@@ -45,7 +45,6 @@ MODAL AGREGAR CATEGORÍA
 ======================================-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
-
     <div class="modal-dialog">
         <div class="model-content">
             <form method="post" enctype="multipart/form-data">
@@ -54,7 +53,6 @@ MODAL AGREGAR CATEGORÍA
                 HEADER
                 ======================================-->
                 <div class="modal-header" style="background: #7D6D61" color=#fff>
-
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 style="color: #fff;" class="modal-title">Agregar Categoría</h4>
                 </div>
@@ -71,15 +69,11 @@ MODAL AGREGAR CATEGORÍA
                         ======================================-->
 
                         <div class="form-group">
-
                             <div class="input-group">
-
                                 <span class="input-group-addon"><i class="fa fa-th"></i></span>
                                 <input type="text" class="form-control input-lg validarCategoria tituloCategoria"
                                     placeholder="Ingresar Categoria" name="tituloCategoria" required>
-
                             </div>
-
                         </div>
 
                         <!--=====================================
@@ -87,16 +81,11 @@ MODAL AGREGAR CATEGORÍA
                         ======================================-->
 
                         <div class="form-group">
-
                             <div class="input-group">
-
                                 <span class="input-group-addon"><i class="fa fa-link"></i></span>
-
                                 <input type="text" class="form-control input-lg rutaCategoria"
                                     placeholder="Ruta url para la categoría" name="rutaCategoria" readonly required>
-
                             </div>
-
                         </div>
 
                         <!--=====================================
@@ -104,14 +93,10 @@ MODAL AGREGAR CATEGORÍA
                         ======================================-->
 
                         <div class="form-group">
-
                             <select name="selActivarOferta" class="form-control input-lg selActivarOferta">
-
                                 <option value="">No tiene oferta</option>
                                 <option value="oferta">Activar oferta</option>
-
                             </select>
-
                         </div>
 
                         <div class="datosOferta" style="display:none">
@@ -126,15 +111,11 @@ MODAL AGREGAR CATEGORÍA
                                 PRECIO
                                 ======================================-->
                                 <div class="col-xs-6">
-
                                     <div class="input-group">
-
                                         <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
                                         <input type="number" class="form-control input-lg valorOferta" id="precioOferta"
                                             name="precioOferta" min="0" step="any" placeholder="Precio">
-
                                     </div>
-
                                 </div>
 
                                 <!--=====================================
@@ -142,16 +123,11 @@ MODAL AGREGAR CATEGORÍA
                                 ======================================-->
 
                                 <div class="col-xs-6">
-
                                     <div class="input-group">
-
                                         <input type="number" class="form-control input-lg valorOferta"
                                             id="descuentoOferta" name="descuentoOferta" min="0" placeholder="Descuento">
-
                                         <span class="input-group-addon"><i class="fa fa-percent"></i></span>
-
                                     </div>
-
                                 </div>
                             </div>
 
@@ -160,20 +136,13 @@ MODAL AGREGAR CATEGORÍA
                             ======================================-->
 
                             <div class="form-group">
-
                                 <div class="input-group date">
-
                                     <input type='text' class="form-control datepicker input-lg valorOferta"
                                         name="finOferta">
-
-                                    <span class="input-group-addon">
-
+                                        <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
-
                                     </span>
-
                                 </div>
-
                             </div>
 
                             <!--=====================================
@@ -181,22 +150,14 @@ MODAL AGREGAR CATEGORÍA
                             ======================================-->
 
                             <div class="form-group">
-
                                 <div class="panel">SUBIR FOTO OFERTA</div>
-
                                 <input type="file" class="fotoOferta" name="fotoOferta">
-
                                 <p class="help-block">Tamaño recomendado 640px * 430px <br> Peso máximo de la foto 2MB
                                 </p>
-
                                 <img src="views/img/ofertas/default/default.jpg"
                                     class="img-thumbnail previsualizarOferta" width="100px">
-
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
 
@@ -205,11 +166,8 @@ MODAL AGREGAR CATEGORÍA
                 ======================================-->
 
                 <div class="modal-footer" style="background-color: #f7f7f7;">
-
                     <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-
                     <button type="submit" class="btn btn-primary">Guardar categoría</button>
-
                 </div>
             </form>
 
@@ -246,7 +204,6 @@ MODAL EDITAR CATEGORÍA
                 ======================================-->
 
                 <div class="modal-body"style="background: #f7f7f7;">
-
                     <div class="box-body">
 
                         <!--=====================================
@@ -358,7 +315,7 @@ MODAL EDITAR CATEGORÍA
                 PIE DEL MODAL
                 ======================================-->
 
-                <div class="modal-footer">
+                <div class="modal-footer" style="background-color: #f7f7f7;">
                     <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
                     <button type="submit" class="btn btn-primary">Guardar cambios categoría</button>
                 </div>
@@ -385,3 +342,22 @@ $eliminarCategoria = new ControllerCategorias();
 $eliminarCategoria -> ctrEliminarCategoria(); 
 
 ?>
+
+<!--=====================================
+BLOQUEO DE LA TECLA ENTER
+======================================-->
+
+<script>
+
+$(document).keydown(function(e){
+
+if(e.keyCode == 13){
+
+    e.preventDefault();
+
+}
+
+})
+
+
+</script>

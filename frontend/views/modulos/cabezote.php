@@ -441,22 +441,27 @@ Top
 										</h4>
 										<br>
 										<ul>';
+				}
 					$item = "id_categoria";
 					$valor = $value["id"];
 					$subcategorias = controladorProductos::ctrListarSubcategorias($item, $valor);
 
 					/* var_dump($subcategorias); */
 					foreach ($subcategorias as $key => $value) {
+
+						if ($value["estado"] != 0){
 						echo '<li>
 							<a href='. $url . $value["ruta"] . ' class="pixel_sub_categorias color-subcategorias">' . $value["nombre"] . '
 							</a>
 
 						</li>';
+						}
 					}
 					echo '</ul>
 
 					</div>';
-				}
+				
+				
 			}
 			?>
 			<!-- <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 all_categorias">
@@ -513,7 +518,6 @@ Top
 			<a class=" et-hero-tab" href="<?php echo $url ?>"><i class="fa fa-home"></i></a>
 			<a class="et-hero-tab" href="<?php echo $url?>about">Sobre Nosotros </a>
 			<a class="et-hero-tab" href="<?php echo $url ?>tienda">Tienda</a>
-			<a class="et-hero-tab" href="<?php echo $url ?>eventos">Eventos</a>
 			<a class="et-hero-tab" href="<?php echo $url?>directorio">Directorio</a>
 			<a class="et-hero-tab" href="<?php echo $url ?>contacto">Contacto</a>
 			<!-- 			<a class="et-hero-tab" href="#registro_modal"><span class="glyphicon glyphicon-user" data-toggle="modal"></span> Sign Up</a>

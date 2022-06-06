@@ -25,6 +25,14 @@ public function mostrarTablaProductos(){
 
     $productos = ControllerProductos::ctrMostrarProductos($item, $valor);
 
+    if(count($productos) == 0){
+
+        $datosJson = '{ "data":[]}';
+        echo $datosJson;
+        return;
+
+    }
+
     $datosJson = '
 
         {	
@@ -59,13 +67,12 @@ public function mostrarTablaProductos(){
 
         $subcategorias = ControllerSubcategorias::ctrMostrarSubCategorias($item2, $valor2);
 
-        if($subcategorias[0]["nombre"] == ""){
-
-            $subcategoria = "SIN SUBCATEGORÍA";
-        
-        }else{
+        if (is_array($subcategorias) && $subcategorias[0]["nombre"] != "") {
 
             $subcategoria = $subcategorias[0]["nombre"];
+        } else {
+        
+            $subcategoria = "SIN SUBCATEGORÍA";
         }
 
         /*=============================================
@@ -90,21 +97,51 @@ public function mostrarTablaProductos(){
 
             
 
-        /*=============================================
-        TRAER IMAGEN PRINCIPAL
-        =============================================*/
+            /*=============================================
+            TRAER IMAGEN PRINCIPAL
+            =============================================*/
 
             $imagenPrincipal = "<img src='".$productos[$i]["img_producto"]."' class='img-thumbnail imgTablaPrincipal' width='100px'>";
+            
+            /*=============================================
+			TRAER MULTIMEDIA
+            =============================================*/
 
+            if($productos[$i]["multimedia"] != null){
+
+                $multimedia = json_decode($productos[$i]["multimedia"],true);
+
+                if(is_array($multimedia) && $multimedia[0]["foto"] != ""){
+
+                    $vistaMultimedia = "<img src='".$multimedia[0]["foto"]."' class='img-thumbnail imgTablaMultimedia' width='100px'>";
+
+                }else{
+
+/*                     $vistaMultimedia = "<img src='http://i3.ytimg.com/vi/".$productos[$i]["multimedia"]."/hqdefault.jpg' class='img-thumbnail imgTablaMultimedia' width='100px'>";
+ */
+                }
+
+
+            }else{
+
+                $vistaMultimedia = "<img src='views/img/multimedia/default/default.jpg' class='img-thumbnail imgTablaMultimedia' width='100px'>";
+
+            }
+
+            /*=============================================
+            TRAER DESCRIPCION
+            =============================================*/
+
+            if($productos[$i]["descripcion"] != ""){
+                $descripcion = $productos[$i]["descripcion"];
+            }else{
+                $descripcion = "Producto sin descripcion";
+            }
             /*=============================================
             TRAER PRECIO
             =============================================*/
 
-            if($productos[$i]["precio"] == 0){
-
-                $precio = "Gratis";
-            
-            }else{
+            if($productos[$i]["precio"] != 0){
 
                 $precio = "$ ".number_format($productos[$i]["precio"],0, '.', '.');
 
@@ -127,27 +164,27 @@ public function mostrarTablaProductos(){
             /*=============================================
             REVISAR SI HAY OFERTAS
             =============================================*/
-            
-        if($productos[$i]["oferta"] != 0){
+                
+            if($productos[$i]["oferta"] != 0){
 
-            if($productos[$i]["precioOferta"] != 0){	
+                if($productos[$i]["precioOferta"] != 0){	
 
-                $tipoOferta = "PRECIO";
-                $valorOferta = "$ ".number_format($productos[$i]["precioOferta"],0, '.', '.');
+                    $tipoOferta = "PRECIO";
+                    $valorOferta = "$ ".number_format($productos[$i]["precioOferta"],0, '.', '.');
+
+                }else{
+
+                    $tipoOferta = "DESCUENTO";
+                    $valorOferta = $productos[$i]["descuentoOferta"]." %";	
+
+                }	
 
             }else{
 
-                $tipoOferta = "DESCUENTO";
-                $valorOferta = $productos[$i]["descuentoOferta"]." %";	
-
-            }	
-
-        }else{
-
-            $tipoOferta = "No tiene oferta";
-            $valorOferta = 0;
-            
-        }
+                $tipoOferta = "No tiene oferta";
+                $valorOferta = 0;
+                
+            }
 
             /*=============================================
             TRAER IMAGEN OFERTA
@@ -167,7 +204,7 @@ public function mostrarTablaProductos(){
             TRAER LAS ACCIONES
             =============================================*/
 
-            $acciones = "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' imgOferta='".$productos[$i]["imgOferta"]."'imgPrincipal='".$productos[$i]["img_producto"]."'><i class='fa fa-times'></i></button></div>";
+            $acciones = "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' imgOferta='".$productos[$i]["imgOferta"]."' rutaCabecera='".$productos[$i]["ruta"]."' imgPrincipal='".$productos[$i]["img_producto"]."'><i class='fa fa-times'></i></button></div>";
 
             /*=============================================
             CONSTRUIR LOS DATOS JSON
@@ -182,7 +219,9 @@ public function mostrarTablaProductos(){
                 "'.$subcategoria.'",
                 "'.$productos[$i]["ruta"].'",
                 "'.$estado.'",
+                "'.$descripcion.'",
                 "'.$imagenPrincipal.'",
+                "'.$vistaMultimedia.'",
                 "'.$precio.'",
                 "'.$productos[$i]["peso"].' kg",
                 "'.$entrega.'",

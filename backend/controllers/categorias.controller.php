@@ -261,9 +261,6 @@ class ControllerCategorias{
                     }
                     
                 }
-/* 
-                print_r($datos);
-                return; */
 
                 ModeloSubcategorias::mdlActualizarOfertaSubcategorias("subcategorias", $datos, "ofertadoPorCategoria");
                 $traerProductos = modeloProductos::mdlMostrarProductos("productos", "id_categoria", $datos["id"]);
@@ -282,7 +279,7 @@ class ControllerCategorias{
                         $descuentoOfertaActualizado = 100 - ($datos["precioOferta"]*100/$value["precio"]);
                     }
 
-                    modeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado, "id", $value["id"]);
+                    modeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado, $value["id"]);
 
                 }
 

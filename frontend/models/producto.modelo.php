@@ -74,14 +74,14 @@ class modeloProductos
 
         if($item != null){
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND estado=1 ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetchAll();
 
         }else{
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE estado=1 ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt->execute();
             return $stmt->fetchAll();
 
@@ -100,14 +100,14 @@ class modeloProductos
 
         if($item != null){
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND estado=1 ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetchAll();
 
         }else{
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar $modo LIMIT $base, $tope");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE estado=1 ORDER BY $ordenar $modo LIMIT $base, $tope");
             $stmt->execute();
             return $stmt->fetchAll();
         }
@@ -125,14 +125,14 @@ class modeloProductos
 
         if ($item != null) {
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar >0 ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND estado=1 ORDER BY $ordenar DESC");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt ->execute();
             return $stmt -> fetchAll();
 
         }else{
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE estado=1 ORDER BY $ordenar DESC");
             $stmt ->execute();
             return $stmt -> fetchAll();
         }
@@ -147,7 +147,7 @@ class modeloProductos
 
 	static public function mdlMostrarTotalProductos($tabla, $orden){
 	
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $orden DESC");
+		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE estado=1 ORDER BY $orden DESC");
 
 		$stmt -> execute();
 
@@ -167,7 +167,7 @@ class modeloProductos
 
         if ($item != null) {
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $ordenar > 0 ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND estado=1 ORDER BY $ordenar DESC");
             $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt ->execute();
             return $stmt -> fetchAll();
@@ -175,7 +175,7 @@ class modeloProductos
         }else{
 
 
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $ordenar > 0 ORDER BY $ordenar DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE estado=1 ORDER BY $ordenar DESC");
             $stmt ->execute();
             return $stmt -> fetchAll();
 
@@ -207,7 +207,7 @@ class modeloProductos
 
     static public function mdlBuscarProductos($tabla, $busqueda, $ordenar, $modo, $base, $tope){
         
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' OR descripcion like '%$busqueda%' ORDER BY $ordenar $modo LIMIT $base, $tope");
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' AND estado=1 ORDER BY $ordenar $modo LIMIT $base, $tope");
         $stmt-> execute();
         return $stmt->fetchAll();
         $stmt -> close();
@@ -220,7 +220,7 @@ class modeloProductos
 
     static public function mdlListarProductos($tabla, $busqueda){
         
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' OR descripcion like '%$busqueda%'");
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE ruta like '%$busqueda%' OR titulo like '%$busqueda%' AND estado=1");
         $stmt-> execute();
         return $stmt->fetchAll();
         $stmt -> close();

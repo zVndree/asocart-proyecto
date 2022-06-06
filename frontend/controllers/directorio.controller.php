@@ -6,18 +6,18 @@ class ControladorDirectorio
     Mostrar Artesanos
     =============================================*/
 
-    static public function ctrListarArtesanos($item, $valor)
+    static public function ctrListarArtesanos()
     {
 
         $tabla = "artesanos";
-        $respuesta = modeloDirectorio::mdlListarArtesanos($tabla, $item, $valor);
+        $respuesta = modeloDirectorio::mdlListarArtesanos($tabla);
         return $respuesta;
     }
 
-    static public function ctrListarEspecialidades($item2, $valor2){
+    static public function ctrListarEspecialidades(){
 
-        $tabla = "especialidad";
-        $respuesta = modeloDirectorio::mdlListarEspecialidades($tabla, $item2, $valor2);
+        $tabla = "artesanos";
+        $respuesta = modeloDirectorio::mdlListarEspecialidades($tabla);
         return $respuesta;
     }
 

@@ -8,22 +8,12 @@ class modeloDirectorio
     Consulta para Mostrar Artesanos
     =============================================*/
 
-    static public function mdlListarArtesanos($tabla, $item, $valor)
+    static public function mdlListarArtesanos($tabla)
     {
 
-        if ($item != null) {
-
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
-            $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
-            
-            $stmt->execute();
-            return $stmt->fetch();
-        } else {
-
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY nombre ASC");
-            $stmt->execute();
-            return $stmt->fetchAll();
-        }
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY nombre ASC");
+        $stmt->execute();
+        return $stmt->fetchAll();
 
         $stmt -> close();
         $stmt = null;
@@ -33,23 +23,14 @@ class modeloDirectorio
     Consulta para Mostrar Especialidad
     =============================================*/
 
-    static public function mdlListarEspecialidades($tabla, $item2, $valor2)
+    static public function mdlListarEspecialidades($tabla)
     {
 
-        if ($item2 != null) {
-
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item2 = :$item2");
-            $stmt->bindParam(":" . $item2, $valor2, PDO::PARAM_STR);
-            $stmt-> execute();
-            return $stmt->fetchAll();
-        } else {
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ");
-            $stmt->execute();
-            return $stmt->fetchAll();
-        }
-
-        $stmt -> close();
-        $stmt = null;
+    $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ");
+    $stmt->execute();
+    return $stmt->fetchAll();
+    $stmt -> close();
+    $stmt = null;
     }
     
 

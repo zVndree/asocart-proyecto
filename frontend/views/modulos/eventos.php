@@ -23,36 +23,51 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
         <div class="contenido-programa">
             <div class="contenedor">
                 <div class="programa-evento">
-                    <h2>Programa del Evento</h2>
+                    <h2 style="color:<?php echo $plantilla["barTop"]?>">Programación Eventos</h2>
                     <nav class="menu-programa" style="border-bottom: 1px solid <?php echo $plantilla["colorFondo"]?>">
-                        <a href="#talleres" style="color: <?php echo $plantilla["colorFondo"]?>" ><i class="fa fa-code"></i> Talleres</a>
-                        <a href="#conferencias" style="color: <?php echo $plantilla["colorFondo"]?>"><i class="fa fa-comment"></i> Conferencias</a>
-                        <a href="#seminarios" style="color: <?php echo $plantilla["colorFondo"]?>"><i class="fa fa-university"></i> Seminarios</a>
-                    </nav>
-                    <div id="talleres" class="info-curso ocultar clearfix">
-                        <div class="detalle-evento">
-                            <h3>Costura a mano</h3>
-                            <p><i class="fa fa-clock-o" style="color: <?php echo $plantilla["colorFondo"]?>"></i> 14:00:00 pm</p>
-                            <p><i class="fa fa-calendar" style="color: <?php echo $plantilla["colorFondo"]?>"></i> 10 de dic</p>
-                            <p><i class="fa fa-user" style="color: <?php echo $plantilla["colorFondo"]?>"></i> Juan Carlos Segura</p>
-                        </div>
-                        <div class="detalle-evento">
-                            <h3>La importancia de las artesanias</h3>
-                            <p><i class="fa fa-clock-o" style="color: <?php echo $plantilla["colorFondo"]?>"></i> 18:00:00 pm</p>
-                            <p><i class="fa fa-calendar" style="color: <?php echo $plantilla["colorFondo"]?>"></i> 10 de dic</p>
-                            <p><i class="fa fa-user" style="color: <?php echo $plantilla["colorFondo"]?>"></i> Alejandro Magno</p>
-                        </div>
-                        <!-- <a href="#" class="back_color">Ver mas</a> -->
-                        <button class="btn btn-default back_color pull-right">
-                            Ver mas <span class="fa fa-chevron-right"></span>
-                        </button>
+
+                    <div class="myBox">      
+
+                <?php 
+                
+                $eventos = controller_Evento::ctr_mostrar_evento();
+                    foreach ($eventos as $key => $value) {
+                            /* $currentDateTime = '08/04/2010 22:15:00'; 
+                            $newDateTime = date('h:i A', strtotime($currentDateTime)); */
+                    $key = $key +1;
+
+                            $hora = new DateTime($value["fecha_inicio"]);
+                        
+                            echo'
+                            
+                                <div id="eventos" class="info-curso ocultar clearfix">
+                                    <div class="detalle-evento">
+                                        <h3 style="color:'.$plantilla["colorFondo"].'">'.$key. '. ' .$value["titulo"].'</h3>
+                                        <p>'.$value["descripcion"].'</p>
+                                        <p><i class="fa fa-calendar" style="color:'.$plantilla["colorFondo"].'"></i>'.$hora->format("j/m/Y").'</p>
+                                        <p><i class="fa fa-clock-o"  style="color:'.$plantilla["colorFondo"].'"></i>'.$hora->format("g:i A").'</p>
+                                        <p><i class="fa fa-map-marker"  style="color:'.$plantilla["colorFondo"].'"></i>'.$value["lugar"].'</p>
+                                    </div>
+                                </div>
+                            
+                            
+                            ';
+
+                            $key ++;
+                    
+                    
+                    }
+                    
+                
+                ?>
                     </div>
+                
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="seccion">
+<!--     <section class="seccion">
         <h1>Faltan</h1>
         <hr class="back_color">
         <div class="cuenta-regresiva contenedor">
@@ -72,4 +87,4 @@ $plantilla = ControllerPlantilla::ctrEstiloPlantilla();
             </ul>
         </div>
     </section>
-</section>
+</section> -->

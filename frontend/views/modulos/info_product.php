@@ -38,50 +38,48 @@ INFOPRODUCTOS
             $item = "ruta";
             $valor = $rutas[0];
             $infoproducto = controladorProductos::ctr_mostrar_info_productos($item, $valor);
+            $multimedia = json_decode($infoproducto["multimedia"],true);
             /* var_dump($infoproducto); */
+
+            echo '<div class="col-md-5 col-sm-6 col-xs-12 visorImg">
+						
+							<figure class="visor">';
+
+							if($multimedia != null){
+
+								for($i = 0; $i < count($multimedia); $i ++){
+
+									echo '<img id="lupa'.($i+1).'" class="img-thumbnail" src="'.$server.$multimedia[$i]["foto"].'">';
+
+								}								
+
+								echo '</figure>
+
+								<div class="flexslider">
+								
+								<ul class="slides">';
+
+								for($i = 0; $i < count($multimedia); $i ++){
+
+									echo '<li>
+                                        <img value="'.($i+1).'" class="img-thumbnail" src="'.$server.$multimedia[$i]["foto"].'" alt="'.$infoproducto["titulo"].'">
+                                    </li>';
+
+								}
+
+							}		
+							echo '</ul>
+
+							</div>
+
+						</div>';	
             ?>
 
             <!--=====================================
 			VISOR DE PRODUCTOS
 			======================================-->
 
-            <div class="col-md-5 col-sm-6 col-xs-12 visorImg">
-
-                <figure class="visor">
-                    <img id="lupa1" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                    <img id="lupa2" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                    <img id="lupa3" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                    <img id="lupa4" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                    <img id="lupa5" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-
-                </figure>
-
-                <!--=====================================
-				CAROUSEL DE PRODUCTOS
-				======================================-->
-
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <img value="1" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                        </li>
-                        <li>
-                            <img value="2" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                        </li>
-                        <li>
-                            <img value="3" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                        </li>
-                        <li>
-                            <img value="4" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                        </li>
-                        <li>
-                            <img value="5" class="img-thumbnail" src="<?php echo $server ?>views/img/info-products/navidad.png" alt="">
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
+            
 
             <!--=====================================
             PRODUCTO
@@ -107,7 +105,7 @@ INFOPRODUCTOS
                 <div class="col-xs-6">
                     <a class="dropdown-toggle pull-right text-muted" data-toggle="dropdown" href="">
 
-                        <i class="fa fa-plus"></i> Compartir
+                        <i style="font-size: 20px;" class="fa fa-share-alt"></i> Compartir
                     </a>
 
                     <ul class="dropdown-menu pull-right compartirRedes">
@@ -140,8 +138,8 @@ INFOPRODUCTOS
                 require_once("moneda.php");
 
                 /*=====================================
-                    TITULO DEL PRODUCTO
-                    ======================================*/
+                TITULO DEL PRODUCTO
+                ======================================*/
 
                 if ($infoproducto["oferta"] == 0) {
 

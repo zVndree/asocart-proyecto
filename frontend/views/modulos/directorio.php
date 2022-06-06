@@ -65,9 +65,9 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
         <ul class="list_artesanos">
             <?php
 
-                $item = null;
-                $valor = null;
-                $artesano = ControladorDirectorio::ctrListarArtesanos($item, $valor);
+            
+                $artesano = ControladorDirectorio::ctrListarArtesanos();
+                /* print_r($artesano); */
                 
                 foreach ($artesano as $key => $value) {
 
@@ -94,8 +94,46 @@ $plantila = ControllerPlantilla::ctrEstiloPlantilla();
                                         </div>
                                             
                                         <div class="more-info">
+                                            <div class="coords">                                
+                                                <span> '.$value["nombre"].' </span>
+                                                
+                                            </div>
                                             
-                                            <h1> '.$value["nombre"].' </h1>
+                                            <div class="coords">
+                                                    <span><i class="fa fa-whatsapp">  </i>'.$value["whatsapp"].'</span>
+                                            </div>';
+
+                                            /* $item = null;
+                                            $valor = null;
+                                            $artesanoRed = ControladorDirectorio::ctrListarEspecialidades();
+                                            $jsonRedesSociales = json_decode($artesanoRed["redesSociales"], null); */
+
+                                            /* foreach ($artesanoRed as $key => $value) { */
+                                                echo'
+                                                <div class="stats">
+                                                    <div>
+                                                        
+                                                    </div>
+                                                <div>
+                                                        <div class="title">Matches</div>
+                                                        <i class="fa fa-gamepad"></i>
+                                                        <div class="value">27</div>
+                                                </div>
+                                                <div>
+                                                    <div class="title">Pals</div>
+                                                    <i class="fa fa-group"></i>
+                                                    <div class="value">123</div>
+                                                </div>
+                                                <div>
+                                                    <div class="title">Coffee</div>
+                                                    <i class="fa fa-coffee"></i>
+                                                    <div class="value infinity">∞</div>
+                                                </div>
+                                            </div>
+                                                ';
+                                          /*   } */
+
+                                            echo'
                                             
                                             <!----
                                             <div class="coords">

@@ -95,4 +95,98 @@ class ModeloSubcategorias{
 
 	}
 
+	
+	/*=============================================
+	CREAR SUBCATEGORIA
+	=============================================*/
+
+	static public function mdlIngresarSubCategoria($tabla, $datos){
+
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre, id_categoria, ruta, estado, oferta, precioOferta, descuentoOferta, imgOferta, finOferta) VALUES (:nombre, :id_categoria, :ruta, :estado, :oferta, :precioOferta, :descuentoOferta, :imgOferta, :finOferta)");
+
+		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+		$stmt->bindParam(":id_categoria", $datos["idCategoria"], PDO::PARAM_STR);
+		$stmt->bindParam(":ruta", $datos["ruta"], PDO::PARAM_STR);
+		$stmt->bindParam(":estado", $datos["estado"], PDO::PARAM_STR);
+		$stmt->bindParam(":oferta", $datos["oferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":precioOferta", $datos["precioOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":descuentoOferta", $datos["descuentoOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":imgOferta", $datos["imgOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":finOferta", $datos["finOferta"], PDO::PARAM_STR);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		$stmt = null;
+
+	}
+
+	/*=============================================
+	EDITAR SUBCATEGORIA
+	=============================================*/
+
+	static public function mdlEditarSubCategoria($tabla, $datos){
+
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, id_categoria = :id_categoria, ruta = :ruta, estado = :estado, oferta = :oferta, precioOferta = :precioOferta, descuentoOferta = :descuentoOferta, imgOferta = :imgOferta, finOferta = :finOferta WHERE id = :id");
+
+		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+		$stmt->bindParam(":id_categoria", $datos["idCategoria"], PDO::PARAM_STR);
+		$stmt->bindParam(":ruta", $datos["ruta"], PDO::PARAM_STR);
+		$stmt->bindParam(":estado", $datos["estado"], PDO::PARAM_STR);
+		$stmt->bindParam(":oferta", $datos["oferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":precioOferta", $datos["precioOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":descuentoOferta", $datos["descuentoOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":imgOferta", $datos["imgOferta"], PDO::PARAM_STR);
+		$stmt->bindParam(":finOferta", $datos["finOferta"], PDO::PARAM_STR);
+		$stmt -> bindParam(":id", $datos["id"], PDO::PARAM_INT);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		$stmt = null;
+
+	}
+
+	/*=============================================
+	ELIMINAR SUBCATEGORIA
+	=============================================*/
+
+	static public function mdlEliminarSubCategoria($tabla, $datos){
+
+		$stmt = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = :id");
+
+		$stmt -> bindParam(":id", $datos, PDO::PARAM_INT);
+
+		if($stmt -> execute()){
+
+			return "ok";
+		
+		}else{
+
+			return "error";	
+
+		}
+
+		$stmt -> close();
+
+		$stmt = null;
+
+	}
+
 }

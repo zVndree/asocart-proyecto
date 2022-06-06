@@ -44,12 +44,12 @@
 
 }
 
-/* .card:hover .additional {
+.card:hover .additional {
     width: 100%;
     border-radius: 0 5px 5px 0;
     background-image: url("../img/plantilla/aztec.svg");
     
-} */
+}
 
 .card .additional .user-card {
     width: 150px;
@@ -84,7 +84,7 @@
 }
 
 .card .additional .coords {
-    margin: 0 1rem;
+    margin: 0 2rem;
     color: #fff;
     font-size: 1rem;
 }

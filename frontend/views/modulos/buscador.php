@@ -74,7 +74,7 @@ Listar Productos
                     $modo = $_SESSION["ordenar"];
                 }
 
-                $base = ($rutas[1] - 1) * 12;
+                $base = ($rutas[1] - 1)*12;
                 $tope = 12;
             } else {
 
@@ -105,7 +105,8 @@ Listar Productos
 
             if (!$productos) {
 
-
+                $estado = 0;
+                
                 /*=============================================
                 Sin productos
                 =============================================*/
@@ -118,8 +119,8 @@ Listar Productos
                 foreach ($productos as $key => $value) {
 
                     if ($value["estado"] != 0) {
+                        
                         $estado = 1;
-                
 
                         $precioOferta = $value["precioOferta"];
                         $moneyPrecioOferta = number_format($precioOferta, 0, '.', '.');
@@ -207,14 +208,12 @@ Listar Productos
                                         </div>
                                     </div>
                                 </li>';
-                    }else{
-                        $estado = 0;
                     }
                 }
 
-                if ($estado == 0) {
+                /* if ($estado == 0) {
                     include "sin_products.php";
-                }
+                } */
                 echo '</ul>';
             }
 
@@ -232,11 +231,10 @@ Listar Productos
 
                 <?php
 
-                //if ($estado != 0) {
+                if ($estado != 0) {
                     
-
                     if (count($list_products) != 0) {
-                        $pag_products = ceil(count($list_products) / 12);
+                        $pag_products = ceil(count($list_products)/12);
 
                         /* var_dump($pag_products); */
 
@@ -367,7 +365,7 @@ Listar Productos
                             </ul>';
                         }
                     }
-                //}
+                }
 
                 ?>
 
