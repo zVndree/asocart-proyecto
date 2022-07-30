@@ -21,6 +21,8 @@ require_once "controllers/categorias.controller.php";
 require_once "controllers/subcategorias.controller.php";
 require_once "controllers/usuarios.controller.php";
 require_once "controllers/artesanos.controller.php";
+require_once "controllers/notificaciones.controller.php";
+
 
 require_once "models/admin_model.php";
 require_once "models/rutas.php";
@@ -30,6 +32,8 @@ require_once "models/subcategorias.modelo.php";
 require_once "models/categorias.modelo.php";
 require_once "models/usuarios.modelo.php";
 require_once "models/artesanos.modelo.php";
+require_once "models/notificaciones.modelo.php";
+
 
 $plantilla = new ControllerPlantilla();
 $plantilla->plantilla();

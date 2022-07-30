@@ -28,9 +28,12 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <link rel="stylesheet" href="views/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Morris chart -->
   <link rel="stylesheet" href="views/bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="views/bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="views/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="views/dist/css/skins/skin-blue.min.css">
+  <!-- iCheck -->
   <link rel="stylesheet" href="views/plugins/iCheck/square/blue.css">
   <!-- Bootstrap Color Picker -->
   <link rel="stylesheet" href="views/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
@@ -39,6 +42,7 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <!-- DataTables -->
   <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
+  
   <!----DROPZONE----->
   <link rel="stylesheet" href="views/plugins/dropzone/dropzone.css">
   <!-- Google Font -->
@@ -63,8 +67,11 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <!------Plugins graficos------->
   <script src="views/bower_components/morris.js/morris.min.js"></script>
   <script src="views/bower_components/raphael/raphael.min.js"></script>
+  <!-- ChartJS -->
+  <script src="views/bower_components/Chart.js/Chart.js"></script>
     <!-- jQuery Knob Chart -->
   <script src="views/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <!-- SWEETALERT-->
   <script src="views/plugins/sweetalert2/sweetalert2.all.js"></script>
   <!-- bootstrap color picker https://farbelous.github.io/bootstrap-colorpicker/v2/-->
   <script src="views/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
@@ -77,6 +84,15 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
   <!----DROPZONE----->
   <script src="views/plugins/dropzone/dropzone.js"></script>
+  <!----DATA TABLE BUTTONS----->
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+
+
 </head>
 
 <body  style="background-color: #d9cab0" class="hold-transition sidebar-collapse sidebar-mini">
@@ -115,7 +131,8 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
         || $_GET["ruta"] == "subcategorias"
         || $_GET["ruta"] == "productos"
         || $_GET["ruta"] == "ajustes"
-        || $_GET["ruta"] == "perfiles"
+        || $_GET["ruta"] == "usuarios"
+        || $_GET["ruta"] == "roles"
         || $_GET["ruta"] == "salir") {
 
         include "modulos/" . $_GET["ruta"] . ".php";
@@ -150,6 +167,10 @@ $plantilla = ControllerAjustes::ctrSeleccionarPlantilla();
   <script src="views/js/gestorUsuarios.js"></script>
   <script src="views/js/gestorArtesanos.js"></script>
   <script src="views/js/gestorAdministradores.js"></script>
+  <script src="views/js/gestorRoles.js"></script>
+  <script src="views/js/gestorNotificaciones.js"></script>
+
+
 
 
 </body>

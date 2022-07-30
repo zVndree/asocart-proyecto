@@ -9,11 +9,23 @@ class ControllerProductos{
 	static public function ctrMostrarProductos($item, $valor){
 
 		$tabla = "productos";
-
 		$respuesta = ModeloProductos::mdlMostrarProductos($tabla, $item, $valor);
-
 		return $respuesta;
 	
+	}
+
+	/*=============================================
+	MOSTRAR SUMA VENTAS
+	=============================================*/
+
+	static public function ctrMostrarSumaVentas(){
+
+		$tabla = "productos";
+
+		$respuesta = ModeloProductos::mdlMostrarSumaVentas($tabla);
+
+		return $respuesta;
+
 	}
 
 	/*=============================================
@@ -23,9 +35,7 @@ class ControllerProductos{
 	static public function ctrMostrarTotalProductos($orden){
 
 		$tabla = "productos";
-
 		$respuesta = ModeloProductos::mdlMostrarTotalProductos($tabla, $orden);
-
 		return $respuesta;
 
 	}
@@ -271,7 +281,6 @@ class ControllerProductos{
 
 				return $respuesta;
 				
-
 			}else{
 
 					echo'<script>
@@ -291,13 +300,8 @@ class ControllerProductos{
 
 			  	</script>';
 
-
-
-			}
-		
+			}	
 		}
-
 	}
-
 }
     

@@ -1,3 +1,10 @@
+<?php
+    if (!$_SESSION["id_rol"] == 1 || !$_SESSION["id_rol"] == 4) {
+        echo '<script>
+            window.location = "inicio";
+        </script>';
+    }
+?>
 <div class="content-wrapper">
     <section class="content-header">
 

@@ -22,7 +22,7 @@
 
             <div class="box-header with-border">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarArtesano">
-                    Agregar Artesano
+                <i class="fa fa-plus-circle"></i> Agregar Artesano
                 </button>
             </div>
 

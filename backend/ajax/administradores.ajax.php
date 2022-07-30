@@ -6,8 +6,8 @@ class AjaxAdministradores
 {
 
     /*=============================================
-        ACTIVAR PERFIL
-        =============================================*/
+    ACTIVAR PERFIL
+    =============================================*/
 
     public $activarPerfil;
     public $activarId;
@@ -29,8 +29,42 @@ class AjaxAdministradores
     }
 
     /*=============================================
-        EDITAR PERFIL
-        =============================================*/
+	VALIDAR NO REPETIR USUARIO
+	=============================================*/	
+
+	public $validarUsuario;
+
+	public function ajaxValidarUsuario(){
+
+		$item = "name";
+		$valor = $this->validarUsuario;
+
+		$respuesta = controllerAdmin::ctrMostrarAdministradores($item, $valor);
+
+		echo json_encode($respuesta);
+
+	}
+
+    /*=============================================
+	TRAER ROL DE ACUERDO A LA CATEGORÍA
+	=============================================*/	
+
+	public $idRol;
+
+	public function ajaxTraerRol(){
+
+		$item = "id_rol";
+		$valor = $this->idRol;
+
+		$respuesta = controllerAdmin::ctrMostrarAdministradores($item, $valor);
+
+		echo json_encode($respuesta);
+
+	}
+
+    /*=============================================
+    EDITAR PERFIL
+    =============================================*/
 
     public $idPerfil;
 
@@ -66,4 +100,15 @@ if (isset($_POST["idPerfil"])) {
     $editar = new AjaxAdministradores();
     $editar->idPerfil = $_POST["idPerfil"];
     $editar->ajaxEditarPerfil();
+}
+
+/*=============================================
+TRAER SUBCATEGORIAS DE ACUERDO A LA CATEGORÍA
+=============================================*/
+if(isset($_POST["idRol"])){
+
+	$traerRoles = new AjaxAdministradores();
+	$traerRoles -> idRol = $_POST["idRol"];
+	$traerRoles -> ajaxTraerRol();
+
 }

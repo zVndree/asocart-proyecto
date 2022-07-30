@@ -17,7 +17,7 @@
         <div class="box">
             <div class="box-header with-border">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
-                    Agregar Producto
+                <i class="fa fa-plus-circle"></i> Agregar Producto
                 </button>
             </div>
 
@@ -151,7 +151,7 @@ MODAL AGREGAR PRODUCTO
                     AGREGAR SUBCATEGORÍA
                     ======================================-->
 
-                    <div class="form-group  entradaSubcategoria" style="display:none">
+                    <div class="form-group entradaSubcategoria" style="display:none">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-th-list"></i></span>
                             <select class="form-control input-lg seleccionarSubCategoria">

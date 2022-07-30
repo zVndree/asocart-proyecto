@@ -203,7 +203,7 @@ $(".seleccionarCategoria").change(function () {
 	//resetear select cada vez que se cambia de categoria
 	$(".seleccionarSubCategoria").html("");
 
-	$("#modalEditarProducto .seleccionarSubCategoria").html("");
+	$("#modalAgregarProducto .seleccionarSubCategoria").html("");
 
 	var datos = new FormData();
 	datos.append("idCategoria", categoria);
@@ -441,7 +441,7 @@ $(".guardarProducto").click(function () {
 		$(".descripcionProducto").val() != "") {
 
 		/*=============================================
-		PREGUNTAMOS SI VIENEN IMÁGENES PARA MULTIMEDIA O LINK DE YOUTUBE
+		PREGUNTAMOS SI VIENEN IMÁGENES PARA MULTIMEDIA 
 		=============================================*/
 
 		if (arrayFiles.length > 0 && $(".rutaProducto").val() != "") {

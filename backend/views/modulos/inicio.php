@@ -21,25 +21,43 @@
         <div class="row">
 
         <?php
+        if ($_SESSION["id_rol"] == 1) {
             include "inicio/box_resumen.php";
+        }
+            
         ?>
 
         </div>
         <!------Fila contenido dash------>
         <div class="row">
-            <div class="col-lg-6">
+            
             <?php
-                include "inicio/grf_ventas.php";
-                include "inicio/prod_mas_vendido.php"
-            ?>
-            </div>
 
-            <div class="col-lg-6">
-            <?php
-                include "inicio/grf_visitas.php";
-                include "inicio/last_user_add.php"
+            if ($_SESSION["id_rol"] == 1) {
+                echo'<div class="col-lg-6">';
+                    include "inicio/grf_ventas.php";
+                    include "inicio/prod_mas_vendido.php";
+
+                echo'</div>';
+            }
+
             ?>
-            </div>
+            
+            <?php
+
+            if ($_SESSION["id_rol"] == 1) {
+                echo'<div class="col-lg-6">';
+                    include "inicio/grf_visitas.php";
+                    include "inicio/last_user_add.php";
+                echo'</div>';
+            }else{
+                echo'<div class="col-lg-12">';
+                    include "inicio/grf_visitas.php";
+                    include "inicio/last_user_add.php";
+                echo'</div>';
+            }
+            
+            ?>
 
             <div class="col-lg-12">
             <?php

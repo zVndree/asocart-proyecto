@@ -39,8 +39,18 @@ class controller_usuarios
 
                 if ($respuesta == "ok") {
 
+                /*=============================================
+                ACTUALIZAR NOTIFICACIONES NUEVOS USUARIOS
+                =============================================*/
 
-                    /*=============================================
+                $traerNotificaciones = ControladorNotificaciones::ctrMostrarNotificaciones();
+
+                $nuevoUsuario = $traerNotificaciones["newUsers"] + 1;
+
+                ModeloNotificaciones::mdlActualizarNotificaciones("notificaciones", "newUsers", $nuevoUsuario);
+
+
+                /*=============================================
                 Verificacion del correo
                 =============================================*/
 
@@ -548,9 +558,9 @@ class controller_usuarios
 
 
                 $email_repetido = false;
-            } else {
-                $email_repetido = true;
             }
+            $email_repetido = true;
+
         } else {
 
             $respuesta1 = ModeloUsuarios::mdlRegistroUsuario($tabla, $datos);

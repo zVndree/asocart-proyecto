@@ -1,5 +1,5 @@
 /*=============================================
-CARGAR LA TABLA DINÁMICA DE USUARIOS
+CARGAR LA TABLA DINÁMICA DE CLIENTES
 =============================================*/
 
 /* $.ajax({
@@ -9,7 +9,7 @@ CARGAR LA TABLA DINÁMICA DE USUARIOS
   },
 }); */
 
-$(".tablaUsuarios").DataTable({
+$(".tablaClientes").DataTable({
 	"ajax": "ajax/tablaUsuarios.ajax.php",
 	deferRender: true,
 	retrieve: true,
